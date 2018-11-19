@@ -1,4 +1,4 @@
-def train(model,loader_train, device,optimizer, dtype,epochs,print_process=True):
+def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,print_process=True):
     """
     Inputs:
     - model: A PyTorch Module giving the model to train.
@@ -10,9 +10,13 @@ def train(model,loader_train, device,optimizer, dtype,epochs,print_process=True)
     import torch
     import torch.nn as nn
     import torch.optim as optim
+    import torch.nn.functional as F
+    import numpy as np
     model = model.to(device=device)  # move the model parameters to CPU/GPU
+    best_val_loss = None
     for e in range(epochs):
-        time = 0
+        loss_perepoch = 0
+
         for t, content in loader_train.items():
             model.train()  # put model to training mode
             # x is the features and y is the win rate
@@ -26,12 +30,11 @@ def train(model,loader_train, device,optimizer, dtype,epochs,print_process=True)
             # Loss is the mean square error
             #logistic or not, l have not tried yet
 
-
             win_rate = sum(PER_C)
             criterion =nn.MSELoss()
 
             loss = criterion(win_rate, y)
-
+            loss_perepoch += loss
             # Zero out all of the gradients for the variables which the optimizer
             # will update.
             optimizer.zero_grad()
@@ -47,14 +50,15 @@ def train(model,loader_train, device,optimizer, dtype,epochs,print_process=True)
             #if time % print_every == 0:
              #   print(loss[0])
               #  print()
-            time+=1
+
 
             if print_process==True:
                 print('now we have')
                 print(t,win_rate,y)
         # every ten epochs print the loss on validation set
-        '''
+        
         if e%10 == 0:
+            loss_val = 0
             for t, content in loader_validation.items():
 
             # x is the features and y is the win rate
@@ -65,16 +69,26 @@ def train(model,loader_train, device,optimizer, dtype,epochs,print_process=True)
                 y = y.to(device=device, dtype=torch.float)
 
                 PER_C = model(x)
+
                 # Loss is the mean square error
                 #logistic or not, l have not tried yet
 
-
                 win_rate = sum(PER_C)
-                criterion =nn.MSELoss()
+                loss_val += (y-win_rate)**2
+            print('validation_loss:')
+            loss_val /=4
+            if e ==0:
+                best_val_loss = loss_val[0].data
 
-                loss = criterion(win_rate, y)
-        
+            if loss_val[0].data<= best_val_loss:
+
+                best_val_loss = loss_val[0]
+            else:
+                break
+            print(loss_val[0])
+
+        '''
         if e%100 == 0:
             torch.save(model, 'index_code1_linear.all')
         '''
-        print(e)
+        print(e,loss_perepoch/25)
