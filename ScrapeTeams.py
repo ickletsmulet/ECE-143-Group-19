@@ -4,11 +4,11 @@ import numpy as np
 import csv
 
 
-# Creating a dictionary of URLs for each year from 1989 to 2018 (30 years).
+# Creating a dictionary of URLs for each year from 1988 to 2018 (30 years).
 baseURL_left = "https://www.basketball-reference.com/leagues/NBA_"
 baseURL_right = ".html"
 URL = {}
-for year in range(1989, 2019):
+for year in range(1988, 2019):
     URL[year] = baseURL_left + str(year) + baseURL_right
 
 # This part scrapes data from the NBA database and creates a list
