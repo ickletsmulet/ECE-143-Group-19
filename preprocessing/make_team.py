@@ -11,6 +11,7 @@ def make_team(Player_table,data_norm,team_idx,year,device,dtype,need_idx):
         data_temp,exist = search_team(Player_table,data_norm,name,need_idx,'poly2')
         # if exist==0,then it means we could not find players, it should not be added
         if exist==0:
+            
             pass
         else:
             data_temp = np.array(data_temp,dtype = np.float)
@@ -56,5 +57,7 @@ def search_team(Player_table,data_norm,team_name,need_idx,curve_method='poly3'):
             elif curve_method=='linear':
                 linear = data_norm[i,need_idx]
 
-                data_team.append(linear)          
+                data_team.append(linear)
+                
+                
     return data_team,exist

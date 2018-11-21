@@ -14,6 +14,9 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
     import numpy as np
     model = model.to(device=device)  # move the model parameters to CPU/GPU
     best_val_loss = None
+    his_tra = []
+    his_val = []
+    his_epoch = []
     for e in range(epochs):
         loss_perepoch = 0
 
@@ -29,7 +32,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
             PER_C = model(x)
             # Loss is the mean square error
             #logistic or not, l have not tried yet
-
+            F.sigmoid(PER_C)
             win_rate = sum(PER_C)
             criterion =nn.MSELoss()
 
@@ -69,7 +72,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
                 y = y.to(device=device, dtype=torch.float)
 
                 PER_C = model(x)
-
+                F.sigmoid(PER_C)
                 # Loss is the mean square error
                 #logistic or not, l have not tried yet
 
@@ -84,7 +87,12 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
 
                 best_val_loss = loss_val[0]
             else:
+                
                 break
+            if e%20 == 0:
+                his_val.append(loss_val[0].data)
+                his_epoch.append(e)
+                his_tra.append(loss_perepoch[0].data/25)
             print(loss_val[0])
 
         '''
@@ -92,3 +100,4 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
             torch.save(model, 'index_code1_linear.all')
         '''
         print(e,loss_perepoch/25)
+    return his_epoch,his_tra,his_val
