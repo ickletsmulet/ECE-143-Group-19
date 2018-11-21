@@ -89,7 +89,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
             else:
                 
                 break
-            if e%20 == 0:
+            if e%2 == 0:
                 his_val.append(loss_val[0].data)
                 his_epoch.append(e)
                 his_tra.append(loss_perepoch[0].data/25)
