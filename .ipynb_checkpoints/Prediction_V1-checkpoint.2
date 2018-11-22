@@ -1,0 +1,311 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import torch\n",
+    "import torch.nn as nn\n",
+    "import torch.optim as optim\n",
+    "from torch.autograd import Variable\n",
+    "from torch.utils.data import DataLoader\n",
+    "from torch.utils.data import sampler\n",
+    "\n",
+    "import torchvision.datasets as dset\n",
+    "import torchvision.transforms as T\n",
+    "import torch.nn.functional as F\n",
+    "import numpy as np\n",
+    "\n",
+    "import timeit\n",
+    "from Preprocessing.data_norm import *\n",
+    "from Preprocessing.make_idx import *\n",
+    "from Preprocessing.make_team import *\n",
+    "from Preprocessing.train import *\n",
+    "import re\n",
+    "import copy as cp\n",
+    "\n",
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "using device: cpu\n"
+     ]
+    }
+   ],
+   "source": [
+    "USE_GPU = True\n",
+    "\n",
+    "dtype = torch.float32 # we will be using float throughout this tutorial\n",
+    "# the default is gpu but if gpu is not available,then use cpu\n",
+    "if USE_GPU and torch.cuda.is_available():\n",
+    "    device = torch.device('cuda')\n",
+    "else:\n",
+    "    device = torch.device('cpu')\n",
+    "\n",
+    "# Constant to control how frequently we print train loss\n",
+    "device = torch.device('cpu')\n",
+    "print_every = 100\n",
+    "# show which device to use\n",
+    "print('using device:', device)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "teamName = [\"Atlanta Hawks\",\"Boston Celtics\",\"Brooklyn Nets\",\"Charlotte Bobcats\",\"Charlotte Hornets\",\n",
+    "\"Chicago Bulls\",\"Cleveland Cavaliers\",\"Dallas Mavericks\",\"Denver Nuggets\",\"Detroit Pistons\",\n",
+    "\"Golden State Warriors\",\"Houston Rockets\",\"Indiana Pacers\",\"Los Angeles Clippers\",\"Los Angeles Lakers\",\n",
+    "\"Memphis Grizzlies\",\"Miami Heat\",\"Milwaukee Bucks\",\"Minnesota Timberwolves\",\"New Jeresy Nets\",\n",
+    "\"New Orleans Hornets\",\"New Orleans Pelicans\",\"New York Knicks\",\"Oklahoma City Thunder\",\"Orlando Magic\",\n",
+    "\"Philadelphia 76ers\",\"Phoenix Suns\",\"Portland Trail Blazers\",\"Sacramento Kings\",\"San Antonio Spurs\",\n",
+    "\"Seattle SuperSonics\",\"Toronto Raptors\",\"Utah Jazz\",\"Vancouver Grizzlies\",\"Washington Bullets\",\"Washington Wizards\"]\n",
+    "\n",
+    "Abbr = [\"ATL\",\"BOS\",\"BKN\",\"CHA\",\"CHA\",\"CHI\",\"CLE\",\"DAL\",\"DEN\",\"DET\",\"GSW\",\"HOU\",\"IND\",\"LAC\",\"LAL\",\"MEM\",\n",
+    "\"MIA\",\"MIL\",\"MIN\",\"NJN\",\"NOH\",\"NOP\",\"NYK\",\"OKC\",\"ORL\",\"PHI\",\"PHO\",\"POR\",\"SAC\",\"SAS\",\"SEA\",\"TOR\",\n",
+    "\"UTA\",\"VAN\",\"WSB\",\"WAS\"]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#25 years training, 4 validation, 1 testing\n",
+    "trainYear = 25\n",
+    "startYear_train = 1989\n",
+    "validationYear = 4\n",
+    "startYear_validation = startYear_train + trainYear\n",
+    "testYear = 1\n",
+    "startYear_test = startYear_validation + validationYear"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[['Cleveland Cavaliers', 'Golden State Warriors', 'Golden State Warriors', 'Houston Rockets', 'Boston Celtics', 'Golden State Warriors', 'Cleveland Cavaliers', 'Houston Rockets', 'Boston Celtics', 'Golden State Warriors', 'Cleveland Cavaliers', 'Golden State Warriors', 'Cleveland Cavaliers', 'Houston Rockets', 'Boston Celtics', 'Houston Rockets', 'Boston Celtics', 'Boston Celtics', 'Golden State Warriors', 'Houston Rockets', 'Cleveland Cavaliers', 'Philadelphia 76ers', 'Utah Jazz', 'New Orleans Pelicans', 'Cleveland Cavaliers', 'Philadelphia 76ers', 'Utah Jazz', 'New Orleans Pelicans', 'Boston Celtics', 'Toronto Raptors', 'Houston Rockets', 'Golden State Warriors', 'Toronto Raptors', 'Boston Celtics', 'Houston Rockets', 'Cleveland Cavaliers', 'Golden State Warriors', 'Boston Celtics', 'Utah Jazz', 'Indiana Pacers', 'Washington Wizards', 'Milwaukee Bucks', 'Houston Rockets', 'Oklahoma City Thunder', 'Cleveland Cavaliers', 'Toronto Raptors', 'Golden State Warriors', 'Philadelphia 76ers', 'Boston Celtics', 'Utah Jazz', 'Minnesota Timberwolves', 'Indiana Pacers', 'Washington Wizards', 'San Antonio Spurs', 'Milwaukee Bucks', 'Utah Jazz', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Miami Heat', 'Milwaukee Bucks', 'Washington Wizards', 'Indiana Pacers', 'San Antonio Spurs', 'New Orleans Pelicans', 'Miami Heat', 'Houston Rockets', 'Oklahoma City Thunder', 'Cleveland Cavaliers', 'Portland Trail Blazers', 'Boston Celtics', 'Toronto Raptors', 'Golden State Warriors', 'Philadelphia 76ers', 'Houston Rockets', 'Oklahoma City Thunder', 'Cleveland Cavaliers', 'Boston Celtics', 'Portland Trail Blazers', 'Philadelphia 76ers', 'Toronto Raptors', 'Golden State Warriors', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Sacramento Kings', 'Boston Celtics', 'Chicago Bulls', 'Cleveland Cavaliers', 'Miami Heat', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Oklahoma City Thunder', 'Orlando Magic', 'Philadelphia 76ers', 'Los Angeles Lakers', 'Utah Jazz', 'Dallas Mavericks', 'Washington Wizards', 'Atlanta Hawks', 'Indiana Pacers', 'Los Angeles Clippers', 'Denver Nuggets', 'San Antonio Spurs', 'Milwaukee Bucks', 'Minnesota Timberwolves', 'Brooklyn Nets', 'Miami Heat', 'New York Knicks', 'Detroit Pistons', 'Phoenix Suns', 'Los Angeles Lakers', 'Toronto Raptors', 'Memphis Grizzlies', 'Boston Celtics', 'Charlotte Hornets', 'Philadelphia 76ers', 'San Antonio Spurs', 'Golden State Warriors', 'Houston Rockets', 'Chicago Bulls', 'New York Knicks', 'Los Angeles Clippers', 'Los Angeles Lakers', 'Phoenix Suns', 'Memphis Grizzlies', 'Boston Celtics', 'New York Knicks', 'Toronto Raptors', 'Detroit Pistons', 'Orlando Magic', 'Philadelphia 76ers', 'Washington Wizards', 'Denver Nuggets', 'Utah Jazz', 'Cleveland Cavaliers', 'Houston Rockets', 'Milwaukee Bucks', 'Indiana Pacers', 'Los Angeles Lakers', 'New Orleans Pelicans', 'Toronto Raptors', 'Atlanta Hawks', 'Detroit Pistons', 'Orlando Magic', 'Los Angeles Clippers', 'Phoenix Suns', 'Denver Nuggets', 'Utah Jazz', 'Dallas Mavericks', 'Milwaukee Bucks', 'Chicago Bulls', 'Houston Rockets', 'Oklahoma City Thunder', 'Miami Heat', 'New York Knicks', 'Cleveland Cavaliers', 'Philadelphia 76ers', 'Los Angeles Lakers', 'Portland Trail Blazers', 'Golden State Warriors', 'Denver Nuggets', 'Minnesota Timberwolves', 'Atlanta Hawks', 'Brooklyn Nets', 'Cleveland Cavaliers', 'New Orleans Pelicans', 'Chicago Bulls', 'Los Angeles Clippers', 'San Antonio Spurs', 'Charlotte Hornets', 'Sacramento Kings', 'Miami Heat', 'Boston Celtics', 'New York Knicks', 'Washington Wizards', 'Los Angeles Lakers', 'Portland Trail Blazers', 'Utah Jazz', 'Dallas Mavericks', 'Cleveland Cavaliers', 'Houston Rockets', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Orlando Magic', 'Golden State Warriors', 'Sacramento Kings', 'San Antonio Spurs', 'Miami Heat', 'Detroit Pistons', 'Los Angeles Lakers', 'Phoenix Suns', 'Utah Jazz', 'Memphis Grizzlies', 'Minnesota Timberwolves', 'Charlotte Hornets', 'Orlando Magic', 'Philadelphia 76ers', 'Golden State Warriors', 'Los Angeles Clippers', 'Sacramento Kings', 'Houston Rockets', 'Miami Heat', 'New Orleans Pelicans', 'Toronto Raptors', 'Washington Wizards', 'Phoenix Suns', 'Minnesota Timberwolves', 'Charlotte Hornets', 'Detroit Pistons', 'Philadelphia 76ers', 'Golden State Warriors', 'Houston Rockets', 'Oklahoma City Thunder', 'Sacramento Kings', 'Toronto Raptors', 'Washington Wizards', 'Indiana Pacers', 'Milwaukee Bucks', 'Brooklyn Nets', 'Dallas Mavericks', 'Houston Rockets', 'Memphis Grizzlies', 'Detroit Pistons', 'Orlando Magic', 'Philadelphia 76ers', 'Golden State Warriors', 'Portland Trail Blazers', 'San Antonio Spurs', 'Chicago Bulls', 'Oklahoma City Thunder', 'Cleveland Cavaliers', 'New York Knicks', 'Toronto Raptors', 'Indiana Pacers', 'Washington Wizards', 'Sacramento Kings', 'Dallas Mavericks', 'Houston Rockets', 'New Orleans Pelicans', 'Charlotte Hornets', 'Orlando Magic', 'San Antonio Spurs', 'Chicago Bulls', 'Milwaukee Bucks', 'New Orleans Pelicans', 'Brooklyn Nets', 'Miami Heat', 'Cleveland Cavaliers', 'Philadelphia 76ers', 'Portland Trail Blazers', 'Phoenix Suns', 'Utah Jazz', 'Boston Celtics', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Orlando Magic', 'Sacramento Kings', 'San Antonio Spurs', 'Brooklyn Nets', 'Miami Heat', 'New York Knicks', 'Cleveland Cavaliers', 'Indiana Pacers', 'Philadelphia 76ers', 'Los Angeles Clippers', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Toronto Raptors', 'Phoenix Suns', 'Portland Trail Blazers', 'Utah Jazz', 'San Antonio Spurs', 'Chicago Bulls', 'Memphis Grizzlies', 'Brooklyn Nets', 'New York Knicks', 'New Orleans Pelicans', 'Washington Wizards', 'Milwaukee Bucks', 'Golden State Warriors', 'Los Angeles Lakers', 'Oklahoma City Thunder', 'Toronto Raptors', 'Orlando Magic', 'Philadelphia 76ers', 'Portland Trail Blazers', 'Denver Nuggets', 'Utah Jazz', 'San Antonio Spurs', 'Houston Rockets', 'Memphis Grizzlies', 'Atlanta Hawks', 'New York Knicks', 'Indiana Pacers', 'Golden State Warriors', 'Sacramento Kings', 'Boston Celtics', 'Orlando Magic', 'Los Angeles Lakers', 'Phoenix Suns', 'Utah Jazz', 'San Antonio Spurs', 'Chicago Bulls', 'New Orleans Pelicans', 'Atlanta Hawks', 'Brooklyn Nets', 'New York Knicks', 'Philadelphia 76ers', 'Washington Wizards', 'Portland Trail Blazers', 'Houston Rockets', 'Memphis Grizzlies', 'Oklahoma City Thunder', 'Los Angeles Lakers', 'Boston Celtics', 'Brooklyn Nets', 'Dallas Mavericks', 'Denver Nuggets', 'New Orleans Pelicans', 'Atlanta Hawks', 'Minnesota Timberwolves', 'New York Knicks', 'Los Angeles Clippers', 'Dallas Mavericks', 'Oklahoma City Thunder', 'Miami Heat', 'Charlotte Hornets', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Sacramento Kings', 'Denver Nuggets', 'Memphis Grizzlies', 'Milwaukee Bucks', 'New Orleans Pelicans', 'Toronto Raptors', 'Detroit Pistons', 'Indiana Pacers', 'Golden State Warriors', 'Minnesota Timberwolves', 'Oklahoma City Thunder', 'Miami Heat', 'Charlotte Hornets', 'Denver Nuggets', 'Los Angeles Lakers', 'Sacramento Kings', 'Chicago Bulls', 'Detroit Pistons', 'Milwaukee Bucks', 'Indiana Pacers', 'Golden State Warriors', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Dallas Mavericks', 'Oklahoma City Thunder', 'Charlotte Hornets', 'Toronto Raptors', 'Washington Wizards', 'Los Angeles Lakers', 'Utah Jazz', 'San Antonio Spurs', 'Chicago Bulls', 'Miami Heat', 'Cleveland Cavaliers', 'Indiana Pacers', 'Los Angeles Clippers', 'Sacramento Kings', 'Milwaukee Bucks', 'Dallas Mavericks', 'Toronto Raptors', 'Washington Wizards', 'Atlanta Hawks', 'Portland Trail Blazers', 'Sacramento Kings', 'San Antonio Spurs', 'Houston Rockets', 'Cleveland Cavaliers', 'Miami Heat', 'Orlando Magic', 'Los Angeles Clippers', 'Utah Jazz', 'Phoenix Suns', 'Chicago Bulls', 'Memphis Grizzlies', 'Milwaukee Bucks', 'Washington Wizards', 'Atlanta Hawks', 'Orlando Magic', 'Philadelphia 76ers', 'Portland Trail Blazers', 'Sacramento Kings', 'Cleveland Cavaliers', 'Miami Heat', 'Los Angeles Clippers', 'Dallas Mavericks', 'San Antonio Spurs', 'Memphis Grizzlies', 'Washington Wizards', 'Atlanta Hawks', 'Boston Celtics', 'Detroit Pistons', 'Orlando Magic', 'Denver Nuggets', 'Portland Trail Blazers', 'Milwaukee Bucks', 'Miami Heat', 'Charlotte Hornets', 'Cleveland Cavaliers', 'Sacramento Kings', 'Utah Jazz', 'Dallas Mavericks', 'New Orleans Pelicans', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Toronto Raptors', 'Denver Nuggets', 'Washington Wizards', 'Cleveland Cavaliers', 'Milwaukee Bucks', 'Charlotte Hornets', 'Sacramento Kings', 'Minnesota Timberwolves', 'Phoenix Suns', 'Utah Jazz', 'Golden State Warriors', 'Miami Heat', 'New York Knicks', 'Philadelphia 76ers', 'Los Angeles Lakers', 'Denver Nuggets', 'Phoenix Suns', 'Utah Jazz', 'Houston Rockets', 'Memphis Grizzlies', 'New Orleans Pelicans', 'Toronto Raptors', 'Detroit Pistons', 'Indiana Pacers', 'Washington Wizards', 'Golden State Warriors', 'Sacramento Kings', 'Chicago Bulls', 'Cleveland Cavaliers', 'Charlotte Hornets', 'Orlando Magic', 'Team Stephen', 'Team USA', 'Minnesota Timberwolves', 'Milwaukee Bucks', 'Portland Trail Blazers', 'Utah Jazz', 'Boston Celtics', 'Chicago Bulls', 'Houston Rockets', 'Memphis Grizzlies', 'New Orleans Pelicans', 'Brooklyn Nets', 'New York Knicks', 'Detroit Pistons', 'Orlando Magic', 'Philadelphia 76ers', 'Denver Nuggets', 'Dallas Mavericks', 'Milwaukee Bucks', 'Minnesota Timberwolves', 'Oklahoma City Thunder', 'Toronto Raptors', 'Golden State Warriors', 'Utah Jazz', 'Chicago Bulls', 'Brooklyn Nets', 'Detroit Pistons', 'Philadelphia 76ers', 'Portland Trail Blazers', 'Houston Rockets', 'Minnesota Timberwolves', 'Oklahoma City Thunder', 'Indiana Pacers', 'Atlanta Hawks', 'Boston Celtics', 'Charlotte Hornets', 'Phoenix Suns', 'Dallas Mavericks', 'Golden State Warriors', 'Chicago Bulls', 'Orlando Magic', 'Philadelphia 76ers', 'Brooklyn Nets', 'Sacramento Kings', 'Chicago Bulls', 'Utah Jazz', 'Houston Rockets', 'Miami Heat', 'Atlanta Hawks', 'Boston Celtics', 'Detroit Pistons', 'Philadelphia 76ers', 'Los Angeles Lakers', 'Golden State Warriors', 'Portland Trail Blazers', 'Washington Wizards', 'Toronto Raptors', 'Orlando Magic', 'Phoenix Suns', 'Cleveland Cavaliers', 'Memphis Grizzlies', 'Miami Heat', 'Detroit Pistons', 'Golden State Warriors', 'Los Angeles Lakers', 'Philadelphia 76ers', 'Atlanta Hawks', 'Brooklyn Nets', 'New York Knicks', 'Toronto Raptors', 'Orlando Magic', 'Los Angeles Clippers', 'Sacramento Kings', 'Denver Nuggets', 'New Orleans Pelicans', 'Miami Heat', 'Detroit Pistons', 'Indiana Pacers', 'Phoenix Suns', 'Oklahoma City Thunder', 'Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Toronto Raptors', 'Sacramento Kings', 'Denver Nuggets', 'Minnesota Timberwolves', 'San Antonio Spurs', 'Cleveland Cavaliers', 'Detroit Pistons', 'Indiana Pacers', 'Orlando Magic', 'Los Angeles Clippers', 'Sacramento Kings', 'Oklahoma City Thunder', 'Phoenix Suns', 'Milwaukee Bucks', 'Philadelphia 76ers', 'Boston Celtics', 'Brooklyn Nets', 'Toronto Raptors', 'Charlotte Hornets', 'Denver Nuggets', 'Minnesota Timberwolves', 'San Antonio Spurs', 'Detroit Pistons', 'Washington Wizards', 'Phoenix Suns', 'Portland Trail Blazers', 'Boston Celtics', 'Atlanta Hawks', 'Brooklyn Nets', 'Cleveland Cavaliers', 'Indiana Pacers', 'Orlando Magic', 'Los Angeles Clippers', 'Utah Jazz', 'San Antonio Spurs', 'Detroit Pistons', 'Houston Rockets', 'New Orleans Pelicans', 'New York Knicks', 'Toronto Raptors', 'Washington Wizards', 'Denver Nuggets', 'Dallas Mavericks', 'Memphis Grizzlies', 'Milwaukee Bucks', 'Atlanta Hawks', 'Indiana Pacers', 'San Antonio Spurs', 'Cleveland Cavaliers', 'Oklahoma City Thunder', 'Toronto Raptors', 'New Orleans Pelicans', 'Chicago Bulls', 'Houston Rockets', 'Denver Nuggets', 'Minnesota Timberwolves', 'Golden State Warriors', 'Atlanta Hawks', 'Miami Heat', 'Indiana Pacers', 'Detroit Pistons', 'Phoenix Suns', 'Dallas Mavericks', 'San Antonio Spurs', 'Chicago Bulls', 'Memphis Grizzlies', 'Milwaukee Bucks', 'New Orleans Pelicans', 'Cleveland Cavaliers', 'Toronto Raptors', 'Charlotte Hornets', 'Golden State Warriors', 'Denver Nuggets', 'Oklahoma City Thunder', 'Miami Heat', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Dallas Mavericks', 'Memphis Grizzlies', 'Atlanta Hawks', 'Charlotte Hornets', 'Detroit Pistons', 'Indiana Pacers', 'Philadelphia 76ers', 'Golden State Warriors', 'Los Angeles Lakers', 'Oklahoma City Thunder', 'San Antonio Spurs', 'Orlando Magic', 'Los Angeles Clippers', 'Denver Nuggets', 'Dallas Mavericks', 'Houston Rockets', 'Memphis Grizzlies', 'Milwaukee Bucks', 'New Orleans Pelicans', 'Atlanta Hawks', 'Charlotte Hornets', 'San Antonio Spurs', 'Detroit Pistons', 'Los Angeles Lakers', 'Boston Celtics', 'Portland Trail Blazers', 'Minnesota Timberwolves', 'Utah Jazz', 'Houston Rockets', 'Philadelphia 76ers', 'Charlotte Hornets', 'New Orleans Pelicans', 'Atlanta Hawks', 'Cleveland Cavaliers', 'Los Angeles Lakers', 'Utah Jazz', 'Denver Nuggets', 'Detroit Pistons', 'Memphis Grizzlies', 'Brooklyn Nets', 'Toronto Raptors', 'Portland Trail Blazers', 'Houston Rockets', 'Boston Celtics', 'Cleveland Cavaliers', 'Los Angeles Clippers', 'Sacramento Kings', 'Chicago Bulls', 'Memphis Grizzlies', 'Milwaukee Bucks', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Brooklyn Nets', 'Toronto Raptors', 'Charlotte Hornets', 'Portland Trail Blazers', 'Denver Nuggets', 'Boston Celtics', 'Orlando Magic', 'Los Angeles Clippers', 'Utah Jazz', 'Cleveland Cavaliers', 'Oklahoma City Thunder', 'Memphis Grizzlies', 'Chicago Bulls', 'Atlanta Hawks', 'Brooklyn Nets', 'Washington Wizards', 'Philadelphia 76ers', 'Detroit Pistons', 'Minnesota Timberwolves', 'Phoenix Suns', 'New York Knicks', 'Miami Heat', 'San Antonio Spurs', 'Chicago Bulls', 'Toronto Raptors', 'Washington Wizards', 'Charlotte Hornets', 'Los Angeles Clippers', 'Dallas Mavericks', 'Phoenix Suns', 'Denver Nuggets', 'Milwaukee Bucks', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Atlanta Hawks', 'Charlotte Hornets', 'Indiana Pacers', 'Washington Wizards', 'Los Angeles Lakers', 'Sacramento Kings', 'Toronto Raptors', 'Philadelphia 76ers', 'Golden State Warriors', 'Denver Nuggets', 'Houston Rockets', 'Memphis Grizzlies', 'Milwaukee Bucks', 'Minnesota Timberwolves', 'Brooklyn Nets', 'New York Knicks', 'Charlotte Hornets', 'Indiana Pacers', 'Washington Wizards', 'Los Angeles Lakers', 'Dallas Mavericks', 'Oklahoma City Thunder', 'Toronto Raptors', 'Golden State Warriors', 'Los Angeles Clippers', 'Sacramento Kings', 'Chicago Bulls', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Brooklyn Nets', 'Indiana Pacers', 'Los Angeles Lakers', 'Portland Trail Blazers', 'Phoenix Suns', 'Dallas Mavericks', 'Miami Heat', 'Sacramento Kings', 'Minnesota Timberwolves', 'Washington Wizards', 'Detroit Pistons', 'Indiana Pacers', 'Orlando Magic', 'Brooklyn Nets', 'Los Angeles Clippers', 'Los Angeles Lakers', 'Portland Trail Blazers', 'Memphis Grizzlies', 'Denver Nuggets', 'Dallas Mavericks', 'San Antonio Spurs', 'Miami Heat', 'Milwaukee Bucks', 'Boston Celtics', 'Philadelphia 76ers', 'Los Angeles Clippers', 'Houston Rockets', 'Los Angeles Lakers', 'Denver Nuggets', 'Utah Jazz', 'Dallas Mavericks', 'Boston Celtics', 'Chicago Bulls', 'Milwaukee Bucks', 'Brooklyn Nets', 'Miami Heat', 'Orlando Magic', 'Philadelphia 76ers', 'Washington Wizards', 'Los Angeles Clippers', 'Sacramento Kings', 'Phoenix Suns', 'New York Knicks', 'Cleveland Cavaliers', 'Chicago Bulls', 'Minnesota Timberwolves', 'Brooklyn Nets', 'Toronto Raptors', 'Phoenix Suns', 'Houston Rockets', 'Los Angeles Clippers', 'Oklahoma City Thunder', 'Sacramento Kings', 'Boston Celtics', 'Indiana Pacers', 'Washington Wizards', 'Denver Nuggets', 'Golden State Warriors', 'Utah Jazz', 'Atlanta Hawks', 'Detroit Pistons', 'New Orleans Pelicans', 'Orlando Magic', 'Golden State Warriors', 'Los Angeles Lakers', 'Sacramento Kings', 'Chicago Bulls', 'Miami Heat', 'New Orleans Pelicans', 'Oklahoma City Thunder', 'Toronto Raptors', 'Washington Wizards', 'Portland Trail Blazers', 'San Antonio Spurs', 'Boston Celtics', 'Milwaukee Bucks', 'Orlando Magic', 'Golden State Warriors', 'Los Angeles Lakers', 'Sacramento Kings', 'Chicago Bulls', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Charlotte Hornets', 'Indiana Pacers', 'Los Angeles Clippers', 'Denver Nuggets', 'Phoenix Suns', 'San Antonio Spurs', 'Milwaukee Bucks', 'Miami Heat', 'Dallas Mavericks', 'Detroit Pistons', 'Los Angeles Lakers', 'Oklahoma City Thunder', 'Boston Celtics', 'Golden State Warriors', 'New York Knicks', 'Sacramento Kings', 'Los Angeles Lakers', 'Phoenix Suns', 'Golden State Warriors', 'Memphis Grizzlies', 'Miami Heat', 'Utah Jazz', 'Atlanta Hawks', 'Boston Celtics', 'Charlotte Hornets', 'Indiana Pacers', 'Washington Wizards', 'Toronto Raptors', 'Golden State Warriors', 'Portland Trail Blazers', 'Houston Rockets', 'Miami Heat', 'Milwaukee Bucks', 'Oklahoma City Thunder', 'Brooklyn Nets', 'Detroit Pistons', 'Orlando Magic', 'Utah Jazz', 'Phoenix Suns', 'New York Knicks', 'Cleveland Cavaliers', 'Philadelphia 76ers', 'Los Angeles Clippers', 'Golden State Warriors', 'Portland Trail Blazers', 'Denver Nuggets', 'Dallas Mavericks', 'Chicago Bulls', 'Houston Rockets', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Boston Celtics', 'Brooklyn Nets', 'Charlotte Hornets', 'Milwaukee Bucks', 'Philadelphia 76ers', 'Washington Wizards', 'Los Angeles Lakers', 'Dallas Mavericks', 'San Antonio Spurs', 'Chicago Bulls', 'Houston Rockets', 'Minnesota Timberwolves', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Charlotte Hornets', 'Indiana Pacers', 'Brooklyn Nets', 'Washington Wizards', 'Detroit Pistons', 'Toronto Raptors', 'Memphis Grizzlies', 'San Antonio Spurs', 'Houston Rockets', 'Miami Heat', 'Minnesota Timberwolves', 'Cleveland Cavaliers', 'New York Knicks', 'Charlotte Hornets', 'Houston Rockets', 'Denver Nuggets', 'Memphis Grizzlies', 'Milwaukee Bucks', 'Boston Celtics', 'Toronto Raptors', 'Charlotte Hornets', 'Indiana Pacers', 'Orlando Magic', 'Philadelphia 76ers', 'Washington Wizards', 'Golden State Warriors', 'Cleveland Cavaliers', 'Minnesota Timberwolves', 'Atlanta Hawks', 'Brooklyn Nets', 'Houston Rockets', 'Phoenix Suns', 'Chicago Bulls', 'New Orleans Pelicans', 'Boston Celtics', 'Miami Heat', 'Indiana Pacers', 'Orlando Magic', 'Washington Wizards', 'Sacramento Kings', 'Minnesota Timberwolves', 'Dallas Mavericks', 'Brooklyn Nets', 'Cleveland Cavaliers', 'Detroit Pistons', 'New York Knicks', 'Golden State Warriors', 'Los Angeles Clippers', 'Chicago Bulls', 'Houston Rockets', 'Memphis Grizzlies', 'Oklahoma City Thunder', 'New York Knicks', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Indiana Pacers', 'Detroit Pistons', 'Sacramento Kings', 'Portland Trail Blazers', 'Memphis Grizzlies', 'Phoenix Suns', 'Milwaukee Bucks', 'Chicago Bulls', 'Cleveland Cavaliers', 'Atlanta Hawks', 'Charlotte Hornets', 'Brooklyn Nets', 'Los Angeles Clippers', 'San Antonio Spurs', 'Memphis Grizzlies', 'Milwaukee Bucks', 'New Orleans Pelicans', 'Charlotte Hornets', 'Detroit Pistons', 'Indiana Pacers', 'Orlando Magic', 'Utah Jazz', 'Brooklyn Nets', 'Phoenix Suns', 'Philadelphia 76ers', 'Los Angeles Clippers', 'San Antonio Spurs', 'Charlotte Hornets', 'Milwaukee Bucks', 'New Orleans Pelicans', 'Boston Celtics', 'New York Knicks', 'Cleveland Cavaliers', 'Indiana Pacers', 'Orlando Magic', 'Portland Trail Blazers', 'Oklahoma City Thunder', 'Toronto Raptors', 'Utah Jazz', 'Dallas Mavericks', 'San Antonio Spurs', 'Chicago Bulls', 'Memphis Grizzlies', 'New Orleans Pelicans', 'Atlanta Hawks', 'Boston Celtics', 'Charlotte Hornets', 'Indiana Pacers', 'Philadelphia 76ers', 'Los Angeles Lakers', 'Miami Heat', 'Minnesota Timberwolves', 'Oklahoma City Thunder', 'New York Knicks', 'Portland Trail Blazers', 'Denver Nuggets', 'Milwaukee Bucks', 'Cleveland Cavaliers', 'Philadelphia 76ers', 'Brooklyn Nets', 'Dallas Mavericks', 'Boston Celtics', 'Utah Jazz', 'Chicago Bulls', 'Memphis Grizzlies', 'Miami Heat', 'Oklahoma City Thunder', 'Toronto Raptors', 'Orlando Magic', 'Washington Wizards', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Denver Nuggets', 'Atlanta Hawks', 'Boston Celtics', 'Los Angeles Lakers', 'Dallas Mavericks', 'San Antonio Spurs', 'Houston Rockets', 'New Orleans Pelicans', 'New York Knicks', 'Toronto Raptors', 'Detroit Pistons', 'Orlando Magic', 'Philadelphia 76ers', 'Sacramento Kings', 'Utah Jazz', 'Chicago Bulls', 'Minnesota Timberwolves', 'Cleveland Cavaliers', 'Golden State Warriors', 'Los Angeles Clippers', 'San Antonio Spurs', 'Houston Rockets', 'Boston Celtics', 'New York Knicks', 'Indiana Pacers', 'Philadelphia 76ers', 'Memphis Grizzlies', 'Chicago Bulls', 'Minnesota Timberwolves', 'Sacramento Kings', 'Utah Jazz', 'Dallas Mavericks', 'Golden State Warriors', 'Houston Rockets', 'Indiana Pacers', 'Atlanta Hawks', 'Charlotte Hornets', 'Philadelphia 76ers', 'Washington Wizards', 'Golden State Warriors', 'Denver Nuggets', 'Phoenix Suns', 'Cleveland Cavaliers', 'Indiana Pacers', 'Minnesota Timberwolves', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Boston Celtics', 'Brooklyn Nets', 'Sacramento Kings', 'Utah Jazz', 'Phoenix Suns', 'Houston Rockets', 'Memphis Grizzlies', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Miami Heat', 'New York Knicks', 'Charlotte Hornets', 'Cleveland Cavaliers', 'Philadelphia 76ers', 'Los Angeles Lakers', 'Sacramento Kings', 'Dallas Mavericks', 'San Antonio Spurs', 'Memphis Grizzlies', 'Milwaukee Bucks', 'New Orleans Pelicans', 'New York Knicks', 'Charlotte Hornets', 'Detroit Pistons', 'Orlando Magic', 'Philadelphia 76ers', 'Los Angeles Lakers', 'Phoenix Suns', 'Minnesota Timberwolves', 'Brooklyn Nets', 'Miami Heat', 'Toronto Raptors', 'Portland Trail Blazers', 'Dallas Mavericks', 'Memphis Grizzlies', 'Atlanta Hawks', 'Philadelphia 76ers', 'Charlotte Hornets', 'Orlando Magic', 'Denver Nuggets', 'Los Angeles Lakers', 'Sacramento Kings', 'Dallas Mavericks', 'Chicago Bulls', 'San Antonio Spurs', 'Brooklyn Nets', 'Cleveland Cavaliers', 'Toronto Raptors', 'Indiana Pacers', 'Washington Wizards', 'Phoenix Suns', 'Boston Celtics', 'Los Angeles Lakers', 'Portland Trail Blazers', 'Charlotte Hornets', 'Memphis Grizzlies', 'Milwaukee Bucks', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Oklahoma City Thunder', 'Atlanta Hawks', 'Miami Heat', 'New York Knicks', 'Dallas Mavericks', 'Houston Rockets', 'Brooklyn Nets', 'Golden State Warriors', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Phoenix Suns', 'Utah Jazz', 'Milwaukee Bucks', 'New Orleans Pelicans', 'New York Knicks', 'Washington Wizards', 'Oklahoma City Thunder', 'Indiana Pacers', 'Detroit Pistons', 'Boston Celtics', 'Denver Nuggets', 'Phoenix Suns', 'Utah Jazz', 'Dallas Mavericks', 'Golden State Warriors', 'Milwaukee Bucks', 'San Antonio Spurs', 'Houston Rockets', 'New York Knicks', 'New Orleans Pelicans', 'Washington Wizards', 'Portland Trail Blazers', 'Oklahoma City Thunder', 'Phoenix Suns', 'San Antonio Spurs', 'Utah Jazz', 'Chicago Bulls', 'Boston Celtics', 'Detroit Pistons', 'Denver Nuggets', 'Sacramento Kings', 'Houston Rockets', 'Toronto Raptors', 'Washington Wizards', 'Golden State Warriors', 'Phoenix Suns', 'Boston Celtics', 'Detroit Pistons', 'Orlando Magic', 'Portland Trail Blazers', 'Sacramento Kings', 'Denver Nuggets', 'Utah Jazz', 'San Antonio Spurs', 'New York Knicks', 'Toronto Raptors', 'Cleveland Cavaliers', 'Indiana Pacers', 'Washington Wizards', 'Golden State Warriors', 'Phoenix Suns', 'Atlanta Hawks', 'Los Angeles Lakers', 'Portland Trail Blazers', 'Minnesota Timberwolves', 'New York Knicks', 'Houston Rockets', 'San Antonio Spurs', 'Orlando Magic', 'Toronto Raptors', 'Los Angeles Clippers', 'Cleveland Cavaliers', 'Denver Nuggets', 'Chicago Bulls', 'Minnesota Timberwolves', 'Detroit Pistons', 'Los Angeles Clippers', 'Los Angeles Lakers', 'Oklahoma City Thunder', 'Denver Nuggets', 'Utah Jazz', 'Dallas Mavericks', 'San Antonio Spurs', 'Atlanta Hawks', 'New York Knicks', 'Detroit Pistons', 'Orlando Magic', 'Philadelphia 76ers', 'Washington Wizards', 'Portland Trail Blazers', 'San Antonio Spurs', 'Los Angeles Clippers', 'Denver Nuggets', 'Utah Jazz', 'Memphis Grizzlies', 'New Orleans Pelicans', 'New York Knicks', 'Boston Celtics', 'Miami Heat', 'Charlotte Hornets', 'Cleveland Cavaliers', 'Philadelphia 76ers', 'Washington Wizards', 'Los Angeles Lakers', 'Milwaukee Bucks', 'Brooklyn Nets', 'Indiana Pacers', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Utah Jazz', 'Houston Rockets', 'Memphis Grizzlies', 'New Orleans Pelicans', 'Boston Celtics', 'Miami Heat', 'New York Knicks', 'Golden State Warriors', 'Cleveland Cavaliers', 'Brooklyn Nets', 'Charlotte Hornets', 'Sacramento Kings', 'Indiana Pacers', 'Atlanta Hawks', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Dallas Mavericks', 'Chicago Bulls', 'Memphis Grizzlies', 'Miami Heat', 'Utah Jazz', 'New Orleans Pelicans', 'Golden State Warriors', 'Los Angeles Lakers', 'Minnesota Timberwolves', 'Atlanta Hawks', 'New York Knicks', 'Charlotte Hornets', 'Orlando Magic', 'Sacramento Kings', 'Portland Trail Blazers', 'Chicago Bulls', 'Memphis Grizzlies', 'Milwaukee Bucks', 'Golden State Warriors', 'Los Angeles Lakers', 'Phoenix Suns', 'Dallas Mavericks', 'Miami Heat', 'Oklahoma City Thunder', 'Brooklyn Nets', 'Charlotte Hornets', 'Detroit Pistons', 'Philadelphia 76ers', 'Los Angeles Clippers', 'Portland Trail Blazers', 'Minnesota Timberwolves', 'Boston Celtics', 'Cleveland Cavaliers', 'Orlando Magic', 'Phoenix Suns', 'Denver Nuggets', 'Dallas Mavericks', 'San Antonio Spurs', 'Houston Rockets', 'Milwaukee Bucks', 'Miami Heat', 'Detroit Pistons', 'Los Angeles Lakers', 'Oklahoma City Thunder', 'Brooklyn Nets', 'Los Angeles Clippers', 'Denver Nuggets', 'Utah Jazz', 'Milwaukee Bucks', 'Chicago Bulls', 'Cleveland Cavaliers', 'Houston Rockets', 'Memphis Grizzlies', 'Miami Heat', 'New York Knicks', 'Toronto Raptors', 'Phoenix Suns', 'New Orleans Pelicans', 'Dallas Mavericks', 'Minnesota Timberwolves', 'Brooklyn Nets', 'Charlotte Hornets', 'Indiana Pacers', 'Milwaukee Bucks', 'Philadelphia 76ers', 'Washington Wizards', 'Los Angeles Lakers', 'Oklahoma City Thunder', 'Toronto Raptors', 'Phoenix Suns', 'Sacramento Kings', 'San Antonio Spurs', 'Utah Jazz', 'Dallas Mavericks', 'Memphis Grizzlies', 'Boston Celtics', 'Detroit Pistons', 'Indiana Pacers', 'Orlando Magic', 'Washington Wizards', 'Golden State Warriors', 'Cleveland Cavaliers', 'Golden State Warriors', 'Los Angeles Clippers', 'Milwaukee Bucks', 'Philadelphia 76ers', 'Chicago Bulls', 'Houston Rockets', 'Memphis Grizzlies', 'New York Knicks', 'Orlando Magic', 'Charlotte Hornets', 'Los Angeles Clippers', 'Atlanta Hawks', 'Phoenix Suns', 'Memphis Grizzlies', 'Brooklyn Nets', 'Miami Heat', 'Charlotte Hornets', 'Los Angeles Lakers', 'Denver Nuggets', 'San Antonio Spurs', 'Cleveland Cavaliers', 'Toronto Raptors', 'Phoenix Suns', 'Sacramento Kings', 'Dallas Mavericks', 'Atlanta Hawks', 'Boston Celtics', 'Miami Heat', 'New York Knicks', 'Detroit Pistons', 'Los Angeles Lakers', 'Brooklyn Nets', 'Chicago Bulls', 'San Antonio Spurs', 'Los Angeles Clippers', 'Washington Wizards', 'Minnesota Timberwolves', 'Orlando Magic', 'Utah Jazz', 'San Antonio Spurs', 'Chicago Bulls', 'Oklahoma City Thunder', 'Cleveland Cavaliers', 'Detroit Pistons', 'Philadelphia 76ers', 'Washington Wizards', 'Portland Trail Blazers', 'Brooklyn Nets', 'Orlando Magic', 'Golden State Warriors', 'Los Angeles Lakers', 'Dallas Mavericks', 'Milwaukee Bucks', 'Cleveland Cavaliers', 'Detroit Pistons', 'Philadelphia 76ers', 'Los Angeles Clippers', 'Portland Trail Blazers', 'New Orleans Pelicans', 'Oklahoma City Thunder', 'New York Knicks', 'Los Angeles Lakers', 'Sacramento Kings', 'Dallas Mavericks', 'Memphis Grizzlies', 'Boston Celtics', 'Toronto Raptors', 'Miami Heat', 'Los Angeles Lakers', 'Golden State Warriors']]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Initialization\n",
+    "host_team=[0]*testYear\n",
+    "visiting_team=[0]*testYear\n",
+    "host_odds=[0]*testYear\n",
+    "visiting_odds=[0]*testYear\n",
+    "betting_data=[0] * testYear\n",
+    "\n",
+    "#Read Betting file\n",
+    "for index in range(testYear):\n",
+    "    betting_file= \"Betting_Data/bettingOdds\" + str(startYear_test) + \".csv\"\n",
+    "    betting_data[index]=(pd.read_csv(betting_file)).values\n",
+    "    host_team[index]=[]\n",
+    "    visiting_team[index]=[]\n",
+    "    visiting_odds[index]=[]\n",
+    "    host_odds[index]=[]\n",
+    "    for i in range(len(betting_data[index])):\n",
+    "        host_team[index].append(betting_data[index][i][0])\n",
+    "        visiting_team[index].append(betting_data[index][i][1])\n",
+    "        host_odds[index].append(betting_data[index][i][2])\n",
+    "        visiting_odds[index].append(betting_data[index][i][3])\n",
+    "    print(host_team)\n",
+    "   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''\n",
+    "when use different idx,we use different features to do training\n",
+    "note:!when saving the model, we should tell which idx used\n",
+    "'''\n",
+    "\n",
+    "#index_code1\n",
+    "need_idx = [1,2,3,4,5,6,7,8,9,10,11,12,17,18,19,20]\n",
+    "#need_idx = [2,3,4,5,6,7,8,9,10,11,12,17,18,19]\n",
+    "#need_idx = [1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# '''\n",
+    "# #initialization\n",
+    "# player_list_train = [0] * trainYear\n",
+    "# winrate_list_train = [0] * trainYear\n",
+    "# data_list_train = [0] * trainYear\n",
+    "# team_idx_train = [0] * trainYear\n",
+    "# data_input_train = [0] * trainYear\n",
+    "# loader_train = {}\n",
+    "# loader_validation = {}\n",
+    "# loader_test = {}\n",
+    "# for index in range(trainYear):\n",
+    "#     # read the statics and winrate\n",
+    "#     playerstats_train = \"Player_Data\\AvgPlayerStats\" + str(index+startYear_train) + \".csv\"\n",
+    "#     teamstats_train = \"Team_data\\TeamStats\" + str(index+startYear_train) + \".csv\"\n",
+    "#     # change them into numpy\n",
+    "#     player_list_train[index] = pd.read_csv(playerstats_train).values\n",
+    "#     winrate_list_train[index] = pd.read_csv(teamstats_train).values\n",
+    "#     # we throw away the players name,team ,age and so on\n",
+    "#     data_list_train[index] = player_list_train[index][:,4:]\n",
+    "#     # do normalization\n",
+    "#     data_list_train[index] = data_norm(data_list_train[index])   \n",
+    "#     # make a index which is abbr\n",
+    "#     team_idx_train[index] = make_idx(winrate_list_train[index],Abbr,teamName)\n",
+    "#     # put players in a same team into one matrix\n",
+    "#     data_input_train[index] = make_team(player_list_train[index],data_list_train[index],team_idx_train[index],str(index+startYear_train),device,dtype,need_idx)\n",
+    "#     # put everyyears' data into one dictionary\n",
+    "#     loader_train = dict(loader_train,**data_input_train[index])\n",
+    "    \n",
+    "# player_list_validation = [0] * validationYear\n",
+    "# winrate_list_validation = [0] * validationYear\n",
+    "# data_list_validation = [0] * validationYear\n",
+    "# team_idx_validation = [0] * validationYear\n",
+    "# data_input_validation = [0] * validationYear\n",
+    "# for index in range(validationYear):\n",
+    "#     playerstats_validation = \"Player_Data\\AvgPlayerStats\" + str(index+startYear_validation) + \".csv\"\n",
+    "#     teamstats_validation = \"Team_data\\TeamStats\" + str(index+startYear_validation) + \".csv\"\n",
+    "#     player_list_validation[index] = pd.read_csv(playerstats_validation).values\n",
+    "#     winrate_list_validation[index] = pd.read_csv(teamstats_validation).values\n",
+    "#     data_list_validation[index] = player_list_validation[index][:,4:]\n",
+    "#     data_list_validation[index] = data_norm(data_list_validation[index])\n",
+    "#     team_idx_validation[index] = make_idx(winrate_list_validation[index],Abbr,teamName)\n",
+    "#     data_input_validation[index] = make_team(player_list_validation[index],data_list_validation[index],team_idx_validation[index],str(index+startYear_validation),device,dtype,need_idx)\n",
+    "#     loader_validation = dict(loader_validation,**data_input_validation[index])\n",
+    "# '''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# change the file name\n",
+    "playerstats_test = \"Player_Data/AvgPlayerStats\" + str(index+startYear_test) + \".csv\"\n",
+    "teamstats_test = \"Team_Data/TeamStats\" + str(index+startYear_test) + \".csv\"\n",
+    "player_list_test = (pd.read_csv(playerstats_test)).values\n",
+    "winrate_list_test = (pd.read_csv(teamstats_test)).values\n",
+    "# 4 could be changed, it correspond to the column of played minutes per season\n",
+    "data_list_test = player_list_test[:,4:]\n",
+    "data_list_test = data_norm(data_list_test)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "OrderedDict([('0.0.weight',\n",
+       "              tensor([[ 0.2331,  0.0535, -0.0071,  0.0219, -0.0711, -0.1629,  0.2112,  0.0138,\n",
+       "                       -0.0278,  0.0070, -0.0656, -0.1519, -0.0515, -0.0335, -0.0185,  0.0774,\n",
+       "                       -0.0806, -0.0046,  0.0327, -0.0025,  0.0066, -0.0292,  0.0910, -0.0068,\n",
+       "                        0.0370, -0.0357,  0.0239,  0.0836,  0.0815,  0.1201,  0.1651, -0.1435]]))])"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#load the existing model\n",
+    "model = torch.load('Trained_Model/index_code1_poly2.2.fit')\n",
+    "model.state_dict()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#see the effect on testing set\n",
+    "from matplotlib import pyplot as plt\n",
+    "x = []\n",
+    "y = []#test\n",
+    "loss = 0\n",
+    "# change the data_input_test[0] for validation is ok to see performance\n",
+    "# change data_input_test[0] to your real input(if one team, no for loop)\n",
+    "for t, content in data_input_test[0].items():\n",
+    "\n",
+    "    PER_C = model(content[0])\n",
+    "            # Loss is the mean square error\n",
+    "    win_rate = sum(PER_C)\n",
+    "    plt.scatter(win_rate[0].data,content[1][0].data)\n",
+    "    print(win_rate,content[1])\n",
+    "    x.append(win_rate[0].data)\n",
+    "    y.append(content[1][0].data)\n",
+    "    loss += (win_rate[0]-content[1][0].data)**2\n",
+    "print(loss)\n",
+    "z1 = np.polyfit(x, y, 1)\n",
+    "p1 = np.poly1d(z1)\n",
+    "x=np.linspace(0,1,100)\n",
+    "y = z1[0]*x+z1[1]\n",
+    "\n",
+    "l1 = plt.plot(x,y,color='blue',linewidth=1.0,label='line')\n",
+    "x=np.linspace(0,1,100)\n",
+    "y =x\n",
+    "l2 = plt.plot(x,y,color='red',linewidth=1.0,linestyle='--',label='line')\n",
+    "plt.legend(labels = ['curve_line', 'y=x'], loc = 'best')\n",
+    "plt.show()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
