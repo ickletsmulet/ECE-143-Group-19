@@ -1,4 +1,4 @@
-def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,print_process=True):
+def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,print_process=True, early_stop = True):
     """
     Inputs:
     - model: A PyTorch Module giving the model to train.
@@ -32,7 +32,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
             PER_C = model(x)
             # Loss is the mean square error
             #logistic or not, l have not tried yet
-            F.sigmoid(PER_C)
+            #F.sigmoid(PER_C)
             win_rate = sum(PER_C)
             criterion =nn.MSELoss()
 
@@ -60,7 +60,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
                 print(t,win_rate,y)
         # every ten epochs print the loss on validation set
         
-        if e%10 == 0:
+        if e%10 == 0 and early_stop == True:
             loss_val = 0
             for t, content in loader_validation.items():
 
@@ -72,7 +72,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
                 y = y.to(device=device, dtype=torch.float)
 
                 PER_C = model(x)
-                F.sigmoid(PER_C)
+                #F.sigmoid(PER_C)
                 # Loss is the mean square error
                 #logistic or not, l have not tried yet
 
