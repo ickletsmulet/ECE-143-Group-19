@@ -1,26 +1,26 @@
 Los Angeles Lakers,Orlando Magic,Visiting
 Los Angeles Lakers,Orlando Magic,Visiting
 Los Angeles Lakers,Orlando Magic,Home
-Orlando Magic,Los Angeles Lakers,Visiting
-Orlando Magic,Los Angeles Lakers,Visiting
-Cleveland Cavaliers,Orlando Magic,Visiting
-Los Angeles Lakers,Denver Nuggets,Home
+Orlando Magic,Los Angeles Lakers,Home
+Orlando Magic,Los Angeles Lakers,Home
+Cleveland Cavaliers,Orlando Magic,Home
+Los Angeles Lakers,Denver Nuggets,Visiting
 Orlando Magic,Cleveland Cavaliers,Home
-Denver Nuggets,Los Angeles Lakers,Visiting
+Denver Nuggets,Los Angeles Lakers,Home
 Cleveland Cavaliers,Orlando Magic,Home
 Los Angeles Lakers,Denver Nuggets,Home
 Cleveland Cavaliers,Orlando Magic,Home
-Los Angeles Lakers,Denver Nuggets,Home
+Los Angeles Lakers,Denver Nuggets,Visiting
 Orlando Magic,Cleveland Cavaliers,Home
 Denver Nuggets,Los Angeles Lakers,Visiting
 Orlando Magic,Cleveland Cavaliers,Visiting
 Denver Nuggets,Los Angeles Lakers,Home
 Houston Rockets,Los Angeles Lakers,Home
-Orlando Magic,Boston Celtics,Home
+Orlando Magic,Boston Celtics,Visiting
 Boston Celtics,Orlando Magic,Home
 Los Angeles Lakers,Houston Rockets,Home
 Dallas Mavericks,Denver Nuggets,Home
-Houston Rockets,Los Angeles Lakers,Visiting
+Houston Rockets,Los Angeles Lakers,Home
 Orlando Magic,Boston Celtics,Home
 Denver Nuggets,Dallas Mavericks,Home
 Cleveland Cavaliers,Atlanta Hawks,Visiting
@@ -28,126 +28,126 @@ Boston Celtics,Orlando Magic,Visiting
 Los Angeles Lakers,Houston Rockets,Home
 Denver Nuggets,Dallas Mavericks,Visiting
 Cleveland Cavaliers,Atlanta Hawks,Visiting
-Boston Celtics,Orlando Magic,Visiting
-Los Angeles Lakers,Houston Rockets,Home
-Atlanta Hawks,Cleveland Cavaliers,Visiting
+Boston Celtics,Orlando Magic,Home
+Los Angeles Lakers,Houston Rockets,Visiting
+Atlanta Hawks,Cleveland Cavaliers,Home
+Houston Rockets,Los Angeles Lakers,Home
+Orlando Magic,Boston Celtics,Home
+Dallas Mavericks,Denver Nuggets,Home
+Atlanta Hawks,Cleveland Cavaliers,Home
 Houston Rockets,Los Angeles Lakers,Visiting
 Orlando Magic,Boston Celtics,Visiting
 Dallas Mavericks,Denver Nuggets,Home
-Atlanta Hawks,Cleveland Cavaliers,Home
-Houston Rockets,Los Angeles Lakers,Home
-Orlando Magic,Boston Celtics,Visiting
-Dallas Mavericks,Denver Nuggets,Visiting
 Miami Heat,Atlanta Hawks,Home
-Chicago Bulls,Boston Celtics,Visiting
+Chicago Bulls,Boston Celtics,Home
 Atlanta Hawks,Miami Heat,Home
-Orlando Magic,Philadelphia 76ers,Home
+Orlando Magic,Philadelphia 76ers,Visiting
 Portland Trail Blazers,Houston Rockets,Home
 Boston Celtics,Chicago Bulls,Home
-New Orleans Hornets,Denver Nuggets,Visiting
-Miami Heat,Atlanta Hawks,Visiting
-Dallas Mavericks,San Antonio Spurs,Home
+New Orleans Hornets,Denver Nuggets,Home
+Miami Heat,Atlanta Hawks,Home
+Dallas Mavericks,San Antonio Spurs,Visiting
 Houston Rockets,Portland Trail Blazers,Home
 Philadelphia 76ers,Orlando Magic,Home
 Chicago Bulls,Boston Celtics,Home
-Denver Nuggets,New Orleans Hornets,Home
+Denver Nuggets,New Orleans Hornets,Visiting
 Atlanta Hawks,Miami Heat,Visiting
-Utah Jazz,Los Angeles Lakers,Visiting
+Utah Jazz,Los Angeles Lakers,Home
 Orlando Magic,Philadelphia 76ers,Visiting
 Portland Trail Blazers,Houston Rockets,Home
 Cleveland Cavaliers,Detroit Pistons,Visiting
 Boston Celtics,Chicago Bulls,Home
-Los Angeles Lakers,Utah Jazz,Home
+Los Angeles Lakers,Utah Jazz,Visiting
 Denver Nuggets,New Orleans Hornets,Home
-Atlanta Hawks,Miami Heat,Visiting
+Atlanta Hawks,Miami Heat,Home
 San Antonio Spurs,Dallas Mavericks,Home
 Orlando Magic,Philadelphia 76ers,Home
 Portland Trail Blazers,Houston Rockets,Home
 Cleveland Cavaliers,Detroit Pistons,Visiting
 Los Angeles Lakers,Utah Jazz,Home
 San Antonio Spurs,Dallas Mavericks,Home
-Boston Celtics,Chicago Bulls,Home
+Boston Celtics,Chicago Bulls,Visiting
 Philadelphia 76ers,Orlando Magic,Home
-New Orleans Hornets,Denver Nuggets,Visiting
-Miami Heat,Atlanta Hawks,Home
+New Orleans Hornets,Denver Nuggets,Home
+Miami Heat,Atlanta Hawks,Visiting
 Houston Rockets,Portland Trail Blazers,Home
 Utah Jazz,Los Angeles Lakers,Home
 Detroit Pistons,Cleveland Cavaliers,Home
-Dallas Mavericks,San Antonio Spurs,Visiting
-Chicago Bulls,Boston Celtics,Home
-Philadelphia 76ers,Orlando Magic,Home
-Utah Jazz,Los Angeles Lakers,Home
-New Orleans Hornets,Denver Nuggets,Visiting
-Miami Heat,Atlanta Hawks,Home
 Dallas Mavericks,San Antonio Spurs,Home
-Houston Rockets,Portland Trail Blazers,Home
-Detroit Pistons,Cleveland Cavaliers,Visiting
+Chicago Bulls,Boston Celtics,Home
+Philadelphia 76ers,Orlando Magic,Visiting
+Utah Jazz,Los Angeles Lakers,Home
+New Orleans Hornets,Denver Nuggets,Home
+Miami Heat,Atlanta Hawks,Home
+Dallas Mavericks,San Antonio Spurs,Visiting
+Houston Rockets,Portland Trail Blazers,Visiting
+Detroit Pistons,Cleveland Cavaliers,Home
 Chicago Bulls,Boston Celtics,Visiting
-New Orleans Hornets,San Antonio Spurs,Visiting
-Denver Nuggets,Portland Trail Blazers,Visiting
+New Orleans Hornets,San Antonio Spurs,Home
+Denver Nuggets,Portland Trail Blazers,Home
 Golden State Warriors,Phoenix Suns,Home
 Charlotte Bobcats,Orlando Magic,Home
-New Jersey Nets,New York Knicks,Visiting
+New Jersey Nets,New York Knicks,Home
 Sacramento Kings,Minnesota Timberwolves,Visiting
-Detroit Pistons,Miami Heat,Visiting
+Detroit Pistons,Miami Heat,Home
 Atlanta Hawks,Memphis Grizzlies,Home
-Oklahoma City Thunder,Los Angeles Clippers,Home
+Oklahoma City Thunder,Los Angeles Clippers,Visiting
 Milwaukee Bucks,Indiana Pacers,Home
 Houston Rockets,Dallas Mavericks,Home
 Philadelphia 76ers,Cleveland Cavaliers,Visiting
-Toronto Raptors,Chicago Bulls,Home
+Toronto Raptors,Chicago Bulls,Visiting
 Washington Wizards,Boston Celtics,Home
-Boston Celtics,Philadelphia 76ers,Home
+Boston Celtics,Philadelphia 76ers,Visiting
 Utah Jazz,Los Angeles Lakers,Home
 Miami Heat,Atlanta Hawks,Home
 Toronto Raptors,Washington Wizards,Visiting
-Los Angeles Clippers,Utah Jazz,Visiting
-Oklahoma City Thunder,Portland Trail Blazers,Visiting
+Los Angeles Clippers,Utah Jazz,Home
+Oklahoma City Thunder,Portland Trail Blazers,Home
 Memphis Grizzlies,Phoenix Suns,Home
 Charlotte Bobcats,New Jersey Nets,Home
 Orlando Magic,Milwaukee Bucks,Home
 Cleveland Cavaliers,Indiana Pacers,Visiting
 New Orleans Hornets,Houston Rockets,Home
-San Antonio Spurs,Golden State Warriors,Home
+San Antonio Spurs,Golden State Warriors,Visiting
 Chicago Bulls,Detroit Pistons,Visiting
-Sacramento Kings,Denver Nuggets,Visiting
+Sacramento Kings,Denver Nuggets,Home
 Minnesota Timberwolves,Dallas Mavericks,Home
 Philadelphia 76ers,Toronto Raptors,Home
 San Antonio Spurs,Sacramento Kings,Visiting
-Dallas Mavericks,New Orleans Hornets,Visiting
+Dallas Mavericks,New Orleans Hornets,Home
 New York Knicks,Miami Heat,Home
 Memphis Grizzlies,Los Angeles Lakers,Home
-Boston Celtics,Cleveland Cavaliers,Visiting
+Boston Celtics,Cleveland Cavaliers,Home
 Golden State Warriors,Utah Jazz,Visiting
-Orlando Magic,New Jersey Nets,Visiting
-Phoenix Suns,Minnesota Timberwolves,Home
-Oklahoma City Thunder,Milwaukee Bucks,Visiting
+Orlando Magic,New Jersey Nets,Home
+Phoenix Suns,Minnesota Timberwolves,Visiting
+Oklahoma City Thunder,Milwaukee Bucks,Home
 Portland Trail Blazers,Los Angeles Clippers,Visiting
 Detroit Pistons,Indiana Pacers,Home
 Charlotte Bobcats,Chicago Bulls,Home
-Washington Wizards,Toronto Raptors,Home
-Utah Jazz,San Antonio Spurs,Visiting
-Los Angeles Lakers,Portland Trail Blazers,Visiting
-Cleveland Cavaliers,Philadelphia 76ers,Home
-New York Knicks,Orlando Magic,Home
+Washington Wizards,Toronto Raptors,Visiting
+Utah Jazz,San Antonio Spurs,Home
+Los Angeles Lakers,Portland Trail Blazers,Home
+Cleveland Cavaliers,Philadelphia 76ers,Visiting
+New York Knicks,Orlando Magic,Visiting
 Charlotte Bobcats,Oklahoma City Thunder,Home
-Phoenix Suns,Memphis Grizzlies,Visiting
-Sacramento Kings,Los Angeles Clippers,Visiting
+Phoenix Suns,Memphis Grizzlies,Home
+Sacramento Kings,Los Angeles Clippers,Home
 Houston Rockets,Golden State Warriors,Visiting
-New Jersey Nets,Detroit Pistons,Visiting
-New Orleans Hornets,Dallas Mavericks,Visiting
-Miami Heat,Boston Celtics,Visiting
+New Jersey Nets,Detroit Pistons,Home
+New Orleans Hornets,Dallas Mavericks,Home
+Miami Heat,Boston Celtics,Home
 Indiana Pacers,Atlanta Hawks,Home
-Houston Rockets,Sacramento Kings,Home
+Houston Rockets,Sacramento Kings,Visiting
 Denver Nuggets,Los Angeles Lakers,Home
-Philadelphia 76ers,Chicago Bulls,Visiting
+Philadelphia 76ers,Chicago Bulls,Home
 Portland Trail Blazers,San Antonio Spurs,Visiting
 Memphis Grizzlies,Orlando Magic,Home
-Detroit Pistons,New York Knicks,Home
+Detroit Pistons,New York Knicks,Visiting
 Phoenix Suns,New Orleans Hornets,Visiting
 Atlanta Hawks,Milwaukee Bucks,Visiting
 Toronto Raptors,Indiana Pacers,Home
-Minnesota Timberwolves,Golden State Warriors,Home
+Minnesota Timberwolves,Golden State Warriors,Visiting
 Oklahoma City Thunder,Denver Nuggets,Home
 Utah Jazz,Dallas Mavericks,Home
 Washington Wizards,Cleveland Cavaliers,Home
@@ -160,44 +160,44 @@ Portland Trail Blazers,Memphis Grizzlies,Visiting
 Minnesota Timberwolves,Los Angeles Clippers,Visiting
 Orlando Magic,Houston Rockets,Home
 New York Knicks,Chicago Bulls,Home
-Philadelphia 76ers,Charlotte Bobcats,Visiting
+Philadelphia 76ers,Charlotte Bobcats,Home
 New York Knicks,Toronto Raptors,Visiting
 Golden State Warriors,Sacramento Kings,Visiting
-Indiana Pacers,Oklahoma City Thunder,Home
-Utah Jazz,New Orleans Hornets,Home
+Indiana Pacers,Oklahoma City Thunder,Visiting
+Utah Jazz,New Orleans Hornets,Visiting
 Philadelphia 76ers,New Jersey Nets,Home
-Denver Nuggets,Minnesota Timberwolves,Home
+Denver Nuggets,Minnesota Timberwolves,Visiting
 Los Angeles Clippers,Los Angeles Lakers,Home
-Portland Trail Blazers,Houston Rockets,Visiting
-Charlotte Bobcats,Detroit Pistons,Visiting
+Portland Trail Blazers,Houston Rockets,Home
+Charlotte Bobcats,Detroit Pistons,Home
 Phoenix Suns,Dallas Mavericks,Home
-San Antonio Spurs,Cleveland Cavaliers,Visiting
+San Antonio Spurs,Cleveland Cavaliers,Home
 Miami Heat,Washington Wizards,Visiting
 Detroit Pistons,Philadelphia 76ers,Home
-Toronto Raptors,New York Knicks,Home
+Toronto Raptors,New York Knicks,Visiting
 Memphis Grizzlies,Milwaukee Bucks,Visiting
 Los Angeles Clippers,Denver Nuggets,Home
-New Jersey Nets,Chicago Bulls,Visiting
+New Jersey Nets,Chicago Bulls,Home
 Orlando Magic,Atlanta Hawks,Visiting
 Minnesota Timberwolves,Utah Jazz,Visiting
 Sacramento Kings,Phoenix Suns,Home
-Cleveland Cavaliers,Orlando Magic,Visiting
-Portland Trail Blazers,Oklahoma City Thunder,Home
+Cleveland Cavaliers,Orlando Magic,Home
+Portland Trail Blazers,Oklahoma City Thunder,Visiting
 Dallas Mavericks,Memphis Grizzlies,Home
 Houston Rockets,Los Angeles Lakers,Home
 San Antonio Spurs,Indiana Pacers,Visiting
 New Orleans Hornets,Golden State Warriors,Home
 Miami Heat,Charlotte Bobcats,Visiting
-Atlanta Hawks,Boston Celtics,Visiting
+Atlanta Hawks,Boston Celtics,Home
 Cleveland Cavaliers,Washington Wizards,Home
-Milwaukee Bucks,Philadelphia 76ers,Visiting
+Milwaukee Bucks,Philadelphia 76ers,Home
 Utah Jazz,Denver Nuggets,Home
 Houston Rockets,Phoenix Suns,Home
 Toronto Raptors,Orlando Magic,Visiting
-Detroit Pistons,New Jersey Nets,Visiting
-Los Angeles Lakers,Milwaukee Bucks,Home
+Detroit Pistons,New Jersey Nets,Home
+Los Angeles Lakers,Milwaukee Bucks,Visiting
 Washington Wizards,Memphis Grizzlies,Home
-New Orleans Hornets,Los Angeles Clippers,Home
+New Orleans Hornets,Los Angeles Clippers,Visiting
 Sacramento Kings,Golden State Warriors,Home
 Miami Heat,Dallas Mavericks,Home
 Charlotte Bobcats,Boston Celtics,Home
@@ -205,123 +205,123 @@ Oklahoma City Thunder,San Antonio Spurs,Visiting
 New Orleans Hornets,Sacramento Kings,Visiting
 Utah Jazz,Portland Trail Blazers,Home
 Atlanta Hawks,Philadelphia 76ers,Home
-Dallas Mavericks,Minnesota Timberwolves,Home
+Dallas Mavericks,Minnesota Timberwolves,Visiting
 Chicago Bulls,Indiana Pacers,Home
 New York Knicks,Denver Nuggets,Home
 Detroit Pistons,Cleveland Cavaliers,Home
 Los Angeles Lakers,Charlotte Bobcats,Home
 New York Knicks,Utah Jazz,Home
-Milwaukee Bucks,New Jersey Nets,Home
-Orlando Magic,Miami Heat,Home
+Milwaukee Bucks,New Jersey Nets,Visiting
+Orlando Magic,Miami Heat,Visiting
 Memphis Grizzlies,Golden State Warriors,Visiting
 Chicago Bulls,Toronto Raptors,Home
 Phoenix Suns,Sacramento Kings,Home
 San Antonio Spurs,New Orleans Hornets,Home
-New Jersey Nets,Minnesota Timberwolves,Visiting
+New Jersey Nets,Minnesota Timberwolves,Home
 Washington Wizards,Indiana Pacers,Home
-Philadelphia 76ers,Detroit Pistons,Visiting
-Dallas Mavericks,Cleveland Cavaliers,Visiting
-Oklahoma City Thunder,Boston Celtics,Visiting
+Philadelphia 76ers,Detroit Pistons,Home
+Dallas Mavericks,Cleveland Cavaliers,Home
+Oklahoma City Thunder,Boston Celtics,Home
 Los Angeles Lakers,Atlanta Hawks,Home
 Detroit Pistons,Washington Wizards,Visiting
-Phoenix Suns,Utah Jazz,Visiting
+Phoenix Suns,Utah Jazz,Home
 Memphis Grizzlies,Portland Trail Blazers,Home
-Milwaukee Bucks,Miami Heat,Visiting
-Los Angeles Clippers,Houston Rockets,Visiting
+Milwaukee Bucks,Miami Heat,Home
+Los Angeles Clippers,Houston Rockets,Home
 Golden State Warriors,Denver Nuggets,Home
 Indiana Pacers,Chicago Bulls,Home
 New York Knicks,Charlotte Bobcats,Home
-Oklahoma City Thunder,Toronto Raptors,Visiting
-Los Angeles Clippers,San Antonio Spurs,Visiting
-Memphis Grizzlies,Sacramento Kings,Home
-Charlotte Bobcats,Philadelphia 76ers,Home
-Milwaukee Bucks,Orlando Magic,Visiting
-New Orleans Hornets,New York Knicks,Visiting
-Los Angeles Lakers,New Jersey Nets,Home
+Oklahoma City Thunder,Toronto Raptors,Home
+Los Angeles Clippers,San Antonio Spurs,Home
+Memphis Grizzlies,Sacramento Kings,Visiting
+Charlotte Bobcats,Philadelphia 76ers,Visiting
+Milwaukee Bucks,Orlando Magic,Home
+New Orleans Hornets,New York Knicks,Home
+Los Angeles Lakers,New Jersey Nets,Visiting
 Denver Nuggets,Dallas Mavericks,Visiting
-Minnesota Timberwolves,Cleveland Cavaliers,Visiting
+Minnesota Timberwolves,Cleveland Cavaliers,Home
 Boston Celtics,Atlanta Hawks,Visiting
 Phoenix Suns,Portland Trail Blazers,Home
 Los Angeles Lakers,Detroit Pistons,Visiting
-Miami Heat,Chicago Bulls,Visiting
+Miami Heat,Chicago Bulls,Home
 Charlotte Bobcats,Washington Wizards,Home
 Milwaukee Bucks,Toronto Raptors,Home
 Utah Jazz,Phoenix Suns,Home
 Minnesota Timberwolves,Philadelphia 76ers,Home
 Boston Celtics,Orlando Magic,Home
 Los Angeles Clippers,New York Knicks,Visiting
-Denver Nuggets,New Orleans Hornets,Home
+Denver Nuggets,New Orleans Hornets,Visiting
 Miami Heat,Indiana Pacers,Home
 Golden State Warriors,Dallas Mavericks,Home
 New Jersey Nets,Cleveland Cavaliers,Home
-San Antonio Spurs,Atlanta Hawks,Home
+San Antonio Spurs,Atlanta Hawks,Visiting
 Houston Rockets,Utah Jazz,Home
 Golden State Warriors,San Antonio Spurs,Home
-Los Angeles Lakers,Oklahoma City Thunder,Home
+Los Angeles Lakers,Oklahoma City Thunder,Visiting
 Detroit Pistons,Chicago Bulls,Home
-Chicago Bulls,Washington Wizards,Home
+Chicago Bulls,Washington Wizards,Visiting
 Philadelphia 76ers,Portland Trail Blazers,Visiting
 Denver Nuggets,Phoenix Suns,Home
 Orlando Magic,New York Knicks,Visiting
 Memphis Grizzlies,Miami Heat,Home
 Los Angeles Clippers,Boston Celtics,Home
-Minnesota Timberwolves,Atlanta Hawks,Visiting
-Los Angeles Clippers,Toronto Raptors,Visiting
+Minnesota Timberwolves,Atlanta Hawks,Home
+Los Angeles Clippers,Toronto Raptors,Home
 Houston Rockets,San Antonio Spurs,Visiting
 Philadelphia 76ers,Sacramento Kings,Visiting
 Golden State Warriors,New Orleans Hornets,Home
 Cleveland Cavaliers,New Jersey Nets,Visiting
 Oklahoma City Thunder,Minnesota Timberwolves,Visiting
-Miami Heat,Detroit Pistons,Home
-Washington Wizards,Phoenix Suns,Visiting
+Miami Heat,Detroit Pistons,Visiting
+Washington Wizards,Phoenix Suns,Home
 New York Knicks,Orlando Magic,Home
 Portland Trail Blazers,Milwaukee Bucks,Visiting
-Boston Celtics,Memphis Grizzlies,Home
-Atlanta Hawks,Cleveland Cavaliers,Visiting
+Boston Celtics,Memphis Grizzlies,Visiting
+Atlanta Hawks,Cleveland Cavaliers,Home
 Los Angeles Lakers,Chicago Bulls,Visiting
-Indiana Pacers,Charlotte Bobcats,Home
-Charlotte Bobcats,Toronto Raptors,Home
+Indiana Pacers,Charlotte Bobcats,Visiting
+Charlotte Bobcats,Toronto Raptors,Visiting
 Boston Celtics,San Antonio Spurs,Visiting
-Utah Jazz,Oklahoma City Thunder,Home
-Sacramento Kings,New York Knicks,Home
+Utah Jazz,Oklahoma City Thunder,Visiting
+Sacramento Kings,New York Knicks,Visiting
 Memphis Grizzlies,New Orleans Hornets,Home
 Miami Heat,New Jersey Nets,Home
 Dallas Mavericks,Indiana Pacers,Visiting
-Minnesota Timberwolves,Houston Rockets,Visiting
+Minnesota Timberwolves,Houston Rockets,Home
 Philadelphia 76ers,Golden State Warriors,Home
-Los Angeles Clippers,Detroit Pistons,Visiting
+Los Angeles Clippers,Detroit Pistons,Home
 Washington Wizards,Denver Nuggets,Home
 Golden State Warriors,Los Angeles Lakers,Home
 Portland Trail Blazers,Cleveland Cavaliers,Home
 Dallas Mavericks,Atlanta Hawks,Home
 Philadelphia 76ers,Phoenix Suns,Home
-Chicago Bulls,Oklahoma City Thunder,Home
-New Jersey Nets,New York Knicks,Home
+Chicago Bulls,Oklahoma City Thunder,Visiting
+New Jersey Nets,New York Knicks,Visiting
 Minnesota Timberwolves,New Orleans Hornets,Home
-Orlando Magic,Milwaukee Bucks,Home
+Orlando Magic,Milwaukee Bucks,Visiting
 Denver Nuggets,Memphis Grizzlies,Visiting
 Washington Wizards,Los Angeles Clippers,Home
 Portland Trail Blazers,Indiana Pacers,Visiting
 Detroit Pistons,Houston Rockets,Home
-Sacramento Kings,Charlotte Bobcats,Visiting
+Sacramento Kings,Charlotte Bobcats,Home
 Miami Heat,Boston Celtics,Home
-Washington Wizards,Utah Jazz,Visiting
+Washington Wizards,Utah Jazz,Home
 Minnesota Timberwolves,San Antonio Spurs,Home
 Philadelphia 76ers,Los Angeles Lakers,Visiting
 Los Angeles Clippers,Golden State Warriors,Home
 Detroit Pistons,Dallas Mavericks,Home
 Orlando Magic,Cleveland Cavaliers,Home
 Boston Celtics,Chicago Bulls,Home
-Sacramento Kings,Atlanta Hawks,Visiting
+Sacramento Kings,Atlanta Hawks,Home
 San Antonio Spurs,Oklahoma City Thunder,Home
 Houston Rockets,New Orleans Hornets,Visiting
-Portland Trail Blazers,Memphis Grizzlies,Home
-New Jersey Nets,Denver Nuggets,Visiting
-Toronto Raptors,Charlotte Bobcats,Visiting
+Portland Trail Blazers,Memphis Grizzlies,Visiting
+New Jersey Nets,Denver Nuggets,Home
+Toronto Raptors,Charlotte Bobcats,Home
 Sacramento Kings,Washington Wizards,Home
-Indiana Pacers,Toronto Raptors,Visiting
+Indiana Pacers,Toronto Raptors,Home
 Miami Heat,Philadelphia 76ers,Home
-Utah Jazz,Orlando Magic,Visiting
+Utah Jazz,Orlando Magic,Home
 Boston Celtics,Milwaukee Bucks,Home
 Dallas Mavericks,Los Angeles Lakers,Home
 New Jersey Nets,Los Angeles Clippers,Home
@@ -329,50 +329,50 @@ Phoenix Suns,Golden State Warriors,Visiting
 Memphis Grizzlies,Detroit Pistons,Visiting
 New York Knicks,Cleveland Cavaliers,Home
 Portland Trail Blazers,Atlanta Hawks,Home
-Oklahoma City Thunder,Phoenix Suns,Visiting
+Oklahoma City Thunder,Phoenix Suns,Home
 Charlotte Bobcats,Minnesota Timberwolves,Home
 Utah Jazz,Miami Heat,Home
 San Antonio Spurs,Houston Rockets,Visiting
-Los Angeles Clippers,Denver Nuggets,Visiting
+Los Angeles Clippers,Denver Nuggets,Home
 New Orleans Hornets,Chicago Bulls,Home
 Orlando Magic,Washington Wizards,Visiting
 Detroit Pistons,Toronto Raptors,Visiting
 Cleveland Cavaliers,Sacramento Kings,Visiting
 New Jersey Nets,Portland Trail Blazers,Home
 Chicago Bulls,Philadelphia 76ers,Home
-New York Knicks,Minnesota Timberwolves,Home
+New York Knicks,Minnesota Timberwolves,Visiting
 New Orleans Hornets,Milwaukee Bucks,Visiting
 Dallas Mavericks,Golden State Warriors,Home
 Houston Rockets,Charlotte Bobcats,Visiting
-Memphis Grizzlies,Boston Celtics,Visiting
-Indiana Pacers,Atlanta Hawks,Visiting
-Los Angeles Lakers,San Antonio Spurs,Home
+Memphis Grizzlies,Boston Celtics,Home
+Indiana Pacers,Atlanta Hawks,Home
+Los Angeles Lakers,San Antonio Spurs,Visiting
 Cleveland Cavaliers,Phoenix Suns,Visiting
-New Orleans Hornets,Washington Wizards,Home
+New Orleans Hornets,Washington Wizards,Visiting
 Dallas Mavericks,Portland Trail Blazers,Visiting
 Toronto Raptors,Philadelphia 76ers,Home
-Chicago Bulls,Orlando Magic,Visiting
-Memphis Grizzlies,Minnesota Timberwolves,Visiting
-Boston Celtics,Miami Heat,Visiting
-Los Angeles Lakers,Houston Rockets,Home
+Chicago Bulls,Orlando Magic,Home
+Memphis Grizzlies,Minnesota Timberwolves,Home
+Boston Celtics,Miami Heat,Home
+Los Angeles Lakers,Houston Rockets,Visiting
 New Jersey Nets,Golden State Warriors,Home
 New York Knicks,Detroit Pistons,Visiting
-Oklahoma City Thunder,Denver Nuggets,Visiting
-Utah Jazz,Atlanta Hawks,Visiting
-Charlotte Bobcats,San Antonio Spurs,Visiting
+Oklahoma City Thunder,Denver Nuggets,Home
+Utah Jazz,Atlanta Hawks,Home
+Charlotte Bobcats,San Antonio Spurs,Home
 Oklahoma City Thunder,Sacramento Kings,Visiting
 Dallas Mavericks,Phoenix Suns,Visiting
 New York Knicks,Milwaukee Bucks,Visiting
 Cleveland Cavaliers,Los Angeles Clippers,Visiting
 Utah Jazz,Indiana Pacers,Visiting
-Los Angeles Lakers,Portland Trail Blazers,Visiting
-Washington Wizards,Minnesota Timberwolves,Home
+Los Angeles Lakers,Portland Trail Blazers,Home
+Washington Wizards,Minnesota Timberwolves,Visiting
 Chicago Bulls,Miami Heat,Home
 Orlando Magic,Detroit Pistons,Home
 Houston Rockets,Denver Nuggets,Visiting
 New Orleans Hornets,Atlanta Hawks,Home
 Utah Jazz,Toronto Raptors,Visiting
-Phoenix Suns,San Antonio Spurs,Visiting
+Phoenix Suns,San Antonio Spurs,Home
 Denver Nuggets,Sacramento Kings,Home
 Philadelphia 76ers,Oklahoma City Thunder,Home
 New York Knicks,New Jersey Nets,Home
@@ -380,7 +380,7 @@ Memphis Grizzlies,Houston Rockets,Home
 Orlando Magic,Boston Celtics,Visiting
 Minnesota Timberwolves,Portland Trail Blazers,Home
 Charlotte Bobcats,New York Knicks,Visiting
-Oklahoma City Thunder,New Orleans Hornets,Visiting
+Oklahoma City Thunder,New Orleans Hornets,Home
 Golden State Warriors,Milwaukee Bucks,Home
 Philadelphia 76ers,Memphis Grizzlies,Visiting
 Indiana Pacers,Los Angeles Clippers,Visiting
@@ -389,149 +389,149 @@ Miami Heat,Cleveland Cavaliers,Home
 Detroit Pistons,Atlanta Hawks,Home
 Denver Nuggets,Utah Jazz,Home
 Miami Heat,Toronto Raptors,Visiting
-Washington Wizards,San Antonio Spurs,Visiting
+Washington Wizards,San Antonio Spurs,Home
 New Jersey Nets,Orlando Magic,Home
-Minnesota Timberwolves,Los Angeles Lakers,Visiting
+Minnesota Timberwolves,Los Angeles Lakers,Home
 Phoenix Suns,Houston Rockets,Home
-Golden State Warriors,Detroit Pistons,Visiting
+Golden State Warriors,Detroit Pistons,Home
 Milwaukee Bucks,Chicago Bulls,Home
 Atlanta Hawks,Charlotte Bobcats,Home
-Cleveland Cavaliers,Boston Celtics,Visiting
-Dallas Mavericks,New Orleans Hornets,Visiting
-Portland Trail Blazers,Denver Nuggets,Visiting
-Houston Rockets,Utah Jazz,Visiting
+Cleveland Cavaliers,Boston Celtics,Home
+Dallas Mavericks,New Orleans Hornets,Home
+Portland Trail Blazers,Denver Nuggets,Home
+Houston Rockets,Utah Jazz,Home
 Indiana Pacers,Portland Trail Blazers,Home
 Washington Wizards,Oklahoma City Thunder,Home
 Atlanta Hawks,New York Knicks,Home
 Boston Celtics,New Jersey Nets,Visiting
 Phoenix Suns,Miami Heat,Home
-Memphis Grizzlies,Los Angeles Clippers,Home
+Memphis Grizzlies,Los Angeles Clippers,Visiting
 San Antonio Spurs,Dallas Mavericks,Home
 Milwaukee Bucks,Cleveland Cavaliers,Home
-Golden State Warriors,Chicago Bulls,Visiting
+Golden State Warriors,Chicago Bulls,Home
 Indiana Pacers,Sacramento Kings,Visiting
-Phoenix Suns,Orlando Magic,Visiting
-Golden State Warriors,Minnesota Timberwolves,Home
+Phoenix Suns,Orlando Magic,Home
+Golden State Warriors,Minnesota Timberwolves,Visiting
 New Jersey Nets,Milwaukee Bucks,Visiting
 Memphis Grizzlies,Los Angeles Lakers,Home
-Toronto Raptors,Houston Rockets,Visiting
-Denver Nuggets,Detroit Pistons,Visiting
+Toronto Raptors,Houston Rockets,Home
+Denver Nuggets,Detroit Pistons,Home
 Chicago Bulls,Charlotte Bobcats,Home
 Atlanta Hawks,Washington Wizards,Visiting
 New Orleans Hornets,Philadelphia 76ers,Visiting
 Dallas Mavericks,Oklahoma City Thunder,Home
 Cleveland Cavaliers,Miami Heat,Visiting
-San Antonio Spurs,Los Angeles Clippers,Home
-San Antonio Spurs,Portland Trail Blazers,Visiting
+San Antonio Spurs,Los Angeles Clippers,Visiting
+San Antonio Spurs,Portland Trail Blazers,Home
 Los Angeles Lakers,Phoenix Suns,Home
 New Orleans Hornets,New Jersey Nets,Visiting
-Houston Rockets,Minnesota Timberwolves,Home
-Denver Nuggets,Indiana Pacers,Visiting
+Houston Rockets,Minnesota Timberwolves,Visiting
+Denver Nuggets,Indiana Pacers,Home
 Utah Jazz,Golden State Warriors,Visiting
-Toronto Raptors,Dallas Mavericks,Visiting
-Detroit Pistons,Boston Celtics,Home
+Toronto Raptors,Dallas Mavericks,Home
+Detroit Pistons,Boston Celtics,Visiting
 Cleveland Cavaliers,Atlanta Hawks,Visiting
-Sacramento Kings,Utah Jazz,Visiting
+Sacramento Kings,Utah Jazz,Home
 Orlando Magic,Philadelphia 76ers,Visiting
-Washington Wizards,Milwaukee Bucks,Visiting
+Washington Wizards,Milwaukee Bucks,Home
 New York Knicks,Miami Heat,Home
 Oklahoma City Thunder,Memphis Grizzlies,Visiting
-Charlotte Bobcats,Los Angeles Clippers,Home
+Charlotte Bobcats,Los Angeles Clippers,Visiting
 Houston Rockets,Chicago Bulls,Home
-Chicago Bulls,Washington Wizards,Visiting
+Chicago Bulls,Washington Wizards,Home
 Cleveland Cavaliers,San Antonio Spurs,Visiting
 Los Angeles Clippers,Sacramento Kings,Home
 Toronto Raptors,Phoenix Suns,Home
 Detroit Pistons,Orlando Magic,Visiting
 Philadelphia 76ers,New York Knicks,Visiting
 Milwaukee Bucks,New Orleans Hornets,Home
-Portland Trail Blazers,Minnesota Timberwolves,Home
+Portland Trail Blazers,Minnesota Timberwolves,Visiting
 Charlotte Bobcats,Golden State Warriors,Visiting
 Los Angeles Lakers,Denver Nuggets,Home
 Oklahoma City Thunder,Dallas Mavericks,Home
-Indiana Pacers,Boston Celtics,Visiting
+Indiana Pacers,Boston Celtics,Home
 Miami Heat,Atlanta Hawks,Home
 Phoenix Suns,Los Angeles Lakers,Home
 Cleveland Cavaliers,Houston Rockets,Home
-Philadelphia 76ers,Washington Wizards,Home
+Philadelphia 76ers,Washington Wizards,Visiting
 Portland Trail Blazers,San Antonio Spurs,Home
 Charlotte Bobcats,Sacramento Kings,Visiting
 Orlando Magic,New York Knicks,Visiting
 Detroit Pistons,New Orleans Hornets,Home
-Chicago Bulls,New Jersey Nets,Visiting
+Chicago Bulls,New Jersey Nets,Home
 Utah Jazz,Minnesota Timberwolves,Visiting
 Boston Celtics,Los Angeles Clippers,Home
-Memphis Grizzlies,Indiana Pacers,Visiting
+Memphis Grizzlies,Indiana Pacers,Home
 Atlanta Hawks,Denver Nuggets,Home
-Milwaukee Bucks,Dallas Mavericks,Visiting
+Milwaukee Bucks,Dallas Mavericks,Home
 Minnesota Timberwolves,Toronto Raptors,Home
 Dallas Mavericks,San Antonio Spurs,Home
 Charlotte Bobcats,Phoenix Suns,Home
-Los Angeles Lakers,Oklahoma City Thunder,Home
-Detroit Pistons,Miami Heat,Visiting
+Los Angeles Lakers,Oklahoma City Thunder,Visiting
+Detroit Pistons,Miami Heat,Home
 Portland Trail Blazers,Houston Rockets,Home
 Memphis Grizzlies,Cleveland Cavaliers,Home
 Orlando Magic,Chicago Bulls,Home
-Atlanta Hawks,Utah Jazz,Visiting
+Atlanta Hawks,Utah Jazz,Home
 New Orleans Hornets,Sacramento Kings,Visiting
 Indiana Pacers,New York Knicks,Home
 Philadelphia 76ers,New Jersey Nets,Home
 Golden State Warriors,Los Angeles Clippers,Home
-Boston Celtics,Denver Nuggets,Home
+Boston Celtics,Denver Nuggets,Visiting
 New York Knicks,Toronto Raptors,Home
-Los Angeles Clippers,Portland Trail Blazers,Visiting
+Los Angeles Clippers,Portland Trail Blazers,Home
 Boston Celtics,Phoenix Suns,Visiting
-Miami Heat,Orlando Magic,Visiting
+Miami Heat,Orlando Magic,Home
 Los Angeles Lakers,Minnesota Timberwolves,Visiting
 Denver Nuggets,Milwaukee Bucks,Home
 Chicago Bulls,Indiana Pacers,Home
 Charlotte Bobcats,Houston Rockets,Home
 Detroit Pistons,Cleveland Cavaliers,Home
 San Antonio Spurs,Washington Wizards,Visiting
-New Orleans Hornets,Utah Jazz,Visiting
+New Orleans Hornets,Utah Jazz,Home
 Philadelphia 76ers,Miami Heat,Home
 Oklahoma City Thunder,Golden State Warriors,Home
-Sacramento Kings,Dallas Mavericks,Visiting
-Atlanta Hawks,Portland Trail Blazers,Visiting
+Sacramento Kings,Dallas Mavericks,Home
+Atlanta Hawks,Portland Trail Blazers,Home
 Oklahoma City Thunder,Phoenix Suns,Home
-Toronto Raptors,New York Knicks,Visiting
-Washington Wizards,New Jersey Nets,Home
+Toronto Raptors,New York Knicks,Home
+Washington Wizards,New Jersey Nets,Visiting
 Indiana Pacers,Minnesota Timberwolves,Visiting
 Cleveland Cavaliers,Milwaukee Bucks,Visiting
 Sacramento Kings,Memphis Grizzlies,Visiting
 New Orleans Hornets,Los Angeles Lakers,Home
 Dallas Mavericks,Houston Rockets,Home
-Denver Nuggets,Chicago Bulls,Visiting
+Denver Nuggets,Chicago Bulls,Home
 Orlando Magic,Charlotte Bobcats,Visiting
 Boston Celtics,Utah Jazz,Home
 San Antonio Spurs,Detroit Pistons,Visiting
 Cleveland Cavaliers,Toronto Raptors,Visiting
 Atlanta Hawks,Sacramento Kings,Visiting
 Memphis Grizzlies,Portland Trail Blazers,Home
-Denver Nuggets,Philadelphia 76ers,Home
-Orlando Magic,New Orleans Hornets,Visiting
+Denver Nuggets,Philadelphia 76ers,Visiting
+Orlando Magic,New Orleans Hornets,Home
 Chicago Bulls,Milwaukee Bucks,Visiting
 Minnesota Timberwolves,Miami Heat,Visiting
 Phoenix Suns,Los Angeles Clippers,Visiting
 Los Angeles Lakers,Golden State Warriors,Visiting
-New Jersey Nets,Dallas Mavericks,Visiting
-Indiana Pacers,Charlotte Bobcats,Visiting
+New Jersey Nets,Dallas Mavericks,Home
+Indiana Pacers,Charlotte Bobcats,Home
 Minnesota Timberwolves,Washington Wizards,Home
-Memphis Grizzlies,Utah Jazz,Visiting
+Memphis Grizzlies,Utah Jazz,Home
 Los Angeles Clippers,Phoenix Suns,Home
 Charlotte Bobcats,Orlando Magic,Home
-New Orleans Hornets,Oklahoma City Thunder,Home
+New Orleans Hornets,Oklahoma City Thunder,Visiting
 San Antonio Spurs,New York Knicks,Home
 Atlanta Hawks,Los Angeles Lakers,Home
-Philadelphia 76ers,Indiana Pacers,Visiting
-New Jersey Nets,Houston Rockets,Visiting
+Philadelphia 76ers,Indiana Pacers,Home
+New Jersey Nets,Houston Rockets,Home
 Milwaukee Bucks,Detroit Pistons,Visiting
-Portland Trail Blazers,Golden State Warriors,Visiting
+Portland Trail Blazers,Golden State Warriors,Home
 Boston Celtics,Dallas Mavericks,Visiting
 Miami Heat,Chicago Bulls,Visiting
 Los Angeles Lakers,Utah Jazz,Home
 San Antonio Spurs,Toronto Raptors,Home
-Oklahoma City Thunder,Portland Trail Blazers,Visiting
+Oklahoma City Thunder,Portland Trail Blazers,Home
 Memphis Grizzlies,Philadelphia 76ers,Home
 Denver Nuggets,Orlando Magic,Visiting
 Boston Celtics,New Orleans Hornets,Visiting
@@ -539,100 +539,100 @@ Indiana Pacers,Milwaukee Bucks,Home
 New York Knicks,Los Angeles Clippers,Home
 Sacramento Kings,Houston Rockets,Home
 Atlanta Hawks,Detroit Pistons,Visiting
-Phoenix Suns,Cleveland Cavaliers,Visiting
-Washington Wizards,Charlotte Bobcats,Visiting
-San Antonio Spurs,New Jersey Nets,Home
+Phoenix Suns,Cleveland Cavaliers,Home
+Washington Wizards,Charlotte Bobcats,Home
+San Antonio Spurs,New Jersey Nets,Visiting
 Toronto Raptors,Minnesota Timberwolves,Visiting
 Denver Nuggets,Miami Heat,Visiting
-Oklahoma City Thunder,Los Angeles Lakers,Visiting
+Oklahoma City Thunder,Los Angeles Lakers,Home
 Cleveland Cavaliers,Indiana Pacers,Home
 New York Knicks,Golden State Warriors,Home
 Sacramento Kings,Dallas Mavericks,Home
 Detroit Pistons,Chicago Bulls,Home
-Washington Wizards,Atlanta Hawks,Visiting
-Phoenix Suns,Philadelphia 76ers,Visiting
+Washington Wizards,Atlanta Hawks,Home
+Phoenix Suns,Philadelphia 76ers,Home
 Houston Rockets,Milwaukee Bucks,Home
 New Orleans Hornets,Memphis Grizzlies,Home
 Los Angeles Clippers,Charlotte Bobcats,Home
 Indiana Pacers,Washington Wizards,Home
 New York Knicks,Portland Trail Blazers,Home
-New Jersey Nets,Orlando Magic,Visiting
+New Jersey Nets,Orlando Magic,Home
 Sacramento Kings,Oklahoma City Thunder,Home
-Minnesota Timberwolves,New Orleans Hornets,Visiting
+Minnesota Timberwolves,New Orleans Hornets,Home
 Charlotte Bobcats,Miami Heat,Home
-Utah Jazz,Golden State Warriors,Visiting
-Phoenix Suns,Detroit Pistons,Home
-Los Angeles Lakers,Cleveland Cavaliers,Home
-San Antonio Spurs,Boston Celtics,Home
+Utah Jazz,Golden State Warriors,Home
+Phoenix Suns,Detroit Pistons,Visiting
+Los Angeles Lakers,Cleveland Cavaliers,Visiting
+San Antonio Spurs,Boston Celtics,Visiting
 Miami Heat,Philadelphia 76ers,Home
-Denver Nuggets,New Jersey Nets,Visiting
+Denver Nuggets,New Jersey Nets,Home
 Detroit Pistons,Milwaukee Bucks,Visiting
 Toronto Raptors,Memphis Grizzlies,Home
-Minnesota Timberwolves,Houston Rockets,Visiting
+Minnesota Timberwolves,Houston Rockets,Home
 Chicago Bulls,Dallas Mavericks,Home
-Los Angeles Clippers,Atlanta Hawks,Home
+Los Angeles Clippers,Atlanta Hawks,Visiting
 Denver Nuggets,Washington Wizards,Visiting
 Utah Jazz,Sacramento Kings,Visiting
 Golden State Warriors,Phoenix Suns,Home
-Portland Trail Blazers,Oklahoma City Thunder,Visiting
+Portland Trail Blazers,Oklahoma City Thunder,Home
 Boston Celtics,New York Knicks,Visiting
-Toronto Raptors,New Orleans Hornets,Visiting
+Toronto Raptors,New Orleans Hornets,Home
 Los Angeles Clippers,Memphis Grizzlies,Visiting
 Orlando Magic,Indiana Pacers,Home
-Atlanta Hawks,Charlotte Bobcats,Home
-Dallas Mavericks,Utah Jazz,Visiting
+Atlanta Hawks,Charlotte Bobcats,Visiting
+Dallas Mavericks,Utah Jazz,Home
 Indiana Pacers,Philadelphia 76ers,Home
 Los Angeles Lakers,Boston Celtics,Visiting
-New Jersey Nets,Washington Wizards,Home
+New Jersey Nets,Washington Wizards,Visiting
 Los Angeles Lakers,Toronto Raptors,Visiting
-Los Angeles Clippers,Orlando Magic,Visiting
+Los Angeles Clippers,Orlando Magic,Home
 Denver Nuggets,Oklahoma City Thunder,Visiting
 Cleveland Cavaliers,New York Knicks,Visiting
-Chicago Bulls,New Orleans Hornets,Home
+Chicago Bulls,New Orleans Hornets,Visiting
 Atlanta Hawks,Minnesota Timberwolves,Visiting
-Houston Rockets,Memphis Grizzlies,Visiting
+Houston Rockets,Memphis Grizzlies,Home
 Phoenix Suns,Golden State Warriors,Home
 Miami Heat,Detroit Pistons,Home
-Portland Trail Blazers,Dallas Mavericks,Visiting
-Boston Celtics,Philadelphia 76ers,Home
+Portland Trail Blazers,Dallas Mavericks,Home
+Boston Celtics,Philadelphia 76ers,Visiting
 Milwaukee Bucks,New Jersey Nets,Home
 Minnesota Timberwolves,Indiana Pacers,Visiting
 Chicago Bulls,Houston Rockets,Home
-San Antonio Spurs,Denver Nuggets,Visiting
-Toronto Raptors,Cleveland Cavaliers,Visiting
-Memphis Grizzlies,Washington Wizards,Home
-Charlotte Bobcats,Utah Jazz,Visiting
-Sacramento Kings,Phoenix Suns,Visiting
-Dallas Mavericks,Orlando Magic,Home
+San Antonio Spurs,Denver Nuggets,Home
+Toronto Raptors,Cleveland Cavaliers,Home
+Memphis Grizzlies,Washington Wizards,Visiting
+Charlotte Bobcats,Utah Jazz,Home
+Sacramento Kings,Phoenix Suns,Home
+Dallas Mavericks,Orlando Magic,Visiting
 Los Angeles Lakers,New York Knicks,Visiting
 Portland Trail Blazers,New Orleans Hornets,Visiting
-Los Angeles Clippers,Miami Heat,Visiting
+Los Angeles Clippers,Miami Heat,Home
 San Antonio Spurs,Golden State Warriors,Visiting
-Orlando Magic,Toronto Raptors,Home
+Orlando Magic,Toronto Raptors,Visiting
 Oklahoma City Thunder,Sacramento Kings,Home
 Cleveland Cavaliers,Detroit Pistons,Visiting
 Minnesota Timberwolves,Boston Celtics,Home
-Los Angeles Clippers,Washington Wizards,Visiting
-New Orleans Hornets,San Antonio Spurs,Visiting
+Los Angeles Clippers,Washington Wizards,Home
+New Orleans Hornets,San Antonio Spurs,Home
 Utah Jazz,Portland Trail Blazers,Home
 Chicago Bulls,Phoenix Suns,Visiting
 New Jersey Nets,Philadelphia 76ers,Visiting
 Atlanta Hawks,Milwaukee Bucks,Home
-Dallas Mavericks,Miami Heat,Home
-Los Angeles Lakers,Memphis Grizzlies,Home
+Dallas Mavericks,Miami Heat,Visiting
+Los Angeles Lakers,Memphis Grizzlies,Visiting
 New York Knicks,Indiana Pacers,Visiting
-Golden State Warriors,Houston Rockets,Visiting
-Oklahoma City Thunder,Utah Jazz,Visiting
+Golden State Warriors,Houston Rockets,Home
+Oklahoma City Thunder,Utah Jazz,Home
 Milwaukee Bucks,Toronto Raptors,Visiting
-Chicago Bulls,Sacramento Kings,Home
-Washington Wizards,Philadelphia 76ers,Visiting
+Chicago Bulls,Sacramento Kings,Visiting
+Washington Wizards,Philadelphia 76ers,Home
 Golden State Warriors,New Orleans Hornets,Visiting
 Los Angeles Lakers,Minnesota Timberwolves,Visiting
 Miami Heat,Indiana Pacers,Home
 Boston Celtics,Detroit Pistons,Visiting
-Charlotte Bobcats,Denver Nuggets,Visiting
-Los Angeles Clippers,Cleveland Cavaliers,Visiting
-New Jersey Nets,Atlanta Hawks,Visiting
+Charlotte Bobcats,Denver Nuggets,Home
+Los Angeles Clippers,Cleveland Cavaliers,Home
+New Jersey Nets,Atlanta Hawks,Home
 San Antonio Spurs,Phoenix Suns,Visiting
 Cleveland Cavaliers,Orlando Magic,Home
 Charlotte Bobcats,Portland Trail Blazers,Home
@@ -643,166 +643,166 @@ Toronto Raptors,New Jersey Nets,Visiting
 Detroit Pistons,Minnesota Timberwolves,Visiting
 Washington Wizards,Miami Heat,Home
 Chicago Bulls,Los Angeles Clippers,Visiting
-Milwaukee Bucks,Indiana Pacers,Visiting
+Milwaukee Bucks,Indiana Pacers,Home
 Philadelphia 76ers,Houston Rockets,Visiting
-Golden State Warriors,Dallas Mavericks,Visiting
+Golden State Warriors,Dallas Mavericks,Home
 Sacramento Kings,Boston Celtics,Home
 San Antonio Spurs,Utah Jazz,Visiting
 Indiana Pacers,Orlando Magic,Home
-Denver Nuggets,Memphis Grizzlies,Home
+Denver Nuggets,Memphis Grizzlies,Visiting
 Charlotte Bobcats,Los Angeles Lakers,Visiting
 Sacramento Kings,Cleveland Cavaliers,Home
-Phoenix Suns,Washington Wizards,Home
+Phoenix Suns,Washington Wizards,Visiting
 New Jersey Nets,Oklahoma City Thunder,Home
-Houston Rockets,New York Knicks,Visiting
-Philadelphia 76ers,New Orleans Hornets,Visiting
+Houston Rockets,New York Knicks,Home
+Philadelphia 76ers,New Orleans Hornets,Home
 Minnesota Timberwolves,Milwaukee Bucks,Visiting
 Atlanta Hawks,Miami Heat,Home
-Portland Trail Blazers,Los Angeles Clippers,Home
-Sacramento Kings,Toronto Raptors,Visiting
+Portland Trail Blazers,Los Angeles Clippers,Visiting
+Sacramento Kings,Toronto Raptors,Home
 Chicago Bulls,Minnesota Timberwolves,Home
 San Antonio Spurs,Los Angeles Lakers,Home
 Charlotte Bobcats,Indiana Pacers,Home
-Los Angeles Clippers,Golden State Warriors,Visiting
+Los Angeles Clippers,Golden State Warriors,Home
 Houston Rockets,Detroit Pistons,Visiting
-Utah Jazz,Denver Nuggets,Visiting
+Utah Jazz,Denver Nuggets,Home
 Dallas Mavericks,Boston Celtics,Home
-Phoenix Suns,Atlanta Hawks,Home
-Cleveland Cavaliers,Utah Jazz,Home
-Washington Wizards,Portland Trail Blazers,Visiting
+Phoenix Suns,Atlanta Hawks,Visiting
+Cleveland Cavaliers,Utah Jazz,Visiting
+Washington Wizards,Portland Trail Blazers,Home
 New York Knicks,Philadelphia 76ers,Home
 Sacramento Kings,Milwaukee Bucks,Home
-Orlando Magic,Miami Heat,Visiting
+Orlando Magic,Miami Heat,Home
 New Jersey Nets,Memphis Grizzlies,Visiting
 New Jersey Nets,San Antonio Spurs,Home
-Memphis Grizzlies,New York Knicks,Visiting
+Memphis Grizzlies,New York Knicks,Home
 New Orleans Hornets,Minnesota Timberwolves,Home
 Oklahoma City Thunder,Los Angeles Clippers,Home
 Houston Rockets,Indiana Pacers,Home
 Cleveland Cavaliers,Golden State Warriors,Visiting
-Dallas Mavericks,Detroit Pistons,Home
-Toronto Raptors,Chicago Bulls,Home
+Dallas Mavericks,Detroit Pistons,Visiting
+Toronto Raptors,Chicago Bulls,Visiting
 Phoenix Suns,Charlotte Bobcats,Home
-Milwaukee Bucks,Atlanta Hawks,Visiting
+Milwaukee Bucks,Atlanta Hawks,Home
 Boston Celtics,Orlando Magic,Visiting
-Washington Wizards,Los Angeles Lakers,Visiting
+Washington Wizards,Los Angeles Lakers,Home
 Washington Wizards,Sacramento Kings,Visiting
-Cleveland Cavaliers,Portland Trail Blazers,Home
+Cleveland Cavaliers,Portland Trail Blazers,Visiting
 Phoenix Suns,New York Knicks,Home
-New Jersey Nets,New Orleans Hornets,Visiting
-Dallas Mavericks,Milwaukee Bucks,Visiting
+New Jersey Nets,New Orleans Hornets,Home
+Dallas Mavericks,Milwaukee Bucks,Home
 Boston Celtics,Miami Heat,Visiting
-Los Angeles Lakers,Los Angeles Clippers,Home
-Utah Jazz,Houston Rockets,Visiting
+Los Angeles Lakers,Los Angeles Clippers,Visiting
+Utah Jazz,Houston Rockets,Home
 Oklahoma City Thunder,Golden State Warriors,Visiting
 Toronto Raptors,Detroit Pistons,Home
-Memphis Grizzlies,Charlotte Bobcats,Visiting
+Memphis Grizzlies,Charlotte Bobcats,Home
 Minnesota Timberwolves,Utah Jazz,Home
 Indiana Pacers,San Antonio Spurs,Home
-Sacramento Kings,Denver Nuggets,Visiting
+Sacramento Kings,Denver Nuggets,Home
 Atlanta Hawks,Chicago Bulls,Visiting
-Milwaukee Bucks,Portland Trail Blazers,Visiting
+Milwaukee Bucks,Portland Trail Blazers,Home
 Dallas Mavericks,Philadelphia 76ers,Visiting
-Chicago Bulls,New York Knicks,Visiting
+Chicago Bulls,New York Knicks,Home
 Indiana Pacers,New Orleans Hornets,Home
 Detroit Pistons,Memphis Grizzlies,Visiting
-Cleveland Cavaliers,Los Angeles Lakers,Visiting
+Cleveland Cavaliers,Los Angeles Lakers,Home
 Minnesota Timberwolves,Los Angeles Clippers,Visiting
 Denver Nuggets,Houston Rockets,Home
-Washington Wizards,Golden State Warriors,Visiting
+Washington Wizards,Golden State Warriors,Home
 San Antonio Spurs,Charlotte Bobcats,Visiting
-Phoenix Suns,Boston Celtics,Visiting
+Phoenix Suns,Boston Celtics,Home
 Toronto Raptors,Atlanta Hawks,Home
 Phoenix Suns,Toronto Raptors,Visiting
-Miami Heat,Oklahoma City Thunder,Home
-Philadelphia 76ers,New York Knicks,Home
-Boston Celtics,New Jersey Nets,Home
-Milwaukee Bucks,Los Angeles Clippers,Visiting
+Miami Heat,Oklahoma City Thunder,Visiting
+Philadelphia 76ers,New York Knicks,Visiting
+Boston Celtics,New Jersey Nets,Visiting
+Milwaukee Bucks,Los Angeles Clippers,Home
 Miami Heat,Houston Rockets,Home
 New Orleans Hornets,Detroit Pistons,Visiting
-Orlando Magic,Denver Nuggets,Home
+Orlando Magic,Denver Nuggets,Visiting
 Utah Jazz,Dallas Mavericks,Home
 San Antonio Spurs,Chicago Bulls,Visiting
-Portland Trail Blazers,Charlotte Bobcats,Visiting
+Portland Trail Blazers,Charlotte Bobcats,Home
 New York Knicks,Washington Wizards,Home
 Milwaukee Bucks,Sacramento Kings,Visiting
 Minnesota Timberwolves,Phoenix Suns,Visiting
-San Antonio Spurs,Philadelphia 76ers,Visiting
+San Antonio Spurs,Philadelphia 76ers,Home
 Detroit Pistons,Oklahoma City Thunder,Home
-Utah Jazz,Memphis Grizzlies,Home
+Utah Jazz,Memphis Grizzlies,Visiting
 Orlando Magic,Los Angeles Lakers,Visiting
 Toronto Raptors,Indiana Pacers,Home
 Atlanta Hawks,Golden State Warriors,Home
 New Orleans Hornets,Cleveland Cavaliers,Home
-Portland Trail Blazers,New Jersey Nets,Home
+Portland Trail Blazers,New Jersey Nets,Visiting
 Phoenix Suns,Denver Nuggets,Home
-Cleveland Cavaliers,Chicago Bulls,Visiting
-Chicago Bulls,Toronto Raptors,Home
+Cleveland Cavaliers,Chicago Bulls,Home
+Chicago Bulls,Toronto Raptors,Visiting
 Los Angeles Lakers,San Antonio Spurs,Home
-Portland Trail Blazers,Philadelphia 76ers,Visiting
-Utah Jazz,Oklahoma City Thunder,Visiting
+Portland Trail Blazers,Philadelphia 76ers,Home
+Utah Jazz,Oklahoma City Thunder,Home
 Washington Wizards,New York Knicks,Home
-Miami Heat,Milwaukee Bucks,Home
+Miami Heat,Milwaukee Bucks,Visiting
 Atlanta Hawks,Los Angeles Clippers,Visiting
 Detroit Pistons,Indiana Pacers,Home
 Sacramento Kings,Golden State Warriors,Visiting
-New Orleans Hornets,Dallas Mavericks,Home
-New Jersey Nets,Boston Celtics,Visiting
+New Orleans Hornets,Dallas Mavericks,Visiting
+New Jersey Nets,Boston Celtics,Home
 Orlando Magic,Sacramento Kings,Visiting
 Atlanta Hawks,Phoenix Suns,Home
 Miami Heat,Minnesota Timberwolves,Visiting
-Cleveland Cavaliers,Memphis Grizzlies,Home
+Cleveland Cavaliers,Memphis Grizzlies,Visiting
 Los Angeles Lakers,Houston Rockets,Visiting
 Charlotte Bobcats,Detroit Pistons,Visiting
 Dallas Mavericks,Denver Nuggets,Home
 Milwaukee Bucks,Washington Wizards,Visiting
 Indiana Pacers,Utah Jazz,Home
-New York Knicks,New Orleans Hornets,Home
-Oklahoma City Thunder,New Jersey Nets,Visiting
-Portland Trail Blazers,Chicago Bulls,Home
+New York Knicks,New Orleans Hornets,Visiting
+Oklahoma City Thunder,New Jersey Nets,Home
+Portland Trail Blazers,Chicago Bulls,Visiting
 Toronto Raptors,Boston Celtics,Home
 Boston Celtics,Toronto Raptors,Visiting
-Orlando Magic,San Antonio Spurs,Home
-Dallas Mavericks,Sacramento Kings,Visiting
+Orlando Magic,San Antonio Spurs,Visiting
+Dallas Mavericks,Sacramento Kings,Home
 Miami Heat,Los Angeles Lakers,Home
 Phoenix Suns,Los Angeles Clippers,Visiting
 Indiana Pacers,Golden State Warriors,Home
-Philadelphia 76ers,Atlanta Hawks,Home
+Philadelphia 76ers,Atlanta Hawks,Visiting
 Charlotte Bobcats,Washington Wizards,Visiting
 Detroit Pistons,Utah Jazz,Home
 Golden State Warriors,Portland Trail Blazers,Home
 Milwaukee Bucks,Minnesota Timberwolves,Home
 New York Knicks,Houston Rockets,Home
-Oklahoma City Thunder,Chicago Bulls,Home
-Memphis Grizzlies,Toronto Raptors,Visiting
+Oklahoma City Thunder,Chicago Bulls,Visiting
+Memphis Grizzlies,Toronto Raptors,Home
 Miami Heat,Sacramento Kings,Visiting
 Dallas Mavericks,Phoenix Suns,Home
 Charlotte Bobcats,Philadelphia 76ers,Home
-Atlanta Hawks,Orlando Magic,Visiting
+Atlanta Hawks,Orlando Magic,Home
 Houston Rockets,Oklahoma City Thunder,Visiting
-Los Angeles Clippers,New Orleans Hornets,Visiting
+Los Angeles Clippers,New Orleans Hornets,Home
 New Jersey Nets,Milwaukee Bucks,Home
 Indiana Pacers,Los Angeles Lakers,Home
 Detroit Pistons,Denver Nuggets,Visiting
 Boston Celtics,Cleveland Cavaliers,Home
 Washington Wizards,Chicago Bulls,Home
-Los Angeles Clippers,San Antonio Spurs,Visiting
+Los Angeles Clippers,San Antonio Spurs,Home
 New York Knicks,Dallas Mavericks,Home
 Toronto Raptors,Washington Wizards,Visiting
-New Orleans Hornets,Utah Jazz,Visiting
+New Orleans Hornets,Utah Jazz,Home
 Detroit Pistons,Portland Trail Blazers,Home
 Indiana Pacers,Phoenix Suns,Visiting
-Memphis Grizzlies,New Jersey Nets,Visiting
-Oklahoma City Thunder,Minnesota Timberwolves,Visiting
+Memphis Grizzlies,New Jersey Nets,Home
+Oklahoma City Thunder,Minnesota Timberwolves,Home
 Philadelphia 76ers,Milwaukee Bucks,Visiting
 Los Angeles Lakers,Golden State Warriors,Visiting
-Miami Heat,Denver Nuggets,Visiting
-Charlotte Bobcats,Cleveland Cavaliers,Visiting
+Miami Heat,Denver Nuggets,Home
+Charlotte Bobcats,Cleveland Cavaliers,Home
 Houston Rockets,Boston Celtics,Visiting
 Orlando Magic,Atlanta Hawks,Visiting
-Houston Rockets,Philadelphia 76ers,Visiting
+Houston Rockets,Philadelphia 76ers,Home
 Washington Wizards,Orlando Magic,Home
-New York Knicks,Oklahoma City Thunder,Visiting
+New York Knicks,Oklahoma City Thunder,Home
 Minnesota Timberwolves,Memphis Grizzlies,Visiting
 New Orleans Hornets,Los Angeles Lakers,Visiting
 Los Angeles Clippers,Dallas Mavericks,Home
@@ -810,70 +810,70 @@ Sacramento Kings,Chicago Bulls,Home
 Boston Celtics,Charlotte Bobcats,Home
 Golden State Warriors,Utah Jazz,Home
 Sacramento Kings,New Jersey Nets,Home
-Toronto Raptors,Milwaukee Bucks,Visiting
+Toronto Raptors,Milwaukee Bucks,Home
 San Antonio Spurs,Miami Heat,Visiting
 Indiana Pacers,Denver Nuggets,Home
 Cleveland Cavaliers,Washington Wizards,Home
 Orlando Magic,Toronto Raptors,Home
-Boston Celtics,New York Knicks,Visiting
-Dallas Mavericks,Memphis Grizzlies,Visiting
-Portland Trail Blazers,Los Angeles Lakers,Visiting
+Boston Celtics,New York Knicks,Home
+Dallas Mavericks,Memphis Grizzlies,Home
+Portland Trail Blazers,Los Angeles Lakers,Home
 Detroit Pistons,Los Angeles Clippers,Visiting
 Philadelphia 76ers,San Antonio Spurs,Home
-New Jersey Nets,Miami Heat,Visiting
+New Jersey Nets,Miami Heat,Home
 Sacramento Kings,Indiana Pacers,Home
 New Orleans Hornets,Denver Nuggets,Home
-Minnesota Timberwolves,Chicago Bulls,Home
-Milwaukee Bucks,Charlotte Bobcats,Visiting
+Minnesota Timberwolves,Chicago Bulls,Visiting
+Milwaukee Bucks,Charlotte Bobcats,Home
 Houston Rockets,Atlanta Hawks,Home
 Houston Rockets,Toronto Raptors,Home
 New Orleans Hornets,Portland Trail Blazers,Visiting
-Los Angeles Clippers,Phoenix Suns,Visiting
+Los Angeles Clippers,Phoenix Suns,Home
 Miami Heat,Orlando Magic,Home
 Denver Nuggets,Oklahoma City Thunder,Visiting
 Indiana Pacers,New York Knicks,Visiting
 Atlanta Hawks,New Jersey Nets,Home
 Golden State Warriors,Minnesota Timberwolves,Home
-Charlotte Bobcats,Milwaukee Bucks,Visiting
+Charlotte Bobcats,Milwaukee Bucks,Home
 San Antonio Spurs,Memphis Grizzlies,Visiting
 Utah Jazz,Los Angeles Lakers,Home
 Sacramento Kings,Detroit Pistons,Home
 Philadelphia 76ers,Dallas Mavericks,Home
-Chicago Bulls,Cleveland Cavaliers,Visiting
-Washington Wizards,Boston Celtics,Visiting
+Chicago Bulls,Cleveland Cavaliers,Home
+Washington Wizards,Boston Celtics,Home
 Denver Nuggets,Toronto Raptors,Visiting
 Golden State Warriors,Oklahoma City Thunder,Home
-Philadelphia 76ers,Los Angeles Clippers,Home
+Philadelphia 76ers,Los Angeles Clippers,Visiting
 Milwaukee Bucks,Houston Rockets,Home
 New Jersey Nets,Detroit Pistons,Home
-Orlando Magic,Chicago Bulls,Home
-Milwaukee Bucks,San Antonio Spurs,Home
+Orlando Magic,Chicago Bulls,Visiting
+Milwaukee Bucks,San Antonio Spurs,Visiting
 Los Angeles Clippers,Sacramento Kings,Home
 Boston Celtics,Portland Trail Blazers,Home
 Washington Wizards,New Orleans Hornets,Home
-Cleveland Cavaliers,Miami Heat,Visiting
-Phoenix Suns,Memphis Grizzlies,Home
+Cleveland Cavaliers,Miami Heat,Home
+Phoenix Suns,Memphis Grizzlies,Visiting
 Atlanta Hawks,Indiana Pacers,Visiting
 Minnesota Timberwolves,Dallas Mavericks,Home
 New York Knicks,Charlotte Bobcats,Visiting
-Philadelphia 76ers,Utah Jazz,Visiting
+Philadelphia 76ers,Utah Jazz,Home
 Phoenix Suns,Oklahoma City Thunder,Visiting
-Chicago Bulls,New Jersey Nets,Home
-Memphis Grizzlies,Minnesota Timberwolves,Visiting
+Chicago Bulls,New Jersey Nets,Visiting
+Memphis Grizzlies,Minnesota Timberwolves,Home
 Washington Wizards,Houston Rockets,Visiting
 Toronto Raptors,Golden State Warriors,Home
 Orlando Magic,Detroit Pistons,Home
-Denver Nuggets,Atlanta Hawks,Visiting
-Boston Celtics,Sacramento Kings,Home
+Denver Nuggets,Atlanta Hawks,Home
+Boston Celtics,Sacramento Kings,Visiting
 Denver Nuggets,New York Knicks,Visiting
 Golden State Warriors,Los Angeles Lakers,Home
 Dallas Mavericks,Los Angeles Clippers,Visiting
 New Orleans Hornets,Indiana Pacers,Visiting
 Miami Heat,Cleveland Cavaliers,Home
-Oklahoma City Thunder,Washington Wizards,Visiting
+Oklahoma City Thunder,Washington Wizards,Home
 Memphis Grizzlies,San Antonio Spurs,Home
-Toronto Raptors,Portland Trail Blazers,Visiting
-Orlando Magic,Minnesota Timberwolves,Home
+Toronto Raptors,Portland Trail Blazers,Home
+Orlando Magic,Minnesota Timberwolves,Visiting
 Detroit Pistons,Milwaukee Bucks,Visiting
 Utah Jazz,Houston Rockets,Home
 New Jersey Nets,Charlotte Bobcats,Visiting
@@ -888,299 +888,299 @@ Indiana Pacers,Memphis Grizzlies,Home
 Boston Celtics,Golden State Warriors,Home
 Oklahoma City Thunder,Detroit Pistons,Home
 Philadelphia 76ers,Denver Nuggets,Home
-Dallas Mavericks,Portland Trail Blazers,Home
+Dallas Mavericks,Portland Trail Blazers,Visiting
 San Antonio Spurs,Phoenix Suns,Visiting
 New Orleans Hornets,Orlando Magic,Home
 Boston Celtics,Los Angeles Lakers,Home
 Washington Wizards,Cleveland Cavaliers,Home
 Minnesota Timberwolves,San Antonio Spurs,Home
-Denver Nuggets,Portland Trail Blazers,Visiting
-Los Angeles Lakers,New Orleans Hornets,Home
+Denver Nuggets,Portland Trail Blazers,Home
+Los Angeles Lakers,New Orleans Hornets,Visiting
 Utah Jazz,Milwaukee Bucks,Home
 Golden State Warriors,Miami Heat,Home
 New Jersey Nets,Indiana Pacers,Visiting
-Chicago Bulls,Detroit Pistons,Visiting
-Memphis Grizzlies,Dallas Mavericks,Visiting
+Chicago Bulls,Detroit Pistons,Home
+Memphis Grizzlies,Dallas Mavericks,Home
 Houston Rockets,Cleveland Cavaliers,Home
 Washington Wizards,Charlotte Bobcats,Home
-Philadelphia 76ers,Boston Celtics,Visiting
+Philadelphia 76ers,Boston Celtics,Home
 Oklahoma City Thunder,Atlanta Hawks,Home
-Sacramento Kings,San Antonio Spurs,Visiting
-Golden State Warriors,Orlando Magic,Visiting
-Houston Rockets,New Jersey Nets,Home
-Los Angeles Lakers,Memphis Grizzlies,Home
+Sacramento Kings,San Antonio Spurs,Home
+Golden State Warriors,Orlando Magic,Home
+Houston Rockets,New Jersey Nets,Visiting
+Los Angeles Lakers,Memphis Grizzlies,Visiting
 Toronto Raptors,Los Angeles Clippers,Visiting
 Portland Trail Blazers,Denver Nuggets,Home
 Dallas Mavericks,Washington Wizards,Visiting
-Cleveland Cavaliers,Oklahoma City Thunder,Home
+Cleveland Cavaliers,Oklahoma City Thunder,Visiting
 New York Knicks,Boston Celtics,Home
 Detroit Pistons,Atlanta Hawks,Home
-Toronto Raptors,San Antonio Spurs,Visiting
+Toronto Raptors,San Antonio Spurs,Home
 Denver Nuggets,Phoenix Suns,Home
 Indiana Pacers,Philadelphia 76ers,Visiting
 Los Angeles Lakers,Orlando Magic,Home
 Sacramento Kings,New Orleans Hornets,Home
 Miami Heat,New Jersey Nets,Visiting
 Houston Rockets,Minnesota Timberwolves,Visiting
-Los Angeles Clippers,Milwaukee Bucks,Visiting
-Utah Jazz,Chicago Bulls,Visiting
+Los Angeles Clippers,Milwaukee Bucks,Home
+Utah Jazz,Chicago Bulls,Home
 Golden State Warriors,Charlotte Bobcats,Visiting
 Philadelphia 76ers,Washington Wizards,Visiting
 Toronto Raptors,Oklahoma City Thunder,Home
-Milwaukee Bucks,New York Knicks,Home
-Dallas Mavericks,New Jersey Nets,Visiting
+Milwaukee Bucks,New York Knicks,Visiting
+Dallas Mavericks,New Jersey Nets,Home
 Los Angeles Lakers,Miami Heat,Home
-Charlotte Bobcats,Memphis Grizzlies,Home
+Charlotte Bobcats,Memphis Grizzlies,Visiting
 Los Angeles Clippers,Indiana Pacers,Visiting
-Sacramento Kings,Houston Rockets,Visiting
+Sacramento Kings,Houston Rockets,Home
 Utah Jazz,Detroit Pistons,Visiting
-Cleveland Cavaliers,Denver Nuggets,Home
+Cleveland Cavaliers,Denver Nuggets,Visiting
 Chicago Bulls,Boston Celtics,Home
-Golden State Warriors,Atlanta Hawks,Visiting
+Golden State Warriors,Atlanta Hawks,Home
 Phoenix Suns,Portland Trail Blazers,Home
 San Antonio Spurs,Orlando Magic,Home
 Dallas Mavericks,Toronto Raptors,Visiting
 Milwaukee Bucks,Philadelphia 76ers,Home
 San Antonio Spurs,New Orleans Hornets,Home
-Utah Jazz,New Jersey Nets,Home
+Utah Jazz,New Jersey Nets,Visiting
 Cleveland Cavaliers,Minnesota Timberwolves,Visiting
 Golden State Warriors,Indiana Pacers,Home
 Washington Wizards,Detroit Pistons,Home
 Los Angeles Clippers,Chicago Bulls,Home
 Boston Celtics,Atlanta Hawks,Visiting
-Sacramento Kings,Portland Trail Blazers,Visiting
+Sacramento Kings,Portland Trail Blazers,Home
 Los Angeles Clippers,Oklahoma City Thunder,Visiting
 New Orleans Hornets,Memphis Grizzlies,Visiting
 New York Knicks,Los Angeles Lakers,Home
-Denver Nuggets,Houston Rockets,Visiting
+Denver Nuggets,Houston Rockets,Home
 Chicago Bulls,Charlotte Bobcats,Home
-Indiana Pacers,Washington Wizards,Home
+Indiana Pacers,Washington Wizards,Visiting
 New Jersey Nets,Toronto Raptors,Visiting
 Minnesota Timberwolves,Sacramento Kings,Home
 New York Knicks,Phoenix Suns,Home
 Milwaukee Bucks,Miami Heat,Visiting
-Orlando Magic,Golden State Warriors,Home
+Orlando Magic,Golden State Warriors,Visiting
 Denver Nuggets,Dallas Mavericks,Visiting
-Utah Jazz,Boston Celtics,Visiting
+Utah Jazz,Boston Celtics,Home
 Charlotte Bobcats,Atlanta Hawks,Home
 New Orleans Hornets,Toronto Raptors,Visiting
 Oklahoma City Thunder,San Antonio Spurs,Home
-Miami Heat,Memphis Grizzlies,Visiting
+Miami Heat,Memphis Grizzlies,Home
 Minnesota Timberwolves,Los Angeles Lakers,Home
-Orlando Magic,Utah Jazz,Home
-New York Knicks,Sacramento Kings,Home
-Washington Wizards,Philadelphia 76ers,Visiting
+Orlando Magic,Utah Jazz,Visiting
+New York Knicks,Sacramento Kings,Visiting
+Washington Wizards,Philadelphia 76ers,Home
 Indiana Pacers,Milwaukee Bucks,Home
 Houston Rockets,Los Angeles Clippers,Home
 Golden State Warriors,Denver Nuggets,Home
-Oklahoma City Thunder,Dallas Mavericks,Visiting
+Oklahoma City Thunder,Dallas Mavericks,Home
 New Jersey Nets,Chicago Bulls,Home
 Detroit Pistons,Charlotte Bobcats,Visiting
 Cleveland Cavaliers,Atlanta Hawks,Home
 Los Angeles Clippers,Portland Trail Blazers,Visiting
 Orlando Magic,Phoenix Suns,Home
-Toronto Raptors,New Jersey Nets,Home
+Toronto Raptors,New Jersey Nets,Visiting
 San Antonio Spurs,Minnesota Timberwolves,Visiting
 Atlanta Hawks,Miami Heat,Visiting
-Chicago Bulls,Memphis Grizzlies,Visiting
+Chicago Bulls,Memphis Grizzlies,Home
 Sacramento Kings,Los Angeles Lakers,Home
 Houston Rockets,Golden State Warriors,Visiting
 Indiana Pacers,Detroit Pistons,Home
 Philadelphia 76ers,Cleveland Cavaliers,Home
 New Orleans Hornets,Boston Celtics,Home
-Boston Celtics,Washington Wizards,Home
+Boston Celtics,Washington Wizards,Visiting
 Portland Trail Blazers,Utah Jazz,Home
 Charlotte Bobcats,Dallas Mavericks,Home
-Indiana Pacers,Toronto Raptors,Visiting
+Indiana Pacers,Toronto Raptors,Home
 Atlanta Hawks,San Antonio Spurs,Home
-Cleveland Cavaliers,Philadelphia 76ers,Home
+Cleveland Cavaliers,Philadelphia 76ers,Visiting
 Memphis Grizzlies,Oklahoma City Thunder,Visiting
-Charlotte Bobcats,New Orleans Hornets,Visiting
+Charlotte Bobcats,New Orleans Hornets,Home
 New York Knicks,New Jersey Nets,Visiting
 Phoenix Suns,Los Angeles Lakers,Home
-Milwaukee Bucks,Golden State Warriors,Visiting
+Milwaukee Bucks,Golden State Warriors,Home
 Minnesota Timberwolves,Denver Nuggets,Home
-Detroit Pistons,Washington Wizards,Visiting
+Detroit Pistons,Washington Wizards,Home
 Los Angeles Lakers,Sacramento Kings,Home
 Orlando Magic,Portland Trail Blazers,Visiting
 Milwaukee Bucks,Phoenix Suns,Home
 Utah Jazz,Minnesota Timberwolves,Visiting
 Atlanta Hawks,Houston Rockets,Home
 San Antonio Spurs,Dallas Mavericks,Visiting
-Toronto Raptors,Cleveland Cavaliers,Visiting
+Toronto Raptors,Cleveland Cavaliers,Home
 New York Knicks,Chicago Bulls,Home
 Golden State Warriors,Oklahoma City Thunder,Visiting
-Charlotte Bobcats,Miami Heat,Visiting
-Houston Rockets,Memphis Grizzlies,Visiting
+Charlotte Bobcats,Miami Heat,Home
+Houston Rockets,Memphis Grizzlies,Home
 Orlando Magic,Los Angeles Clippers,Visiting
 Portland Trail Blazers,Toronto Raptors,Visiting
-Detroit Pistons,New York Knicks,Visiting
-Milwaukee Bucks,Los Angeles Lakers,Visiting
+Detroit Pistons,New York Knicks,Home
+Milwaukee Bucks,Los Angeles Lakers,Home
 Boston Celtics,Indiana Pacers,Visiting
-Golden State Warriors,San Antonio Spurs,Visiting
-Denver Nuggets,Sacramento Kings,Home
+Golden State Warriors,San Antonio Spurs,Home
+Denver Nuggets,Sacramento Kings,Visiting
 Utah Jazz,Phoenix Suns,Home
 New Jersey Nets,Philadelphia 76ers,Visiting
-Memphis Grizzlies,New Orleans Hornets,Visiting
-Los Angeles Clippers,Minnesota Timberwolves,Home
-Oklahoma City Thunder,Miami Heat,Visiting
-Atlanta Hawks,Dallas Mavericks,Visiting
+Memphis Grizzlies,New Orleans Hornets,Home
+Los Angeles Clippers,Minnesota Timberwolves,Visiting
+Oklahoma City Thunder,Miami Heat,Home
+Atlanta Hawks,Dallas Mavericks,Home
 Washington Wizards,Chicago Bulls,Home
 Cleveland Cavaliers,Charlotte Bobcats,Visiting
 Los Angeles Lakers,Washington Wizards,Visiting
-Toronto Raptors,Utah Jazz,Visiting
+Toronto Raptors,Utah Jazz,Home
 Oklahoma City Thunder,Orlando Magic,Home
-Minnesota Timberwolves,New Jersey Nets,Visiting
-Charlotte Bobcats,Milwaukee Bucks,Visiting
+Minnesota Timberwolves,New Jersey Nets,Home
+Charlotte Bobcats,Milwaukee Bucks,Home
 Los Angeles Clippers,Memphis Grizzlies,Home
 Golden State Warriors,Houston Rockets,Home
 Philadelphia 76ers,Detroit Pistons,Visiting
 Indiana Pacers,Cleveland Cavaliers,Home
 Portland Trail Blazers,Boston Celtics,Home
 New York Knicks,Atlanta Hawks,Home
-San Antonio Spurs,Denver Nuggets,Home
-Phoenix Suns,Dallas Mavericks,Visiting
+San Antonio Spurs,Denver Nuggets,Visiting
+Phoenix Suns,Dallas Mavericks,Home
 Portland Trail Blazers,Washington Wizards,Visiting
 Miami Heat,Utah Jazz,Visiting
 Los Angeles Lakers,Philadelphia 76ers,Visiting
-Minnesota Timberwolves,Orlando Magic,Visiting
-Phoenix Suns,New Orleans Hornets,Visiting
+Minnesota Timberwolves,Orlando Magic,Home
+Phoenix Suns,New Orleans Hornets,Home
 Chicago Bulls,Milwaukee Bucks,Home
-Los Angeles Clippers,Houston Rockets,Visiting
-New York Knicks,Cleveland Cavaliers,Visiting
-Oklahoma City Thunder,Charlotte Bobcats,Visiting
-Indiana Pacers,Boston Celtics,Visiting
-Memphis Grizzlies,Atlanta Hawks,Visiting
+Los Angeles Clippers,Houston Rockets,Home
+New York Knicks,Cleveland Cavaliers,Home
+Oklahoma City Thunder,Charlotte Bobcats,Home
+Indiana Pacers,Boston Celtics,Home
+Memphis Grizzlies,Atlanta Hawks,Home
 Detroit Pistons,San Antonio Spurs,Visiting
 Utah Jazz,Sacramento Kings,Visiting
-Portland Trail Blazers,New York Knicks,Home
-Washington Wizards,New Jersey Nets,Home
+Portland Trail Blazers,New York Knicks,Visiting
+Washington Wizards,New Jersey Nets,Visiting
 Los Angeles Lakers,Indiana Pacers,Home
-Toronto Raptors,Denver Nuggets,Visiting
-Los Angeles Clippers,Dallas Mavericks,Visiting
-Philadelphia 76ers,Chicago Bulls,Home
+Toronto Raptors,Denver Nuggets,Home
+Los Angeles Clippers,Dallas Mavericks,Home
+Philadelphia 76ers,Chicago Bulls,Visiting
 Miami Heat,Golden State Warriors,Visiting
-Minnesota Timberwolves,Charlotte Bobcats,Visiting
-Orlando Magic,Boston Celtics,Visiting
+Minnesota Timberwolves,Charlotte Bobcats,Home
+Orlando Magic,Boston Celtics,Home
 New Jersey Nets,Phoenix Suns,Visiting
-Chicago Bulls,Philadelphia 76ers,Home
-Toronto Raptors,Los Angeles Lakers,Visiting
+Chicago Bulls,Philadelphia 76ers,Visiting
+Toronto Raptors,Los Angeles Lakers,Home
 Portland Trail Blazers,Detroit Pistons,Visiting
-Houston Rockets,Denver Nuggets,Visiting
-Atlanta Hawks,Washington Wizards,Home
-New Jersey Nets,Utah Jazz,Home
-Dallas Mavericks,Sacramento Kings,Home
-Indiana Pacers,Orlando Magic,Visiting
+Houston Rockets,Denver Nuggets,Home
+Atlanta Hawks,Washington Wizards,Visiting
+New Jersey Nets,Utah Jazz,Visiting
+Dallas Mavericks,Sacramento Kings,Visiting
+Indiana Pacers,Orlando Magic,Home
 Golden State Warriors,New York Knicks,Home
-Denver Nuggets,Minnesota Timberwolves,Home
+Denver Nuggets,Minnesota Timberwolves,Visiting
 Cleveland Cavaliers,Milwaukee Bucks,Visiting
 Oklahoma City Thunder,Memphis Grizzlies,Visiting
 Miami Heat,Los Angeles Clippers,Home
-San Antonio Spurs,Houston Rockets,Visiting
+San Antonio Spurs,Houston Rockets,Home
 Boston Celtics,Charlotte Bobcats,Visiting
-Sacramento Kings,Utah Jazz,Visiting
+Sacramento Kings,Utah Jazz,Home
 Atlanta Hawks,Toronto Raptors,Home
-Memphis Grizzlies,San Antonio Spurs,Visiting
-New Orleans Hornets,Portland Trail Blazers,Visiting
-Miami Heat,Phoenix Suns,Home
+Memphis Grizzlies,San Antonio Spurs,Home
+New Orleans Hornets,Portland Trail Blazers,Home
+Miami Heat,Phoenix Suns,Visiting
 Minnesota Timberwolves,Oklahoma City Thunder,Visiting
 Dallas Mavericks,Los Angeles Lakers,Home
 Charlotte Bobcats,Indiana Pacers,Visiting
-Milwaukee Bucks,Detroit Pistons,Visiting
-Golden State Warriors,Cleveland Cavaliers,Visiting
-Philadelphia 76ers,Boston Celtics,Visiting
-Orlando Magic,Washington Wizards,Home
+Milwaukee Bucks,Detroit Pistons,Home
+Golden State Warriors,Cleveland Cavaliers,Home
+Philadelphia 76ers,Boston Celtics,Home
+Orlando Magic,Washington Wizards,Visiting
 New Orleans Hornets,Denver Nuggets,Visiting
 Memphis Grizzlies,Utah Jazz,Home
 Charlotte Bobcats,Toronto Raptors,Home
 Chicago Bulls,San Antonio Spurs,Home
 New Jersey Nets,Sacramento Kings,Visiting
-Miami Heat,Portland Trail Blazers,Visiting
+Miami Heat,Portland Trail Blazers,Home
 Orlando Magic,Philadelphia 76ers,Visiting
 Phoenix Suns,Minnesota Timberwolves,Visiting
 Denver Nuggets,Los Angeles Clippers,Visiting
 Indiana Pacers,Houston Rockets,Visiting
-New York Knicks,Detroit Pistons,Visiting
-Oklahoma City Thunder,Cleveland Cavaliers,Visiting
+New York Knicks,Detroit Pistons,Home
+Oklahoma City Thunder,Cleveland Cavaliers,Home
 Golden State Warriors,Boston Celtics,Home
-Milwaukee Bucks,Atlanta Hawks,Visiting
+Milwaukee Bucks,Atlanta Hawks,Home
 Golden State Warriors,Washington Wizards,Home
 Phoenix Suns,Oklahoma City Thunder,Visiting
 Cleveland Cavaliers,New York Knicks,Visiting
-New Jersey Nets,Los Angeles Lakers,Visiting
+New Jersey Nets,Los Angeles Lakers,Home
 Indiana Pacers,Dallas Mavericks,Home
 Chicago Bulls,Utah Jazz,Visiting
 Sacramento Kings,Portland Trail Blazers,Home
 Milwaukee Bucks,Orlando Magic,Home
-Houston Rockets,Miami Heat,Home
+Houston Rockets,Miami Heat,Visiting
 San Antonio Spurs,Memphis Grizzlies,Visiting
 New Orleans Hornets,Los Angeles Clippers,Visiting
 Philadelphia 76ers,Charlotte Bobcats,Home
 Boston Celtics,Toronto Raptors,Visiting
 Golden State Warriors,Philadelphia 76ers,Home
 Sacramento Kings,Los Angeles Lakers,Home
-Minnesota Timberwolves,Detroit Pistons,Home
+Minnesota Timberwolves,Detroit Pistons,Visiting
 Chicago Bulls,Denver Nuggets,Home
-Portland Trail Blazers,Phoenix Suns,Visiting
-Houston Rockets,Orlando Magic,Home
+Portland Trail Blazers,Phoenix Suns,Home
+Houston Rockets,Orlando Magic,Visiting
 Washington Wizards,New York Knicks,Home
-Oklahoma City Thunder,New Orleans Hornets,Visiting
-Los Angeles Clippers,New Jersey Nets,Visiting
+Oklahoma City Thunder,New Orleans Hornets,Home
+Los Angeles Clippers,New Jersey Nets,Home
 Indiana Pacers,Miami Heat,Home
-Utah Jazz,Memphis Grizzlies,Home
-Atlanta Hawks,Cleveland Cavaliers,Visiting
+Utah Jazz,Memphis Grizzlies,Visiting
+Atlanta Hawks,Cleveland Cavaliers,Home
 Milwaukee Bucks,Charlotte Bobcats,Visiting
-Houston Rockets,Washington Wizards,Home
+Houston Rockets,Washington Wizards,Visiting
 New Jersey Nets,Toronto Raptors,Visiting
-Utah Jazz,San Antonio Spurs,Visiting
-Portland Trail Blazers,Sacramento Kings,Home
+Utah Jazz,San Antonio Spurs,Home
+Portland Trail Blazers,Sacramento Kings,Visiting
 Los Angeles Clippers,Philadelphia 76ers,Home
-New Orleans Hornets,Oklahoma City Thunder,Home
+New Orleans Hornets,Oklahoma City Thunder,Visiting
 Boston Celtics,Minnesota Timberwolves,Visiting
-New York Knicks,Milwaukee Bucks,Visiting
-Denver Nuggets,Los Angeles Lakers,Visiting
-Orlando Magic,Indiana Pacers,Home
+New York Knicks,Milwaukee Bucks,Home
+Denver Nuggets,Los Angeles Lakers,Home
+Orlando Magic,Indiana Pacers,Visiting
 Chicago Bulls,Golden State Warriors,Visiting
 Memphis Grizzlies,Dallas Mavericks,Home
 Charlotte Bobcats,Atlanta Hawks,Home
-Los Angeles Lakers,Phoenix Suns,Home
+Los Angeles Lakers,Phoenix Suns,Visiting
 Detroit Pistons,Boston Celtics,Home
-Milwaukee Bucks,Utah Jazz,Visiting
+Milwaukee Bucks,Utah Jazz,Home
 Denver Nuggets,San Antonio Spurs,Visiting
-Chicago Bulls,Portland Trail Blazers,Visiting
-Los Angeles Clippers,Oklahoma City Thunder,Home
-Sacramento Kings,New Orleans Hornets,Home
-Philadelphia 76ers,Minnesota Timberwolves,Visiting
-Toronto Raptors,Miami Heat,Home
+Chicago Bulls,Portland Trail Blazers,Home
+Los Angeles Clippers,Oklahoma City Thunder,Visiting
+Sacramento Kings,New Orleans Hornets,Visiting
+Philadelphia 76ers,Minnesota Timberwolves,Home
+Toronto Raptors,Miami Heat,Visiting
 Dallas Mavericks,Houston Rockets,Visiting
 Cleveland Cavaliers,Detroit Pistons,Home
 Washington Wizards,Atlanta Hawks,Home
 Miami Heat,Washington Wizards,Visiting
-Toronto Raptors,Orlando Magic,Visiting
-Cleveland Cavaliers,New Jersey Nets,Home
-Sacramento Kings,Memphis Grizzlies,Visiting
+Toronto Raptors,Orlando Magic,Home
+Cleveland Cavaliers,New Jersey Nets,Visiting
+Sacramento Kings,Memphis Grizzlies,Home
 Chicago Bulls,Los Angeles Lakers,Home
-Atlanta Hawks,Indiana Pacers,Visiting
+Atlanta Hawks,Indiana Pacers,Home
 Portland Trail Blazers,Golden State Warriors,Home
 Milwaukee Bucks,Denver Nuggets,Home
-Dallas Mavericks,Charlotte Bobcats,Home
+Dallas Mavericks,Charlotte Bobcats,Visiting
 New York Knicks,Boston Celtics,Home
-Phoenix Suns,Utah Jazz,Visiting
-Houston Rockets,Oklahoma City Thunder,Home
+Phoenix Suns,Utah Jazz,Home
+Houston Rockets,Oklahoma City Thunder,Visiting
 San Antonio Spurs,Los Angeles Clippers,Visiting
-Miami Heat,Toronto Raptors,Visiting
+Miami Heat,Toronto Raptors,Home
 San Antonio Spurs,Sacramento Kings,Visiting
-Detroit Pistons,Phoenix Suns,Visiting
+Detroit Pistons,Phoenix Suns,Home
 Dallas Mavericks,New York Knicks,Visiting
 Minnesota Timberwolves,Denver Nuggets,Home
 Orlando Magic,Charlotte Bobcats,Visiting
-Oklahoma City Thunder,Philadelphia 76ers,Visiting
+Oklahoma City Thunder,Philadelphia 76ers,Home
 Portland Trail Blazers,Minnesota Timberwolves,Visiting
-Boston Celtics,Milwaukee Bucks,Home
+Boston Celtics,Milwaukee Bucks,Visiting
 Golden State Warriors,Los Angeles Clippers,Visiting
 New Orleans Hornets,Houston Rockets,Home
-Utah Jazz,Cleveland Cavaliers,Visiting
-Indiana Pacers,Chicago Bulls,Visiting
+Utah Jazz,Cleveland Cavaliers,Home
+Indiana Pacers,Chicago Bulls,Home
 New Jersey Nets,Atlanta Hawks,Visiting
 Houston Rockets,San Antonio Spurs,Home
 Phoenix Suns,Sacramento Kings,Visiting
@@ -1188,128 +1188,128 @@ Oklahoma City Thunder,New York Knicks,Home
 Portland Trail Blazers,New Orleans Hornets,Home
 Atlanta Hawks,New Jersey Nets,Home
 Washington Wizards,Miami Heat,Home
-Milwaukee Bucks,Memphis Grizzlies,Home
-Detroit Pistons,Los Angeles Lakers,Home
+Milwaukee Bucks,Memphis Grizzlies,Visiting
+Detroit Pistons,Los Angeles Lakers,Visiting
 Philadelphia 76ers,Indiana Pacers,Visiting
 Orlando Magic,Dallas Mavericks,Visiting
-Utah Jazz,Charlotte Bobcats,Visiting
+Utah Jazz,Charlotte Bobcats,Home
 Denver Nuggets,Boston Celtics,Visiting
 Detroit Pistons,Golden State Warriors,Visiting
-Denver Nuggets,Cleveland Cavaliers,Visiting
+Denver Nuggets,Cleveland Cavaliers,Home
 Dallas Mavericks,Chicago Bulls,Home
 Utah Jazz,Washington Wizards,Home
-Philadelphia 76ers,Toronto Raptors,Home
+Philadelphia 76ers,Toronto Raptors,Visiting
 Houston Rockets,Phoenix Suns,Visiting
-Orlando Magic,Oklahoma City Thunder,Home
+Orlando Magic,Oklahoma City Thunder,Visiting
 Los Angeles Lakers,New Orleans Hornets,Visiting
 Indiana Pacers,New Jersey Nets,Visiting
 San Antonio Spurs,Milwaukee Bucks,Home
-Portland Trail Blazers,Miami Heat,Home
+Portland Trail Blazers,Miami Heat,Visiting
 New York Knicks,Memphis Grizzlies,Visiting
-Sacramento Kings,Los Angeles Clippers,Home
+Sacramento Kings,Los Angeles Clippers,Visiting
 Atlanta Hawks,Boston Celtics,Home
 New York Knicks,San Antonio Spurs,Home
-Detroit Pistons,Sacramento Kings,Home
+Detroit Pistons,Sacramento Kings,Visiting
 Utah Jazz,Philadelphia 76ers,Visiting
 Minnesota Timberwolves,Golden State Warriors,Home
-Los Angeles Lakers,Dallas Mavericks,Home
+Los Angeles Lakers,Dallas Mavericks,Visiting
 Milwaukee Bucks,Cleveland Cavaliers,Home
 Atlanta Hawks,Chicago Bulls,Visiting
 Denver Nuggets,Charlotte Bobcats,Visiting
 Memphis Grizzlies,Phoenix Suns,Home
-Portland Trail Blazers,Orlando Magic,Home
+Portland Trail Blazers,Orlando Magic,Visiting
 New Jersey Nets,Miami Heat,Home
-Oklahoma City Thunder,Indiana Pacers,Visiting
+Oklahoma City Thunder,Indiana Pacers,Home
 Toronto Raptors,Boston Celtics,Home
-Golden State Warriors,Sacramento Kings,Visiting
+Golden State Warriors,Sacramento Kings,Home
 Atlanta Hawks,Oklahoma City Thunder,Visiting
-Utah Jazz,New York Knicks,Visiting
-Houston Rockets,Los Angeles Lakers,Visiting
-Dallas Mavericks,Los Angeles Clippers,Visiting
+Utah Jazz,New York Knicks,Home
+Houston Rockets,Los Angeles Lakers,Home
+Dallas Mavericks,Los Angeles Clippers,Home
 Boston Celtics,Detroit Pistons,Visiting
-Memphis Grizzlies,Denver Nuggets,Visiting
+Memphis Grizzlies,Denver Nuggets,Home
 Toronto Raptors,Charlotte Bobcats,Visiting
 Minnesota Timberwolves,Portland Trail Blazers,Home
-Washington Wizards,Orlando Magic,Visiting
-Miami Heat,New Orleans Hornets,Visiting
-Phoenix Suns,Milwaukee Bucks,Home
+Washington Wizards,Orlando Magic,Home
+Miami Heat,New Orleans Hornets,Home
+Phoenix Suns,Milwaukee Bucks,Visiting
 New Jersey Nets,Indiana Pacers,Home
-Cleveland Cavaliers,Chicago Bulls,Home
+Cleveland Cavaliers,Chicago Bulls,Visiting
 New York Knicks,Washington Wizards,Visiting
-Oklahoma City Thunder,Utah Jazz,Visiting
+Oklahoma City Thunder,Utah Jazz,Home
 Miami Heat,San Antonio Spurs,Visiting
 Minnesota Timberwolves,Sacramento Kings,Home
-Detroit Pistons,New Jersey Nets,Visiting
+Detroit Pistons,New Jersey Nets,Home
 Houston Rockets,Los Angeles Clippers,Visiting
 Memphis Grizzlies,Golden State Warriors,Visiting
 Dallas Mavericks,Denver Nuggets,Home
 Indiana Pacers,Cleveland Cavaliers,Home
-Phoenix Suns,Chicago Bulls,Visiting
+Phoenix Suns,Chicago Bulls,Home
 New Orleans Hornets,Charlotte Bobcats,Home
-Milwaukee Bucks,Boston Celtics,Visiting
-Toronto Raptors,Atlanta Hawks,Visiting
-Houston Rockets,Portland Trail Blazers,Visiting
+Milwaukee Bucks,Boston Celtics,Home
+Toronto Raptors,Atlanta Hawks,Home
+Houston Rockets,Portland Trail Blazers,Home
 Philadelphia 76ers,Orlando Magic,Home
-Portland Trail Blazers,Utah Jazz,Visiting
-Detroit Pistons,Toronto Raptors,Home
-Memphis Grizzlies,Sacramento Kings,Visiting
+Portland Trail Blazers,Utah Jazz,Home
+Detroit Pistons,Toronto Raptors,Visiting
+Memphis Grizzlies,Sacramento Kings,Home
 Boston Celtics,Oklahoma City Thunder,Visiting
-Charlotte Bobcats,New York Knicks,Visiting
+Charlotte Bobcats,New York Knicks,Home
 Atlanta Hawks,New Orleans Hornets,Visiting
 San Antonio Spurs,Minnesota Timberwolves,Visiting
 Washington Wizards,Milwaukee Bucks,Home
-Philadelphia 76ers,Miami Heat,Visiting
-Los Angeles Clippers,Los Angeles Lakers,Visiting
+Philadelphia 76ers,Miami Heat,Home
+Los Angeles Clippers,Los Angeles Lakers,Home
 Phoenix Suns,Indiana Pacers,Visiting
 Denver Nuggets,Golden State Warriors,Home
-Chicago Bulls,Cleveland Cavaliers,Visiting
+Chicago Bulls,Cleveland Cavaliers,Home
 Dallas Mavericks,San Antonio Spurs,Visiting
-Phoenix Suns,New Jersey Nets,Home
-Boston Celtics,Houston Rockets,Home
-Sacramento Kings,Philadelphia 76ers,Visiting
+Phoenix Suns,New Jersey Nets,Visiting
+Boston Celtics,Houston Rockets,Visiting
+Sacramento Kings,Philadelphia 76ers,Home
 Chicago Bulls,Orlando Magic,Home
 Golden State Warriors,Memphis Grizzlies,Home
 Utah Jazz,Los Angeles Clippers,Visiting
-Cleveland Cavaliers,Dallas Mavericks,Home
-Detroit Pistons,Charlotte Bobcats,Home
+Cleveland Cavaliers,Dallas Mavericks,Visiting
+Detroit Pistons,Charlotte Bobcats,Visiting
 Minnesota Timberwolves,Oklahoma City Thunder,Home
 Milwaukee Bucks,New York Knicks,Visiting
-Los Angeles Clippers,Utah Jazz,Visiting
-Portland Trail Blazers,Phoenix Suns,Visiting
+Los Angeles Clippers,Utah Jazz,Home
+Portland Trail Blazers,Phoenix Suns,Home
 Sacramento Kings,Orlando Magic,Home
-Cleveland Cavaliers,New Orleans Hornets,Visiting
-Golden State Warriors,New Jersey Nets,Home
+Cleveland Cavaliers,New Orleans Hornets,Home
+Golden State Warriors,New Jersey Nets,Visiting
 Dallas Mavericks,Minnesota Timberwolves,Visiting
 Toronto Raptors,Milwaukee Bucks,Visiting
 Boston Celtics,Indiana Pacers,Home
 Oklahoma City Thunder,Houston Rockets,Home
 Washington Wizards,Detroit Pistons,Home
-Los Angeles Lakers,Denver Nuggets,Home
+Los Angeles Lakers,Denver Nuggets,Visiting
 Memphis Grizzlies,Chicago Bulls,Home
-Miami Heat,Charlotte Bobcats,Visiting
+Miami Heat,Charlotte Bobcats,Home
 Philadelphia 76ers,Atlanta Hawks,Home
 Golden State Warriors,Toronto Raptors,Home
-San Antonio Spurs,Portland Trail Blazers,Visiting
-New York Knicks,Philadelphia 76ers,Visiting
-Sacramento Kings,Miami Heat,Visiting
+San Antonio Spurs,Portland Trail Blazers,Home
+New York Knicks,Philadelphia 76ers,Home
+Sacramento Kings,Miami Heat,Home
 Orlando Magic,Memphis Grizzlies,Home
 Denver Nuggets,Los Angeles Clippers,Visiting
 Chicago Bulls,Boston Celtics,Home
-New Orleans Hornets,Phoenix Suns,Home
+New Orleans Hornets,Phoenix Suns,Visiting
 Houston Rockets,Dallas Mavericks,Visiting
 Charlotte Bobcats,Cleveland Cavaliers,Home
 New Jersey Nets,Washington Wizards,Visiting
 Denver Nuggets,Utah Jazz,Home
-Phoenix Suns,San Antonio Spurs,Home
+Phoenix Suns,San Antonio Spurs,Visiting
 Toronto Raptors,Philadelphia 76ers,Visiting
 Atlanta Hawks,Orlando Magic,Visiting
 Milwaukee Bucks,Oklahoma City Thunder,Visiting
 Miami Heat,New York Knicks,Home
 Sacramento Kings,Minnesota Timberwolves,Home
-Los Angeles Lakers,Los Angeles Clippers,Home
+Los Angeles Lakers,Los Angeles Clippers,Visiting
 Memphis Grizzlies,Houston Rockets,Home
 New Orleans Hornets,Golden State Warriors,Visiting
-Indiana Pacers,Detroit Pistons,Visiting
+Indiana Pacers,Detroit Pistons,Home
 Portland Trail Blazers,Los Angeles Lakers,Home
-Milwaukee Bucks,Chicago Bulls,Visiting
+Milwaukee Bucks,Chicago Bulls,Home
 Cleveland Cavaliers,Boston Celtics,Home
