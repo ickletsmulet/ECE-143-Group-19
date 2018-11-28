@@ -17,6 +17,8 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
     his_tra = []
     his_val = []
     his_epoch = []
+    
+    
     for e in range(epochs):
         loss_perepoch = 0
 
@@ -79,7 +81,8 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
                 win_rate = sum(PER_C)
                 loss_val += (y-win_rate)**2
             print('validation_loss:')
-            loss_val /=4
+           
+            loss_val /=1
             if e ==0:
                 best_val_loss = loss_val[0].data
 
@@ -87,8 +90,8 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
 
                 best_val_loss = loss_val[0]
             else:
-                
-                break
+                pass
+                #break
             if e%2 == 0:
                 his_val.append(loss_val[0].data)
                 his_epoch.append(e)
