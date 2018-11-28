@@ -12,9 +12,9 @@ Match: BOS2018 @ CLE2018 | Win Prob: tensor(0.5177) vs tensor(0.4823) | Odds: -3
 Match: HOU2018 @ GSW2018 | Win Prob: tensor(0.4352) vs tensor(0.5648) | Odds: -357 to 293 | Recommendation: Visiting
 Match: BOS2018 @ CLE2018 | Win Prob: tensor(0.5177) vs tensor(0.4823) | Odds: -286 to 246 | Recommendation: Visiting
 Match: GSW2018 @ HOU2018 | Win Prob: tensor(0.5648) vs tensor(0.4352) | Odds: -123 to 108 | Recommendation: Home
-Match: CLE2018 @ BOS2018 | Win Prob: tensor(0.4823) vs tensor(0.5177) | Odds: -108 to -106 | Recommendation: Home
+Match: CLE2018 @ BOS2018 | Win Prob: tensor(0.4823) vs tensor(0.5177) | Odds: -108 to -106 | Recommendation: Visiting
 Match: GSW2018 @ HOU2018 | Win Prob: tensor(0.5648) vs tensor(0.4352) | Odds: -127 to 112 | Recommendation: Home
-Match: CLE2018 @ BOS2018 | Win Prob: tensor(0.4823) vs tensor(0.5177) | Odds: -101 to -112 | Recommendation: Home
+Match: CLE2018 @ BOS2018 | Win Prob: tensor(0.4823) vs tensor(0.5177) | Odds: -101 to -112 | Recommendation: Visiting
 Match: PHI2018 @ BOS2018 | Win Prob: tensor(0.4726) vs tensor(0.5274) | Odds: -120 to 106 | Recommendation: Visiting
 Match: NOP2018 @ GSW2018 | Win Prob: tensor(0.5137) vs tensor(0.4863) | Odds: -909 to 642 | Recommendation: Visiting
 Match: UTA2018 @ HOU2018 | Win Prob: tensor(0.5506) vs tensor(0.4494) | Odds: -909 to 660 | Recommendation: Visiting
@@ -58,7 +58,7 @@ Match: HOU2018 @ MIN2018 | Win Prob: tensor(0.4319) vs tensor(0.5681) | Odds: 20
 Match: POR2018 @ NOP2018 | Win Prob: tensor(0.4857) vs tensor(0.5143) | Odds: -270 to 231 | Recommendation: Visiting
 Match: PHI2018 @ MIA2018 | Win Prob: tensor(0.4553) vs tensor(0.5447) | Odds: 150 to -169 | Recommendation: Home
 Match: BOS2018 @ MIL2018 | Win Prob: tensor(0.4628) vs tensor(0.5372) | Odds: -213 to 185 | Recommendation: Visiting
-Match: TOR2018 @ WAS2018 | Win Prob: tensor(0.4044) vs tensor(0.5956) | Odds: -111 to -102 | Recommendation: Home
+Match: TOR2018 @ WAS2018 | Win Prob: tensor(0.4044) vs tensor(0.5956) | Odds: -111 to -102 | Recommendation: Visiting
 Match: CLE2018 @ IND2018 | Win Prob: tensor(0.4585) vs tensor(0.5415) | Odds: -120 to 106 | Recommendation: Visiting
 Match: GSW2018 @ SAS2018 | Win Prob: tensor(0.4894) vs tensor(0.5106) | Odds: 143 to -161 | Recommendation: Home
 Match: POR2018 @ NOP2018 | Win Prob: tensor(0.4857) vs tensor(0.5143) | Odds: -161 to 143 | Recommendation: Visiting
@@ -156,16 +156,16 @@ Match: MIL2018 @ DEN2018 | Win Prob: tensor(0.5407) vs tensor(0.4593) | Odds: -2
 Match: UTA2018 @ MIN2018 | Win Prob: tensor(0.4822) vs tensor(0.5178) | Odds: 125 to -143 | Recommendation: Home
 Match: ORL2018 @ ATL2018 | Win Prob: tensor(0.5070) vs tensor(0.4930) | Odds: -120 to 104 | Recommendation: Visiting
 Match: DAL2018 @ CLE2018 | Win Prob: tensor(0.5878) vs tensor(0.4122) | Odds: -667 to 522 | Recommendation: Visiting
-Match: OKC2018 @ NOP2018 | Win Prob: tensor(0.4819) vs tensor(0.5181) | Odds: -102 to -112 | Recommendation: Home
+Match: OKC2018 @ NOP2018 | Win Prob: tensor(0.4819) vs tensor(0.5181) | Odds: -102 to -112 | Recommendation: Visiting
 Match: WAS2018 @ CHI2018 | Win Prob: tensor(0.3580) vs tensor(0.6420) | Odds: 279 to -333 | Recommendation: Home
 Match: IND2018 @ LAC2018 | Win Prob: tensor(0.4772) vs tensor(0.5228) | Odds: -149 to 129 | Recommendation: Visiting
-Match: HOU2018 @ SAS2018 | Win Prob: tensor(0.4248) vs tensor(0.5752) | Odds: -104 to -110 | Recommendation: Home
+Match: HOU2018 @ SAS2018 | Win Prob: tensor(0.4248) vs tensor(0.5752) | Odds: -104 to -110 | Recommendation: Visiting
 Match: PHI2018 @ CHO2018 | Win Prob: tensor(0.4326) vs tensor(0.5674) | Odds: 127 to -145 | Recommendation: Home
 Match: GSW2018 @ SAC2018 | Win Prob: tensor(0.2810) vs tensor(0.7190) | Odds: 345 to -435 | Recommendation: Home
 Match: TOR2018 @ BOS2018 | Win Prob: tensor(0.4343) vs tensor(0.5657) | Odds: 169 to -196 | Recommendation: Home
 Match: DET2018 @ NYK2018 | Win Prob: tensor(0.4129) vs tensor(0.5871) | Odds: 169 to -196 | Recommendation: Home
 Match: CHO2018 @ WAS2018 | Win Prob: tensor(0.5097) vs tensor(0.4903) | Odds: -256 to 219 | Recommendation: Visiting
-Match: MIL2018 @ LAL2018 | Win Prob: tensor(0.4715) vs tensor(0.5285) | Odds: -104 to -110 | Recommendation: Home
+Match: MIL2018 @ LAL2018 | Win Prob: tensor(0.4715) vs tensor(0.5285) | Odds: -104 to -110 | Recommendation: Visiting
 Match: LAC2018 @ POR2018 | Win Prob: tensor(0.5635) vs tensor(0.4365) | Odds: -256 to 216 | Recommendation: Visiting
 Match: MEM2018 @ UTA2018 | Win Prob: tensor(0.6817) vs tensor(0.3183) | Odds: -2500 to 1272 | Recommendation: Visiting
 Match: MIN2018 @ DAL2018 | Win Prob: tensor(0.4167) vs tensor(0.5833) | Odds: 213 to -250 | Recommendation: Home
@@ -288,7 +288,7 @@ Match: ORL2018 @ SAS2018 | Win Prob: tensor(0.6320) vs tensor(0.3680) | Odds: -6
 Match: LAC2018 @ CHI2018 | Win Prob: tensor(0.3729) vs tensor(0.6271) | Odds: 277 to -333 | Recommendation: Home
 Match: CHO2018 @ NOP2018 | Win Prob: tensor(0.5430) vs tensor(0.4570) | Odds: -200 to 172 | Recommendation: Visiting
 Match: OKC2018 @ ATL2018 | Win Prob: tensor(0.3605) vs tensor(0.6395) | Odds: 216 to -256 | Recommendation: Home
-Match: DAL2018 @ NYK2018 | Win Prob: tensor(0.4716) vs tensor(0.5284) | Odds: -109 to -106 | Recommendation: Home
+Match: DAL2018 @ NYK2018 | Win Prob: tensor(0.4716) vs tensor(0.5284) | Odds: -109 to -106 | Recommendation: Visiting
 Match: IND2018 @ PHI2018 | Win Prob: tensor(0.5511) vs tensor(0.4489) | Odds: -263 to 223 | Recommendation: Visiting
 Match: MIN2018 @ WAS2018 | Win Prob: tensor(0.4565) vs tensor(0.5435) | Odds: -154 to 135 | Recommendation: Visiting
 Match: MIA2018 @ POR2018 | Win Prob: tensor(0.5344) vs tensor(0.4656) | Odds: -244 to 206 | Recommendation: Visiting
@@ -308,8 +308,8 @@ Match: MEM2018 @ DAL2018 | Win Prob: tensor(0.5877) vs tensor(0.4123) | Odds: -4
 Match: SAS2018 @ OKC2018 | Win Prob: tensor(0.5151) vs tensor(0.4849) | Odds: -175 to 152 | Recommendation: Visiting
 Match: WAS2018 @ MIA2018 | Win Prob: tensor(0.5132) vs tensor(0.4868) | Odds: -169 to 148 | Recommendation: Visiting
 Match: PHO2018 @ CHO2018 | Win Prob: tensor(0.6229) vs tensor(0.3771) | Odds: -1111 to 744 | Recommendation: Visiting
-Match: CLE2018 @ LAC2018 | Win Prob: tensor(0.4359) vs tensor(0.5641) | Odds: -102 to -114 | Recommendation: Home
-Match: GSW2018 @ POR2018 | Win Prob: tensor(0.5007) vs tensor(0.4993) | Odds: -111 to -104 | Recommendation: Home
+Match: CLE2018 @ LAC2018 | Win Prob: tensor(0.4359) vs tensor(0.5641) | Odds: -102 to -114 | Recommendation: Visiting
+Match: GSW2018 @ POR2018 | Win Prob: tensor(0.5007) vs tensor(0.4993) | Odds: -111 to -104 | Recommendation: Visiting
 Match: ORL2018 @ SAC2018 | Win Prob: tensor(0.4120) vs tensor(0.5880) | Odds: -145 to 125 | Recommendation: Visiting
 Match: LAL2018 @ DEN2018 | Win Prob: tensor(0.5689) vs tensor(0.4311) | Odds: -278 to 238 | Recommendation: Visiting
 Match: UTA2018 @ MEM2018 | Win Prob: tensor(0.3183) vs tensor(0.6817) | Odds: 449 to -588 | Recommendation: Home
@@ -321,7 +321,7 @@ Match: ATL2018 @ IND2018 | Win Prob: tensor(0.5973) vs tensor(0.4027) | Odds: -4
 Match: SAS2018 @ GSW2018 | Win Prob: tensor(0.5106) vs tensor(0.4894) | Odds: -714 to 525 | Recommendation: Visiting
 Match: BOS2018 @ MIN2018 | Win Prob: tensor(0.5130) vs tensor(0.4870) | Odds: 118 to -135 | Recommendation: Home
 Match: PHO2018 @ OKC2018 | Win Prob: tensor(0.6785) vs tensor(0.3215) | Odds: -667 to 501 | Recommendation: Visiting
-Match: PHI2018 @ MIA2018 | Win Prob: tensor(0.4553) vs tensor(0.5447) | Odds: -111 to -103 | Recommendation: Home
+Match: PHI2018 @ MIA2018 | Win Prob: tensor(0.4553) vs tensor(0.5447) | Odds: -111 to -103 | Recommendation: Visiting
 Match: CLE2018 @ DEN2018 | Win Prob: tensor(0.4858) vs tensor(0.5142) | Odds: -154 to 135 | Recommendation: Visiting
 Match: ORL2018 @ LAL2018 | Win Prob: tensor(0.5633) vs tensor(0.4367) | Odds: -263 to 227 | Recommendation: Visiting
 Match: NOP2018 @ SAC2018 | Win Prob: tensor(0.2922) vs tensor(0.7078) | Odds: 200 to -233 | Recommendation: Visiting
@@ -384,7 +384,7 @@ Match: WAS2018 @ MIL2018 | Win Prob: tensor(0.4933) vs tensor(0.5067) | Odds: -1
 Match: PHI2018 @ MIA2018 | Win Prob: tensor(0.4553) vs tensor(0.5447) | Odds: -116 to 100 | Recommendation: Visiting
 Match: CHI2018 @ CHO2018 | Win Prob: tensor(0.6330) vs tensor(0.3670) | Odds: -714 to 534 | Recommendation: Visiting
 Match: MIN2018 @ SAC2018 | Win Prob: tensor(0.2838) vs tensor(0.7162) | Odds: 175 to -204 | Recommendation: Visiting
-Match: HOU2018 @ UTA2018 | Win Prob: tensor(0.4494) vs tensor(0.5506) | Odds: -101 to -115 | Recommendation: Home
+Match: HOU2018 @ UTA2018 | Win Prob: tensor(0.4494) vs tensor(0.5506) | Odds: -101 to -115 | Recommendation: Visiting
 Match: IND2018 @ DAL2018 | Win Prob: tensor(0.4530) vs tensor(0.5470) | Odds: 135 to -156 | Recommendation: Home
 Match: PHO2018 @ NOP2018 | Win Prob: tensor(0.6625) vs tensor(0.3375) | Odds: -312 to 258 | Recommendation: Visiting
 Match: ORL2018 @ OKC2018 | Win Prob: tensor(0.6459) vs tensor(0.3541) | Odds: -625 to 468 | Recommendation: Visiting
@@ -488,7 +488,7 @@ Match: CLE2018 @ ORL2018 | Win Prob: tensor(0.3569) vs tensor(0.6431) | Odds: 24
 Match: DAL2018 @ LAC2018 | Win Prob: tensor(0.5243) vs tensor(0.4757) | Odds: -256 to 216 | Recommendation: Visiting
 Match: CHI2018 @ SAC2018 | Win Prob: tensor(0.4584) vs tensor(0.5416) | Odds: -130 to 112 | Recommendation: Visiting
 Match: CHO2018 @ DEN2018 | Win Prob: tensor(0.5438) vs tensor(0.4562) | Odds: -175 to 152 | Recommendation: Visiting
-Match: UTA2018 @ NOP2018 | Win Prob: tensor(0.4720) vs tensor(0.5280) | Odds: -108 to -106 | Recommendation: Home
+Match: UTA2018 @ NOP2018 | Win Prob: tensor(0.4720) vs tensor(0.5280) | Odds: -108 to -106 | Recommendation: Visiting
 Match: ORL2018 @ MIA2018 | Win Prob: tensor(0.6102) vs tensor(0.3898) | Odds: -400 to 320 | Recommendation: Visiting
 Match: POR2018 @ DET2018 | Win Prob: tensor(0.4715) vs tensor(0.5285) | Odds: -137 to 119 | Recommendation: Visiting
 Match: WAS2018 @ IND2018 | Win Prob: tensor(0.5068) vs tensor(0.4932) | Odds: 129 to -149 | Recommendation: Home
@@ -553,7 +553,7 @@ Match: WAS2018 @ ATL2018 | Win Prob: tensor(0.4092) vs tensor(0.5908) | Odds: 14
 Match: CHO2018 @ MIA2018 | Win Prob: tensor(0.5229) vs tensor(0.4771) | Odds: -172 to 150 | Recommendation: Visiting
 Match: ORL2018 @ IND2018 | Win Prob: tensor(0.6040) vs tensor(0.3960) | Odds: -263 to 224 | Recommendation: Visiting
 Match: OKC2018 @ DET2018 | Win Prob: tensor(0.4678) vs tensor(0.5322) | Odds: 142 to -164 | Recommendation: Home
-Match: NYK2018 @ PHO2018 | Win Prob: tensor(0.4340) vs tensor(0.5660) | Odds: -101 to -114 | Recommendation: Home
+Match: NYK2018 @ PHO2018 | Win Prob: tensor(0.4340) vs tensor(0.5660) | Odds: -101 to -114 | Recommendation: Visiting
 Match: POR2018 @ DAL2018 | Win Prob: tensor(0.4128) vs tensor(0.5872) | Odds: 100 to -115 | Recommendation: Visiting
 Match: PHI2018 @ SAS2018 | Win Prob: tensor(0.4783) vs tensor(0.5217) | Odds: -167 to 146 | Recommendation: Visiting
 Match: LAL2018 @ CHI2018 | Win Prob: tensor(0.3909) vs tensor(0.6091) | Odds: -175 to 152 | Recommendation: Visiting
@@ -592,7 +592,7 @@ Match: IND2018 @ SAS2018 | Win Prob: tensor(0.5296) vs tensor(0.4704) | Odds: -2
 Match: NYK2018 @ LAL2018 | Win Prob: tensor(0.5336) vs tensor(0.4664) | Odds: 110 to -127 | Recommendation: Home
 Match: ORL2018 @ BOS2018 | Win Prob: tensor(0.6266) vs tensor(0.3734) | Odds: -667 to 490 | Recommendation: Visiting
 Match: DAL2018 @ POR2018 | Win Prob: tensor(0.5872) vs tensor(0.4128) | Odds: -213 to 181 | Recommendation: Visiting
-Match: TOR2018 @ MIN2018 | Win Prob: tensor(0.4471) vs tensor(0.5529) | Odds: -101 to -111 | Recommendation: Home
+Match: TOR2018 @ MIN2018 | Win Prob: tensor(0.4471) vs tensor(0.5529) | Odds: -101 to -111 | Recommendation: Visiting
 Match: LAC2018 @ UTA2018 | Win Prob: tensor(0.5769) vs tensor(0.4231) | Odds: -141 to 123 | Recommendation: Home
 Match: GSW2018 @ HOU2018 | Win Prob: tensor(0.5648) vs tensor(0.4352) | Odds: 127 to -145 | Recommendation: Home
 Match: MIL2018 @ PHI2018 | Win Prob: tensor(0.5644) vs tensor(0.4356) | Odds: -303 to 257 | Recommendation: Visiting
@@ -658,7 +658,7 @@ Match: BOS2018 @ PHI2018 | Win Prob: tensor(0.5274) vs tensor(0.4726) | Odds: 11
 Match: LAC2018 @ GSW2018 | Win Prob: tensor(0.5628) vs tensor(0.4372) | Odds: -909 to 633 | Recommendation: Visiting
 Match: ATL2018 @ DEN2018 | Win Prob: tensor(0.6234) vs tensor(0.3766) | Odds: -455 to 358 | Recommendation: Visiting
 Match: POR2018 @ HOU2018 | Win Prob: tensor(0.5641) vs tensor(0.4359) | Odds: -286 to 243 | Recommendation: Visiting
-Match: NOP2018 @ MEM2018 | Win Prob: tensor(0.3431) vs tensor(0.6569) | Odds: -110 to -105 | Recommendation: Home
+Match: NOP2018 @ MEM2018 | Win Prob: tensor(0.3431) vs tensor(0.6569) | Odds: -110 to -105 | Recommendation: Visiting
 Match: ORL2018 @ MIL2018 | Win Prob: tensor(0.5911) vs tensor(0.4089) | Odds: -625 to 467 | Recommendation: Visiting
 Match: OKC2018 @ MIN2018 | Win Prob: tensor(0.4922) vs tensor(0.5078) | Odds: -189 to 164 | Recommendation: Visiting
 Match: CHI2018 @ NYK2018 | Win Prob: tensor(0.5767) vs tensor(0.4233) | Odds: -200 to 174 | Recommendation: Visiting
@@ -677,7 +677,7 @@ Match: CLE2018 @ MIN2018 | Win Prob: tensor(0.4953) vs tensor(0.5047) | Odds: -1
 Match: DET2018 @ NOP2018 | Win Prob: tensor(0.5142) vs tensor(0.4858) | Odds: -238 to 202 | Recommendation: Visiting
 Match: MIL2018 @ IND2018 | Win Prob: tensor(0.5134) vs tensor(0.4866) | Odds: -122 to 106 | Recommendation: Visiting
 Match: ATL2018 @ LAL2018 | Win Prob: tensor(0.5564) vs tensor(0.4436) | Odds: -159 to 139 | Recommendation: Visiting
-Match: SAS2018 @ POR2018 | Win Prob: tensor(0.5113) vs tensor(0.4887) | Odds: -114 to -101 | Recommendation: Home
+Match: SAS2018 @ POR2018 | Win Prob: tensor(0.5113) vs tensor(0.4887) | Odds: -114 to -101 | Recommendation: Visiting
 Match: OKC2018 @ PHO2018 | Win Prob: tensor(0.3215) vs tensor(0.6785) | Odds: 305 to -370 | Recommendation: Home
 Match: NYK2018 @ DAL2018 | Win Prob: tensor(0.5284) vs tensor(0.4716) | Odds: -213 to 181 | Recommendation: Visiting
 Match: UTA2018 @ MIA2018 | Win Prob: tensor(0.4519) vs tensor(0.5481) | Odds: -167 to 145 | Recommendation: Visiting
@@ -695,10 +695,10 @@ Match: UTA2018 @ DEN2018 | Win Prob: tensor(0.4727) vs tensor(0.5273) | Odds: -2
 Match: CHI2018 @ DAL2018 | Win Prob: tensor(0.6041) vs tensor(0.3959) | Odds: -175 to 154 | Recommendation: Visiting
 Match: PHO2018 @ SAS2018 | Win Prob: tensor(0.6652) vs tensor(0.3348) | Odds: -769 to 569 | Recommendation: Visiting
 Match: NYK2018 @ MIA2018 | Win Prob: tensor(0.5813) vs tensor(0.4187) | Odds: -233 to 200 | Recommendation: Visiting
-Match: TOR2018 @ MIL2018 | Win Prob: tensor(0.3980) vs tensor(0.6020) | Odds: -112 to -102 | Recommendation: Home
+Match: TOR2018 @ MIL2018 | Win Prob: tensor(0.3980) vs tensor(0.6020) | Odds: -112 to -102 | Recommendation: Visiting
 Match: MIN2018 @ BOS2018 | Win Prob: tensor(0.4870) vs tensor(0.5130) | Odds: -147 to 129 | Recommendation: Visiting
 Match: DET2018 @ PHI2018 | Win Prob: tensor(0.5388) vs tensor(0.4612) | Odds: -222 to 191 | Recommendation: Visiting
-Match: OKC2018 @ LAC2018 | Win Prob: tensor(0.4329) vs tensor(0.5671) | Odds: -102 to -114 | Recommendation: Home
+Match: OKC2018 @ LAC2018 | Win Prob: tensor(0.4329) vs tensor(0.5671) | Odds: -102 to -114 | Recommendation: Visiting
 Match: GSW2018 @ HOU2018 | Win Prob: tensor(0.5648) vs tensor(0.4352) | Odds: 158 to -182 | Recommendation: Home
 Match: OKC2018 @ LAL2018 | Win Prob: tensor(0.4142) vs tensor(0.5858) | Odds: 185 to -217 | Recommendation: Home
 Match: PHO2018 @ DEN2018 | Win Prob: tensor(0.6632) vs tensor(0.3368) | Odds: -833 to 592 | Recommendation: Visiting
@@ -713,7 +713,7 @@ Match: SAS2018 @ PHI2018 | Win Prob: tensor(0.5217) vs tensor(0.4783) | Odds: -1
 Match: NYK2018 @ WAS2018 | Win Prob: tensor(0.5684) vs tensor(0.4316) | Odds: -455 to 368 | Recommendation: Visiting
 Match: MEM2018 @ LAC2018 | Win Prob: tensor(0.6110) vs tensor(0.3890) | Odds: -238 to 202 | Recommendation: Visiting
 Match: CHO2018 @ SAC2018 | Win Prob: tensor(0.3291) vs tensor(0.6709) | Odds: 150 to -172 | Recommendation: Visiting
-Match: ATL2018 @ PHO2018 | Win Prob: tensor(0.4567) vs tensor(0.5433) | Odds: -111 to -104 | Recommendation: Home
+Match: ATL2018 @ PHO2018 | Win Prob: tensor(0.4567) vs tensor(0.5433) | Odds: -111 to -104 | Recommendation: Visiting
 Match: SAS2018 @ NYK2018 | Win Prob: tensor(0.3963) vs tensor(0.6037) | Odds: 181 to -208 | Recommendation: Home
 Match: POR2018 @ CLE2018 | Win Prob: tensor(0.5006) vs tensor(0.4994) | Odds: -435 to 344 | Recommendation: Visiting
 Match: POR2018 @ CHI2018 | Win Prob: tensor(0.3154) vs tensor(0.6846) | Odds: -149 to 129 | Recommendation: Visiting
@@ -753,7 +753,7 @@ Match: NYK2018 @ CHI2018 | Win Prob: tensor(0.4233) vs tensor(0.5767) | Odds: -1
 Match: DEN2018 @ MIN2018 | Win Prob: tensor(0.5095) vs tensor(0.4905) | Odds: -208 to 177 | Recommendation: Visiting
 Match: TOR2018 @ OKC2018 | Win Prob: tensor(0.4548) vs tensor(0.5452) | Odds: -164 to 144 | Recommendation: Visiting
 Match: WAS2018 @ ATL2018 | Win Prob: tensor(0.4092) vs tensor(0.5908) | Odds: 202 to -238 | Recommendation: Home
-Match: BOS2018 @ CHO2018 | Win Prob: tensor(0.4597) vs tensor(0.5403) | Odds: -104 to -110 | Recommendation: Home
+Match: BOS2018 @ CHO2018 | Win Prob: tensor(0.4597) vs tensor(0.5403) | Odds: -104 to -110 | Recommendation: Visiting
 Match: DAL2018 @ IND2018 | Win Prob: tensor(0.5470) vs tensor(0.4530) | Odds: -169 to 148 | Recommendation: Visiting
 Match: SAC2018 @ LAC2018 | Win Prob: tensor(0.6652) vs tensor(0.3348) | Odds: -213 to 183 | Recommendation: Home
 Match: UTA2018 @ DEN2018 | Win Prob: tensor(0.4727) vs tensor(0.5273) | Odds: -238 to 204 | Recommendation: Visiting
@@ -766,7 +766,7 @@ Match: MIN2018 @ LAL2018 | Win Prob: tensor(0.4218) vs tensor(0.5782) | Odds: 21
 Match: HOU2018 @ OKC2018 | Win Prob: tensor(0.4396) vs tensor(0.5604) | Odds: -127 to 110 | Recommendation: Visiting
 Match: WAS2018 @ BOS2018 | Win Prob: tensor(0.5306) vs tensor(0.4694) | Odds: -175 to 154 | Recommendation: Visiting
 Match: CLE2018 @ GSW2018 | Win Prob: tensor(0.4987) vs tensor(0.5013) | Odds: -185 to 163 | Recommendation: Visiting
-Match: PHI2018 @ NYK2018 | Win Prob: tensor(0.3758) vs tensor(0.6242) | Odds: -101 to -112 | Recommendation: Home
+Match: PHI2018 @ NYK2018 | Win Prob: tensor(0.3758) vs tensor(0.6242) | Odds: -101 to -112 | Recommendation: Visiting
 Match: SAS2018 @ SAC2018 | Win Prob: tensor(0.2897) vs tensor(0.7103) | Odds: 212 to -250 | Recommendation: Visiting
 Match: POR2018 @ LAL2018 | Win Prob: tensor(0.4178) vs tensor(0.5822) | Odds: -147 to 127 | Recommendation: Visiting
 Match: MIN2018 @ PHO2018 | Win Prob: tensor(0.3284) vs tensor(0.6716) | Odds: 274 to -333 | Recommendation: Home
@@ -795,7 +795,7 @@ Match: TOR2018 @ PHI2018 | Win Prob: tensor(0.4614) vs tensor(0.5386) | Odds: 14
 Match: PHO2018 @ LAC2018 | Win Prob: tensor(0.6169) vs tensor(0.3831) | Odds: -222 to 189 | Recommendation: Visiting
 Match: MEM2018 @ GSW2018 | Win Prob: tensor(0.6691) vs tensor(0.3309) | Odds: -500 to 394 | Recommendation: Visiting
 Match: SAS2018 @ POR2018 | Win Prob: tensor(0.5113) vs tensor(0.4887) | Odds: -139 to 121 | Recommendation: Visiting
-Match: MIN2018 @ DEN2018 | Win Prob: tensor(0.4905) vs tensor(0.5095) | Odds: -112 to -101 | Recommendation: Home
+Match: MIN2018 @ DEN2018 | Win Prob: tensor(0.4905) vs tensor(0.5095) | Odds: -112 to -101 | Recommendation: Visiting
 Match: DET2018 @ DAL2018 | Win Prob: tensor(0.4407) vs tensor(0.5593) | Odds: -116 to 100 | Recommendation: Visiting
 Match: ORL2018 @ CHI2018 | Win Prob: tensor(0.4529) vs tensor(0.5471) | Odds: -196 to 170 | Recommendation: Visiting
 Match: LAL2018 @ HOU2018 | Win Prob: tensor(0.6433) vs tensor(0.3567) | Odds: -1429 to 924 | Recommendation: Visiting
@@ -847,8 +847,8 @@ Match: UTA2018 @ CHI2018 | Win Prob: tensor(0.3036) vs tensor(0.6964) | Odds: 19
 Match: MIL2018 @ NOP2018 | Win Prob: tensor(0.5399) vs tensor(0.4601) | Odds: -133 to 116 | Recommendation: Visiting
 Match: DEN2018 @ BOS2018 | Win Prob: tensor(0.4965) vs tensor(0.5035) | Odds: -238 to 204 | Recommendation: Visiting
 Match: POR2018 @ MIA2018 | Win Prob: tensor(0.4656) vs tensor(0.5344) | Odds: -147 to 129 | Recommendation: Visiting
-Match: OKC2018 @ IND2018 | Win Prob: tensor(0.4554) vs tensor(0.5446) | Odds: -104 to -110 | Recommendation: Home
-Match: LAC2018 @ ORL2018 | Win Prob: tensor(0.4180) vs tensor(0.5820) | Odds: -103 to -111 | Recommendation: Home
+Match: OKC2018 @ IND2018 | Win Prob: tensor(0.4554) vs tensor(0.5446) | Odds: -104 to -110 | Recommendation: Visiting
+Match: LAC2018 @ ORL2018 | Win Prob: tensor(0.4180) vs tensor(0.5820) | Odds: -103 to -111 | Recommendation: Visiting
 Match: MEM2018 @ WAS2018 | Win Prob: tensor(0.6262) vs tensor(0.3738) | Odds: -312 to 262 | Recommendation: Visiting
 Match: PHO2018 @ SAC2018 | Win Prob: tensor(0.4476) vs tensor(0.5524) | Odds: -179 to 156 | Recommendation: Visiting
 Match: PHI2018 @ MIN2018 | Win Prob: tensor(0.4856) vs tensor(0.5144) | Odds: -189 to 164 | Recommendation: Visiting
@@ -930,8 +930,8 @@ Match: CHO2018 @ MIA2018 | Win Prob: tensor(0.5229) vs tensor(0.4771) | Odds: -1
 Match: MIN2018 @ OKC2018 | Win Prob: tensor(0.5078) vs tensor(0.4922) | Odds: -222 to 191 | Recommendation: Visiting
 Match: IND2018 @ TOR2018 | Win Prob: tensor(0.5891) vs tensor(0.4109) | Odds: -286 to 244 | Recommendation: Visiting
 Match: GSW2018 @ ORL2018 | Win Prob: tensor(0.3581) vs tensor(0.6419) | Odds: 478 to -625 | Recommendation: Home
-Match: DET2018 @ WAS2018 | Win Prob: tensor(0.4808) vs tensor(0.5192) | Odds: -106 to -109 | Recommendation: Home
-Match: UTA2018 @ LAC2018 | Win Prob: tensor(0.4231) vs tensor(0.5769) | Odds: -108 to -106 | Recommendation: Home
+Match: DET2018 @ WAS2018 | Win Prob: tensor(0.4808) vs tensor(0.5192) | Odds: -106 to -109 | Recommendation: Visiting
+Match: UTA2018 @ LAC2018 | Win Prob: tensor(0.4231) vs tensor(0.5769) | Odds: -108 to -106 | Recommendation: Visiting
 Match: MIL2018 @ POR2018 | Win Prob: tensor(0.5542) vs tensor(0.4458) | Odds: -172 to 152 | Recommendation: Visiting
 Match: CHI2018 @ DEN2018 | Win Prob: tensor(0.6728) vs tensor(0.3272) | Odds: -625 to 480 | Recommendation: Visiting
 Match: CLE2018 @ ATL2018 | Win Prob: tensor(0.3634) vs tensor(0.6366) | Odds: 274 to -323 | Recommendation: Home
@@ -947,7 +947,7 @@ Match: OKC2018 @ ORL2018 | Win Prob: tensor(0.3541) vs tensor(0.6459) | Odds: 20
 Match: WAS2018 @ PHI2018 | Win Prob: tensor(0.5578) vs tensor(0.4422) | Odds: -286 to 242 | Recommendation: Visiting
 Match: MIL2018 @ SAC2018 | Win Prob: tensor(0.3264) vs tensor(0.6736) | Odds: 217 to -250 | Recommendation: Home
 Match: DEN2018 @ UTA2018 | Win Prob: tensor(0.5273) vs tensor(0.4727) | Odds: -105 to -109 | Recommendation: Home
-Match: PHO2018 @ CHI2018 | Win Prob: tensor(0.4892) vs tensor(0.5108) | Odds: -114 to -101 | Recommendation: Home
+Match: PHO2018 @ CHI2018 | Win Prob: tensor(0.4892) vs tensor(0.5108) | Odds: -114 to -101 | Recommendation: Visiting
 Match: WAS2018 @ MIN2018 | Win Prob: tensor(0.5435) vs tensor(0.4565) | Odds: -213 to 181 | Recommendation: Visiting
 Match: MIA2018 @ CLE2018 | Win Prob: tensor(0.5351) vs tensor(0.4649) | Odds: -175 to 156 | Recommendation: Visiting
 Match: SAC2018 @ GSW2018 | Win Prob: tensor(0.7190) vs tensor(0.2810) | Odds: -909 to 685 | Recommendation: Visiting
@@ -995,7 +995,7 @@ Match: CHI2018 @ LAL2018 | Win Prob: tensor(0.6091) vs tensor(0.3909) | Odds: -2
 Match: DEN2018 @ SAC2018 | Win Prob: tensor(0.2916) vs tensor(0.7084) | Odds: 177 to -204 | Recommendation: Visiting
 Match: BOS2018 @ DAL2018 | Win Prob: tensor(0.4294) vs tensor(0.5706) | Odds: 233 to -278 | Recommendation: Home
 Match: ATL2018 @ SAS2018 | Win Prob: tensor(0.6255) vs tensor(0.3745) | Odds: -417 to 338 | Recommendation: Visiting
-Match: POR2018 @ MEM2018 | Win Prob: tensor(0.3303) vs tensor(0.6697) | Odds: -102 to -112 | Recommendation: Home
+Match: POR2018 @ MEM2018 | Win Prob: tensor(0.3303) vs tensor(0.6697) | Odds: -102 to -112 | Recommendation: Visiting
 Match: WAS2018 @ MIL2018 | Win Prob: tensor(0.4933) vs tensor(0.5067) | Odds: -156 to 137 | Recommendation: Visiting
 Match: OKC2018 @ NOP2018 | Win Prob: tensor(0.4819) vs tensor(0.5181) | Odds: 121 to -137 | Recommendation: Home
 Match: LAC2018 @ NYK2018 | Win Prob: tensor(0.4475) vs tensor(0.5525) | Odds: 112 to -128 | Recommendation: Visiting
@@ -1023,13 +1023,13 @@ Match: CHO2018 @ CHI2018 | Win Prob: tensor(0.3670) vs tensor(0.6330) | Odds: 22
 Match: OKC2018 @ SAS2018 | Win Prob: tensor(0.4849) vs tensor(0.5151) | Odds: 104 to -119 | Recommendation: Home
 Match: LAC2018 @ CLE2018 | Win Prob: tensor(0.5641) vs tensor(0.4359) | Odds: -263 to 225 | Recommendation: Visiting
 Match: NYK2018 @ TOR2018 | Win Prob: tensor(0.6598) vs tensor(0.3402) | Odds: -323 to 272 | Recommendation: Visiting
-Match: DET2018 @ IND2018 | Win Prob: tensor(0.4876) vs tensor(0.5124) | Odds: -114 to -101 | Recommendation: Home
+Match: DET2018 @ IND2018 | Win Prob: tensor(0.4876) vs tensor(0.5124) | Odds: -114 to -101 | Recommendation: Visiting
 Match: MIA2018 @ WAS2018 | Win Prob: tensor(0.4868) vs tensor(0.5132) | Odds: -189 to 165 | Recommendation: Visiting
 Match: HOU2018 @ PHO2018 | Win Prob: tensor(0.2710) vs tensor(0.7290) | Odds: 666 to -909 | Recommendation: Home
 Match: GSW2018 @ BOS2018 | Win Prob: tensor(0.4836) vs tensor(0.5164) | Odds: 241 to -286 | Recommendation: Home
 Match: PHI2018 @ LAL2018 | Win Prob: tensor(0.4078) vs tensor(0.5922) | Odds: 141 to -161 | Recommendation: Home
 Match: ORL2018 @ POR2018 | Win Prob: tensor(0.6425) vs tensor(0.3575) | Odds: -200 to 175 | Recommendation: Visiting
-Match: CLE2018 @ CHO2018 | Win Prob: tensor(0.4422) vs tensor(0.5578) | Odds: -106 to -109 | Recommendation: Home
+Match: CLE2018 @ CHO2018 | Win Prob: tensor(0.4422) vs tensor(0.5578) | Odds: -106 to -109 | Recommendation: Visiting
 Match: IND2018 @ MEM2018 | Win Prob: tensor(0.3675) vs tensor(0.6325) | Odds: -149 to 131 | Recommendation: Visiting
 Match: DET2018 @ MIL2018 | Win Prob: tensor(0.4742) vs tensor(0.5258) | Odds: -185 to 161 | Recommendation: Visiting
 Match: SAS2018 @ MIN2018 | Win Prob: tensor(0.5073) vs tensor(0.4927) | Odds: -196 to 168 | Recommendation: Visiting
@@ -1043,7 +1043,7 @@ Match: TOR2018 @ HOU2018 | Win Prob: tensor(0.5154) vs tensor(0.4846) | Odds: -2
 Match: ORL2018 @ GSW2018 | Win Prob: tensor(0.6419) vs tensor(0.3581) | Odds: -769 to 603 | Recommendation: Visiting
 Match: PHI2018 @ LAC2018 | Win Prob: tensor(0.4264) vs tensor(0.5736) | Odds: -130 to 114 | Recommendation: Visiting
 Match: DEN2018 @ POR2018 | Win Prob: tensor(0.5135) vs tensor(0.4865) | Odds: -127 to 112 | Recommendation: Visiting
-Match: LAL2018 @ PHO2018 | Win Prob: tensor(0.4013) vs tensor(0.5987) | Odds: -114 to -101 | Recommendation: Home
+Match: LAL2018 @ PHO2018 | Win Prob: tensor(0.4013) vs tensor(0.5987) | Odds: -114 to -101 | Recommendation: Visiting
 Match: MIN2018 @ UTA2018 | Win Prob: tensor(0.5178) vs tensor(0.4822) | Odds: 129 to -147 | Recommendation: Home
 Match: MEM2018 @ MIL2018 | Win Prob: tensor(0.6199) vs tensor(0.3801) | Odds: -154 to 136 | Recommendation: Home
 Match: ATL2018 @ NOP2018 | Win Prob: tensor(0.6226) vs tensor(0.3774) | Odds: -400 to 334 | Recommendation: Visiting
@@ -1094,7 +1094,7 @@ Match: BOS2018 @ ATL2018 | Win Prob: tensor(0.3799) vs tensor(0.6201) | Odds: 28
 Match: MEM2018 @ LAL2018 | Win Prob: tensor(0.5927) vs tensor(0.4073) | Odds: 123 to -141 | Recommendation: Home
 Match: OKC2018 @ POR2018 | Win Prob: tensor(0.4963) vs tensor(0.5037) | Odds: 127 to -145 | Recommendation: Home
 Match: CHO2018 @ MIN2018 | Win Prob: tensor(0.5532) vs tensor(0.4468) | Odds: -192 to 167 | Recommendation: Visiting
-Match: IND2018 @ NYK2018 | Win Prob: tensor(0.4250) vs tensor(0.5750) | Odds: -103 to -112 | Recommendation: Home
+Match: IND2018 @ NYK2018 | Win Prob: tensor(0.4250) vs tensor(0.5750) | Odds: -103 to -112 | Recommendation: Visiting
 Match: UTA2018 @ HOU2018 | Win Prob: tensor(0.5506) vs tensor(0.4494) | Odds: -238 to 204 | Recommendation: Visiting
 Match: PHO2018 @ SAS2018 | Win Prob: tensor(0.6652) vs tensor(0.3348) | Odds: -476 to 380 | Recommendation: Visiting
 Match: BOS2018 @ ORL2018 | Win Prob: tensor(0.3734) vs tensor(0.6266) | Odds: 138 to -159 | Recommendation: Visiting
@@ -1163,7 +1163,7 @@ Match: OKC2018 @ MIN2018 | Win Prob: tensor(0.4922) vs tensor(0.5078) | Odds: 11
 Match: DEN2018 @ ATL2018 | Win Prob: tensor(0.3766) vs tensor(0.6234) | Odds: 233 to -278 | Recommendation: Home
 Match: HOU2018 @ CHO2018 | Win Prob: tensor(0.3804) vs tensor(0.6196) | Odds: 127 to -145 | Recommendation: Visiting
 Match: SAS2018 @ ORL2018 | Win Prob: tensor(0.3680) vs tensor(0.6320) | Odds: 181 to -213 | Recommendation: Home
-Match: NOP2018 @ SAC2018 | Win Prob: tensor(0.2922) vs tensor(0.7078) | Odds: -110 to -104 | Recommendation: Home
+Match: NOP2018 @ SAC2018 | Win Prob: tensor(0.2922) vs tensor(0.7078) | Odds: -110 to -104 | Recommendation: Visiting
 Match: LAC2018 @ POR2018 | Win Prob: tensor(0.5635) vs tensor(0.4365) | Odds: -128 to 112 | Recommendation: Home
 Match: ATL2018 @ CHI2018 | Win Prob: tensor(0.4460) vs tensor(0.5540) | Odds: -132 to 114 | Recommendation: Visiting
 Match: DAL2018 @ MEM2018 | Win Prob: tensor(0.4123) vs tensor(0.5877) | Odds: -312 to 261 | Recommendation: Visiting
@@ -1209,7 +1209,7 @@ Match: SAC2018 @ DAL2018 | Win Prob: tensor(0.6433) vs tensor(0.3567) | Odds: -2
 Match: UTA2018 @ MIN2018 | Win Prob: tensor(0.4822) vs tensor(0.5178) | Odds: -185 to 161 | Recommendation: Visiting
 Match: ATL2018 @ CHO2018 | Win Prob: tensor(0.5813) vs tensor(0.4187) | Odds: -185 to 162 | Recommendation: Visiting
 Match: POR2018 @ IND2018 | Win Prob: tensor(0.4591) vs tensor(0.5409) | Odds: 185 to -213 | Recommendation: Home
-Match: CLE2018 @ MIL2018 | Win Prob: tensor(0.4452) vs tensor(0.5548) | Odds: -108 to -106 | Recommendation: Home
+Match: CLE2018 @ MIL2018 | Win Prob: tensor(0.4452) vs tensor(0.5548) | Odds: -108 to -106 | Recommendation: Visiting
 Match: BOS2018 @ PHI2018 | Win Prob: tensor(0.5274) vs tensor(0.4726) | Odds: -143 to 125 | Recommendation: Visiting
 Match: DET2018 @ WAS2018 | Win Prob: tensor(0.4808) vs tensor(0.5192) | Odds: -263 to 224 | Recommendation: Visiting
 Match: LAC2018 @ LAL2018 | Win Prob: tensor(0.4809) vs tensor(0.5191) | Odds: 206 to -238 | Recommendation: Home
@@ -1265,7 +1265,7 @@ Match: GSW2018 @ MIN2018 | Win Prob: tensor(0.4966) vs tensor(0.5034) | Odds: 18
 Match: MIA2018 @ ORL2018 | Win Prob: tensor(0.3898) vs tensor(0.6102) | Odds: -132 to 108 | Recommendation: Visiting
 Match: PHO2018 @ UTA2018 | Win Prob: tensor(0.6871) vs tensor(0.3129) | Odds: -196 to 158 | Recommendation: Home
 Match: SAC2018 @ SAS2018 | Win Prob: tensor(0.7103) vs tensor(0.2897) | Odds: -244 to 191 | Recommendation: Home
-Match: MIL2018 @ CHI2018 | Win Prob: tensor(0.3641) vs tensor(0.6359) | Odds: -104 to -118 | Recommendation: Home
+Match: MIL2018 @ CHI2018 | Win Prob: tensor(0.3641) vs tensor(0.6359) | Odds: -104 to -118 | Recommendation: Visiting
 Match: NOP2018 @ OKC2018 | Win Prob: tensor(0.5181) vs tensor(0.4819) | Odds: -238 to 189 | Recommendation: Visiting
 Match: IND2018 @ CLE2018 | Win Prob: tensor(0.5415) vs tensor(0.4585) | Odds: -189 to 152 | Recommendation: Visiting
 Match: ATL2018 @ DET2018 | Win Prob: tensor(0.6092) vs tensor(0.3908) | Odds: -217 to 171 | Recommendation: Visiting
@@ -1274,7 +1274,7 @@ Match: NYK2018 @ WAS2018 | Win Prob: tensor(0.5684) vs tensor(0.4316) | Odds: -2
 Match: TOR2018 @ POR2018 | Win Prob: tensor(0.4511) vs tensor(0.5489) | Odds: -169 to 138 | Recommendation: Visiting
 Match: DAL2018 @ ORL2018 | Win Prob: tensor(0.4419) vs tensor(0.5581) | Odds: -244 to 192 | Recommendation: Visiting
 Match: MIN2018 @ GSW2018 | Win Prob: tensor(0.5034) vs tensor(0.4966) | Odds: -250 to 196 | Recommendation: Visiting
-Match: DEN2018 @ LAL2018 | Win Prob: tensor(0.4311) vs tensor(0.5689) | Odds: -112 to -110 | Recommendation: Home
+Match: DEN2018 @ LAL2018 | Win Prob: tensor(0.4311) vs tensor(0.5689) | Odds: -112 to -110 | Recommendation: Visiting
 Match: CHI2018 @ DAL2018 | Win Prob: tensor(0.6041) vs tensor(0.3959) | Odds: -222 to 179 | Recommendation: Visiting
 Match: IND2018 @ MIL2018 | Win Prob: tensor(0.4866) vs tensor(0.5134) | Odds: -175 to 146 | Recommendation: Visiting
 Match: ATL2018 @ CLE2018 | Win Prob: tensor(0.6366) vs tensor(0.3634) | Odds: -345 to 263 | Recommendation: Visiting
@@ -1287,7 +1287,7 @@ Match: HOU2018 @ OKC2018 | Win Prob: tensor(0.4396) vs tensor(0.5604) | Odds: 20
 Match: DEN2018 @ LAL2018 | Win Prob: tensor(0.4311) vs tensor(0.5689) | Odds: 152 to -185 | Recommendation: Home
 Match: SAS2018 @ SAC2018 | Win Prob: tensor(0.2897) vs tensor(0.7103) | Odds: 100 to -125 | Recommendation: Visiting
 Match: MIL2018 @ DAL2018 | Win Prob: tensor(0.4663) vs tensor(0.5337) | Odds: -200 to 163 | Recommendation: Visiting
-Match: ORL2018 @ MEM2018 | Win Prob: tensor(0.4699) vs tensor(0.5301) | Odds: -122 to -101 | Recommendation: Home
+Match: ORL2018 @ MEM2018 | Win Prob: tensor(0.4699) vs tensor(0.5301) | Odds: -122 to -101 | Recommendation: Visiting
 Match: CHO2018 @ BOS2018 | Win Prob: tensor(0.5403) vs tensor(0.4597) | Odds: -323 to 252 | Recommendation: Visiting
 Match: LAC2018 @ TOR2018 | Win Prob: tensor(0.6110) vs tensor(0.3890) | Odds: -125 to 104 | Recommendation: Home
 Match: ATL2018 @ MIA2018 | Win Prob: tensor(0.6035) vs tensor(0.3965) | Odds: -278 to 222 | Recommendation: Visiting
