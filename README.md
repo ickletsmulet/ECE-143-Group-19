@@ -11,7 +11,7 @@ To run the code, you must have several modules installed:
 torchvision,
 BeautifulSoup,
 selenium,
-requests,
+requests
 
 
 Depending on how you decide to download and save the csv data files,
