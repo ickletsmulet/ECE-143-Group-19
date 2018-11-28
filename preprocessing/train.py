@@ -35,7 +35,8 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
             # Loss is the mean square error
             #logistic or not, l have not tried yet
             #F.sigmoid(PER_C)
-            win_rate = sum(PER_C)
+            PER_C,indices = torch.sort(PER_C,descending=True)[:10]
+            win_rate = torch.mean(PER_C)
             criterion =nn.MSELoss()
 
             loss = criterion(win_rate, y)
@@ -78,7 +79,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
                 # Loss is the mean square error
                 #logistic or not, l have not tried yet
 
-                win_rate = sum(PER_C)
+                win_rate = torch.mean(PER_C)
                 loss_val += (y-win_rate)**2
             print('validation_loss:')
            

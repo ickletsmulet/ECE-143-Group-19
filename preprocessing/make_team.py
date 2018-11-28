@@ -8,7 +8,7 @@ def make_team(Player_table,data_norm,team_idx,year,device,dtype,need_idx):
     import torch
     loader_train={}
     for name,rate in team_idx.items():
-        data_temp,exist = search_team(Player_table,data_norm,name,need_idx,'poly2')
+        data_temp,exist = search_team(Player_table,data_norm,name,need_idx,'poly4')
         # if exist==0,then it means we could not find players, it should not be added
         if exist==0:
             
