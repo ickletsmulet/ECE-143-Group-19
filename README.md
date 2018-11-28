@@ -8,11 +8,10 @@ provided by betting sites in combination with our predictions.
 
 
 To run the code, you must have several modules installed:
-
-torchvision
-BeautifulSoup
-selenium
-requests
+torchvision,
+BeautifulSoup,
+selenium,
+requests,
 
 
 Depending on how you decide to download and save the csv data files,
