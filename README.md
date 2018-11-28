@@ -8,6 +8,7 @@ provided by betting sites in combination with our predictions.
 
 
 To run the code, you must have several modules installed:
+
 torchvision
 BeautifulSoup
 selenium
