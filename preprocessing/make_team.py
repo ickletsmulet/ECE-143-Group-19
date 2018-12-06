@@ -3,6 +3,27 @@ def make_team(Player_table,data_norm,team_idx,year,device,dtype,need_idx):
     put all players in one team to one matrix with size[n,m]
     n:number of players
     m: number of features
+    
+    
+    input:data_norm
+    type:numpy.array() which contains the data normalized
+    input:need_idx
+    type:list
+    input:team_idx
+    type:dic
+    input:Player_table
+    type:numpy.array() which contains the team name
+    input:year
+    type:int which year we would like to search
+    input:device
+    type:str device to train in  
+    input:dtype
+    type:str data type to input
+    
+    output:data_team
+    type:numpy.array() which contains the data normalized and using different curve method
+    output:exist
+    type:int when exist =0,it means we could not find the player who belongs to this team
     '''
     import numpy as np
     import torch
@@ -26,7 +47,29 @@ def make_team(Player_table,data_norm,team_idx,year,device,dtype,need_idx):
             # combine the data and winrate to a tuple which is the value of dictionary(key is the team+year)
             loader_train[name+year] = (data_temp,ltemp)
     return loader_train
+
+
 def search_team(Player_table,data_norm,team_name,need_idx,curve_method='poly3'):
+    '''
+    
+    this module is to change the player tabel into a valid input of the train model, we should select a curve_method
+    
+    input:data_norm
+    type:numpy.array() which contains the data normalized
+    input:curve_method
+    type:str
+    input:need_idx
+    type:list
+    input:team_name
+    type:str
+    input:Player_table
+    type:numpy.array() which contains the team name
+    
+    output:data_team
+    type:numpy.array() which contains the data normalized and using different curve method
+    output:exist
+    type:int when exist =0,it means we could not find the player who belongs to this team
+    '''
     import numpy as np
     data_team=[]
     # when exist =0,it means we could not find the player who belongs to this team
