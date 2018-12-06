@@ -1,11 +1,15 @@
-def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,print_process=True, early_stop = True):
+def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs = 500,print_process=True, early_stop = True):
     """
     Inputs:
     - model: A PyTorch Module giving the model to train.
     - optimizer: An Optimizer object we will use to train the model
     - epochs: (Optional) A Python integer giving the number of epochs to train for
+    - loader_train:  dataset of training
+    - loader_validation: dataset of validation
+    - print_process:print the process of train result or not
+    - early_stop:stop when validation loss begin to raise or not
     
-    Returns: Nothing, but prints model accuracies during training.
+    Returns: his_epoch,his_tra,his_val which shows the process in training
     """
     import torch
     import torch.nn as nn
@@ -32,9 +36,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
             y = y.to(device=device, dtype=torch.float)
 
             PER_C = model(x)
-            # Loss is the mean square error
-            #logistic or not, l have not tried yet
-            #F.sigmoid(PER_C)
+
             PER_C,indices = torch.sort(PER_C,descending=True)[:10]
             win_rate = torch.mean(PER_C)
             criterion =nn.MSELoss()
@@ -52,10 +54,6 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
             # Actually update the parameters of the model using the gradients
             # computed by the backwards pass.
             optimizer.step()
-
-            #if time % print_every == 0:
-             #   print(loss[0])
-              #  print()
 
 
             if print_process==True:
@@ -75,10 +73,7 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
                 y = y.to(device=device, dtype=torch.float)
 
                 PER_C = model(x)
-                #F.sigmoid(PER_C)
-                # Loss is the mean square error
-                #logistic or not, l have not tried yet
-
+                PER_C,indices = torch.sort(PER_C,descending=True)[:10]
                 win_rate = torch.mean(PER_C)
                 loss_val += (y-win_rate)**2
             print('validation_loss:')
@@ -91,17 +86,12 @@ def train(model,loader_train, loader_validation,device,optimizer, dtype,epochs,p
 
                 best_val_loss = loss_val[0]
             else:
-                pass
-                #break
+                break
             if e%2 == 0:
                 his_val.append(loss_val[0].data)
                 his_epoch.append(e)
                 his_tra.append(loss_perepoch[0].data/25)
             print(loss_val[0])
 
-        '''
-        if e%100 == 0:
-            torch.save(model, 'index_code1_linear.all')
-        '''
         print(e,loss_perepoch/25)
     return his_epoch,his_tra,his_val
