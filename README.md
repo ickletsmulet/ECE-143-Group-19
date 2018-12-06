@@ -24,6 +24,10 @@ Depending on how you decide to download and save the csv data files,
 the code may not find the necessary data files in the desginated paths.
 In that case, change the code or the file locations to make the code work.
 
+The train.ipynb is to train a model to predict the winning rate of a team. However, we have 
+provided a trained one. If you want to try training by yourself, just open it and follow the
+docstring to change hyperparameters to train.
+
 
 Some of the code's formatting may be messed up when viewed from GitHub. The code will
 still work but it is best viewed in JupyerNotebook for cleaner formatting appearances.
