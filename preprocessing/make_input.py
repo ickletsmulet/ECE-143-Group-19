@@ -1,4 +1,15 @@
 def make_input(data_norm,curve_method='poly3'):
+    '''
+    this module is to change the player tabel into a valid input of the train model, we should select a curve_method
+    
+    input:data_norm
+    type:numpy.array() which contains the data normalized
+    input:curve_method
+    type:str
+    
+    output:data_team
+    type:numpy.array() which contains the data normalized and using different curve method
+    '''
     import numpy as np
     data_team=[]
     # when exist =0,it means we could not find the player who belongs to this team
